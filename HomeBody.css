@@ -1,0 +1,37 @@
+.class-search {
+    border-radius: 1.5vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 7vh;
+    width: 25%;
+    text-indent: 1vw;
+    margin-top: 15vh;
+    margin-left: 33.5%;
+}
+
+.professor-search {
+    border-radius: 1.5vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    height: 7vh;
+    width: 25%;
+    text-indent: 1vw;
+    margin-top: 8vh;
+    margin-left: 33.5%;
+}
+
+.search-btn {
+    padding-top: 2.25vh;
+    padding-bottom: 2.25vh;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 7vh;
+    border-radius: 1.5vh;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-decoration: none;
+    color: black;
+}

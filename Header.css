@@ -1,0 +1,34 @@
+.header-top {
+    padding-bottom: 5vh;
+    border-bottom: 1px solid black;
+    border-bottom-width: 0.2vh;
+}
+.header-top a {
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 4vh;
+}
+.logo {
+    float: left;
+    height: 10vh;
+    width: 8.5%;
+}
+.title-name {
+    font-size: 4.7vw;
+    margin-left: 21vw;
+    padding-top: 5vh;
+    text-decoration: none;
+}
+.title-name:hover {
+    color: #595959;
+}
+.contact-link {
+    float: right;
+    font-size: 4vh;
+    padding-top: 2.5vh;
+    text-decoration: none;
+}
+.contact-link:hover {
+    text-decoration: underline;
+}

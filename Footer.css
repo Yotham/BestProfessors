@@ -1,0 +1,21 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 0.2vh;
+    padding-top: 1vh;
+    border-top: 1px solid black;
+    border-top-width: 0.2vh;
+}
+.footer a {
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+.git {
+    color: black;
+}
