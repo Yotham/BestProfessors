@@ -1,0 +1,103 @@
+{
+    "code": "ADMN",
+    "courses": [
+      {
+        "crse": 1030,
+        "id": "ADMN-1030",
+        "sections": [
+          {
+            "act": 0,
+            "attribute": "",
+            "cap": 1200,
+            "credMax": 0.0,
+            "credMin": 0.0,
+            "crn": 79948,
+            "crse": 1030,
+            "rem": 1200,
+            "sec": "06",
+            "subj": "ADMN",
+            "timeslots": [
+              {
+                "dateEnd": "05/05",
+                "dateStart": "01/09",
+                "days": [],
+                "instructor": "Philip Bruce",
+                "location": "TBA",
+                "timeEnd": -1,
+                "timeStart": -1
+              }
+            ],
+            "title": "Arch Exp & Plan Science"
+          }
+        ],
+        "subj": "ADMN",
+        "title": "Arch Exp & Plan Science"
+      },
+      {
+        "crse": 1100,
+        "id": "ADMN-1100",
+        "sections": [
+          {
+            "act": 0,
+            "attribute": "",
+            "cap": 65,
+            "credMax": 0.0,
+            "credMin": 0.0,
+            "crn": 79917,
+            "crse": 1100,
+            "rem": 65,
+            "sec": "02",
+            "subj": "ADMN",
+            "timeslots": [
+              {
+                "dateEnd": "05/05",
+                "dateStart": "01/09",
+                "days": [],
+                "instructor": "Matthew Joseph Lopez",
+                "location": "TBA",
+                "timeEnd": -1,
+                "timeStart": -1
+              }
+            ],
+            "title": "Portfolio Development"
+          }
+        ],
+        "subj": "ADMN",
+        "title": "Portfolio Development"
+      },
+      {
+        "crse": 1824,
+        "id": "ADMN-1824",
+        "sections": [
+          {
+            "act": 0,
+            "attribute": "",
+            "cap": 150,
+            "credMax": 0.0,
+            "credMin": 0.0,
+            "crn": 79529,
+            "crse": 1824,
+            "rem": 150,
+            "sec": "01",
+            "subj": "ADMN",
+            "timeslots": [
+              {
+                "dateEnd": "05/05",
+                "dateStart": "01/09",
+                "days": [
+                  "T"
+                ],
+                "instructor": "Joseph Louis Trzepacz",
+                "location": "Academy Hall AUD",
+                "timeEnd": 1650,
+                "timeStart": 1600
+              }
+            ],
+            "title": "Student Success Labs"
+          }
+        ],
+        "subj": "ADMN",
+        "title": "Student Success Labs"
+      }
+    ]
+}
