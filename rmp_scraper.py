@@ -5,6 +5,11 @@ import json
 import math
 from urllib.parse import urlparse 
 from bs4 import BeautifulSoup
+from html.parser import HTMLParser
+
+class htmlParser(HTMLParser):
+    def handle_data(self, data):
+        return self.data
 
 def generate_professor_list():
     page = requests.get(
@@ -75,6 +80,7 @@ professor = get_professor(professor_list,Fname,Mname,Lname)
 print(professor)
 def access_review_page(professor):
     tid = str(professor["tid"])
+    numRatings = professor["tNumRatings"]
     #request professors page
     r = requests.get("https://www.ratemyprofessors.com/professor?tid="+tid)
     response = r.text
@@ -82,8 +88,14 @@ def access_review_page(professor):
     soup = BeautifulSoup(response, "html.parser")
     #look for specific html class
     classNames = soup.find_all('div', {'class':'RatingHeader__StyledClass-sc-1dlkqw1-2'})
-    #print contents of class
-    for className in classNames:
-        print(className)
+    reviewEmotion = soup.find_all('div',{'class':'EmotionLabel__StyledEmotionLabel-sc-1u525uj-0'})
+    qualityRating = soup.find_all('div',{'class':'CardNumRating__CardNumRatingNumber-sc-17t4b9u-2'})
+    reviews = soup.find_all('div',{'class':'Comments__StyledComments-dzzyvm-0'})
+    classNamesnoDups = []
+    for i in range(len(classNames)):
+        if(i > 0 and classNames[i] != classNames[i-1]):
+            classNamesnoDups.append(classNames[i])
+    for i in range(len(classNamesnoDups)):
+        print(classNamesnoDups[i].text, "\n", reviewEmotion[i].text, "\n",qualityRating[i].text,"\n",reviews[i].text)
 
 access_review_page(professor)
