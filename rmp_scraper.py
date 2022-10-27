@@ -75,12 +75,9 @@ def get_professor(professor_list,Fname,Mname,Lname):
             #get professor
             return professor_list[i]
 
-
-professor = get_professor(professor_list,Fname,Mname,Lname)
-print(professor)
 def access_review_page(professor):
+    professor_ratings = []
     tid = str(professor["tid"])
-    numRatings = professor["tNumRatings"]
     #request professors page
     r = requests.get("https://www.ratemyprofessors.com/professor?tid="+tid)
     response = r.text
@@ -96,6 +93,17 @@ def access_review_page(professor):
         if(i > 0 and classNames[i] != classNames[i-1]):
             classNamesnoDups.append(classNames[i])
     for i in range(len(classNamesnoDups)):
-        print(classNamesnoDups[i].text, "\n", reviewEmotion[i].text, "\n",qualityRating[i].text,"\n",reviews[i].text)
+        review = {}
+        review["className"] = classNamesnoDups[i].text
+        review["reviewEmotion"] = reviewEmotion[i].text
+        review["qualityRating"] = qualityRating[i].text
+        review["review"] = reviews[i].text
+        professor_ratings.append(review)
+    return professor_ratings
 
-access_review_page(professor)
+
+"""
+need to make professor objects
+"""
+
+
