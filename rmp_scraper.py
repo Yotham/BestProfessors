@@ -92,7 +92,7 @@ def access_review_page(professor):
         j = i*2
         review = {}
         review["className"] = classNames[j].text
-        review["reviewEmotion"] = reviewEmotion[j].text
+        review["reviewEmotion"] = reviewEmotion[j].text[1:len(reviewEmotion)]
         review["qualityRating"] = qualityRating[j].text
         review["review"] = reviews[i].text
         professor_ratings.append(review)
@@ -120,5 +120,5 @@ else:
     profs[first_name + " " + last_name] = access_review_page(professor)
 
 
-json_object = json.dumps(profs, indent = 4) 
-print(json_object)
+with open("results.json", "w") as outfile:
+    json.dump(profs, outfile,indent = 4)
