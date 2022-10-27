@@ -88,22 +88,37 @@ def access_review_page(professor):
     reviewEmotion = soup.find_all('div',{'class':'EmotionLabel__StyledEmotionLabel-sc-1u525uj-0'})
     qualityRating = soup.find_all('div',{'class':'CardNumRating__CardNumRatingNumber-sc-17t4b9u-2'})
     reviews = soup.find_all('div',{'class':'Comments__StyledComments-dzzyvm-0'})
-    classNamesnoDups = []
-    for i in range(len(classNames)):
-        if(i > 0 and classNames[i] != classNames[i-1]):
-            classNamesnoDups.append(classNames[i])
-    for i in range(len(classNamesnoDups)):
+    for i in range(len(reviews)):
+        j = i*2
         review = {}
-        review["className"] = classNamesnoDups[i].text
-        review["reviewEmotion"] = reviewEmotion[i].text
-        review["qualityRating"] = qualityRating[i].text
+        review["className"] = classNames[j].text
+        review["reviewEmotion"] = reviewEmotion[j].text
+        review["qualityRating"] = qualityRating[j].text
         review["review"] = reviews[i].text
         professor_ratings.append(review)
     return professor_ratings
+
+
+
 
 
 """
 need to make professor objects
 """
 
+professor = get_professor(professor_list,Fname,Mname,Lname)
 
+profs = {}
+
+first_name = professor["tFname"]
+middle_name = professor["tMiddlename"]
+last_name = professor["tLname"]
+
+if(middle_name != ''):
+    profs[first_name + " " + middle_name + " " + last_name] = access_review_page(professor)
+else:
+    profs[first_name + " " + last_name] = access_review_page(professor)
+
+
+json_object = json.dumps(profs, indent = 4) 
+print(json_object)
