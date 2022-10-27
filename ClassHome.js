@@ -1,103 +1,43 @@
 import React from 'react'
+import CourseData from './courses.json'
+import './ClassHome.css'
 
 export default function ClassHome() {
   return (
-    <div>
-        <div className="class-home-title">
-          Here are the offered classes organized by subject (ie. CSCI):
-        </div>
-        <div className="results">
-          <div className="result-card">
-            <div className="professor-name-and-rating">
-              <div className="prof-name">
-                Class 1
-              </div>
+    <div className='course-cataloge'>
+      {
+        CourseData && CourseData.map( courseCode => {
+          return (
+            <div className="code" key={ courseCode.code }>
+              -------------------- { courseCode.code } --------------------
+              { courseCode.courses && courseCode.courses.map( availableCourses => {
+                return (
+                  <div key={ availableCourses.id }>
+                    { availableCourses.id } -- { availableCourses.title }
+                    { availableCourses.sections && availableCourses.sections.map( courseSections => {
+                      return (
+                        <div key={ courseSections.crn }>
+                          { courseSections.crn }
+                          { courseSections.cap }
+                          { courseSections.rem }
+                          { courseSections.timeslots && courseSections.timeslots.map( courseInstructor => {
+                            return (
+                              <div key={ courseSections.crn }>
+                                { courseInstructor.instructor }
+                              </div>
+                            )
+                          }) }
+                        </div>
+                      )
+                    }) }
+                    <br></br>
+                  </div>
+                )
+              }) }
             </div>
-            <ul className="descriptions">
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    Offered in the fall and spring
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    13/60 spots remaining
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    Prerequisites: Class1, Class2, Class3
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="result-card">
-            <div className="professor-name-and-rating">
-              <div className="prof-name">
-                Class 2
-              </div>
-            </div>
-            <ul className="descriptions">
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    Offered in the fall and spring
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    13/60 spots remaining
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    Prerequisites: Class1, Class2, Class3
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div className="result-card">
-            <div className="professor-name-and-rating">
-              <div className="prof-name">
-                Class 3
-              </div>
-            </div>
-            <ul className="descriptions">
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    Offered in the fall and spring
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    13/60 spots remaining
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div className="professor-description">
-                  <div className="comment">
-                    Prerequisites: Class1, Class2, Class3
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+          )
+        } )
+      }
     </div>
   )
 }
