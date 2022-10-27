@@ -1,1 +1,124 @@
-{"Roger Grice": [{"className": " COMM6830", "reviewEmotion": "\ud83d\ude16awful", "qualityRating": "2.5", "review": "Roger is a real nice guy but I didn't get a whole lot of out of this class. May be the easiest college course I have ever taken"}, {"className": " ITWS2210", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "I like Roger"}, {"className": " COMM6810", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "Roger is the kind of professor who really cares about the well-being and progress of his students.  While his assignments, even in the HCI capstone, were pretty straightforward, the course was a decent amount of work and well organized.  Talk with him outside of class and he'll become a good friend and mentor."}, {"className": " WWW1", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "Awesome dude.  very easy no matter what class you take with him."}, {"className": " ITEC1200", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "4.0", "review": "Great professor. Very laid back will allow excuses not to have class. Not heavy work intensive, just keep up with work and you'll get a good grade. Try to get him as a professor."}, {"className": " WWWSECT", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "Take whatever you can with him. Most laidback professor, comes up with excuses to not have class (its too hot, the hockey team won, etc.) Do the 5 projects (that aren't difficult) and the A is yours."}, {"className": " WRIT2510", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "4.0", "review": "good sense of humor, very easy on grading. do the assignments and u'll be more than fine"}, {"className": " WWW", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "very easy grader... cool/fun teacher.. understands students"}, {"className": " VISCOMM", "reviewEmotion": "\ud83d\ude16awful", "qualityRating": "1.5", "review": "His lectures bored me to death, but he allowed AIM in class so it wasnt so bad. You didnt need to pay attention to do well, just keep up with the assignments."}, {"className": " WRITINGWWW", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "I had Grice for Writing to the WWW, but I knew who he was before I took the course.  He's a great guy with good sense of humor.  His classes are always fun and that makes them a lot easier.  Great professor and an asset to the school."}, {"className": " USABILITYTSTNG", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "Great teacher.  Funny, energetic, creative and a good teacher.  He may be easier than some teachers, but who cares?  As long as you learn the material, you're getting what you paid for.  And with this guy, you have fun in the process."}, {"className": " HCI", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "Very Approachable outside of class, made a subject I thought was dull very interesting and fun"}, {"className": " USABILITY", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "No Comments"}, {"className": " COMM6770", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "4.0", "review": "Its a grice class"}, {"className": " COMM6420", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "4.0", "review": "This is a good interductory class into the area of Human Computer Interaction.  The teachers is also very easy.  I recieve a 100% in the class.  The only problem with the class is that is has a lot of animations that do not stream well over the Internet to the distance students."}, {"className": " CDW", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "Roger is the best professor ever.  Bring him a Diet Pepsi and win an A."}, {"className": " COMDESWWW", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "4.5", "review": "Roger is as easy as he is friendly.  He is a great guy, and although his classes are not the most extensive at RPI, you do learn something."}, {"className": " WWWW", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "Roger is the best professor at this school by far.  He also loves hockey and coming up to his fraternity house to hang out afterwards."}, {"className": " HCI", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "ROGER is the man!"}, {"className": " COMM6960", "reviewEmotion": "\ud83d\ude0eawesome", "qualityRating": "5.0", "review": "This professor is one of the elite at RPI.  Other professors should be honored to hold his coffee cup (just to sip from it once)!    ROGER IS THE BEST!!!!!!"}]}
+{
+    "Roger Grice": [
+        {
+            "className": " COMM6830",
+            "reviewEmotion": "awful",
+            "qualityRating": "2.5",
+            "review": "Roger is a real nice guy but I didn't get a whole lot of out of this class. May be the easiest college course I have ever taken"
+        },
+        {
+            "className": " ITWS2210",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "I like Roger"
+        },
+        {
+            "className": " COMM6810",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "Roger is the kind of professor who really cares about the well-being and progress of his students.  While his assignments, even in the HCI capstone, were pretty straightforward, the course was a decent amount of work and well organized.  Talk with him outside of class and he'll become a good friend and mentor."
+        },
+        {
+            "className": " WWW1",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "Awesome dude.  very easy no matter what class you take with him."
+        },
+        {
+            "className": " ITEC1200",
+            "reviewEmotion": "awesome",
+            "qualityRating": "4.0",
+            "review": "Great professor. Very laid back will allow excuses not to have class. Not heavy work intensive, just keep up with work and you'll get a good grade. Try to get him as a professor."
+        },
+        {
+            "className": " WWWSECT",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "Take whatever you can with him. Most laidback professor, comes up with excuses to not have class (its too hot, the hockey team won, etc.) Do the 5 projects (that aren't difficult) and the A is yours."
+        },
+        {
+            "className": " WRIT2510",
+            "reviewEmotion": "awesome",
+            "qualityRating": "4.0",
+            "review": "good sense of humor, very easy on grading. do the assignments and u'll be more than fine"
+        },
+        {
+            "className": " WWW",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "very easy grader... cool/fun teacher.. understands students"
+        },
+        {
+            "className": " VISCOMM",
+            "reviewEmotion": "awful",
+            "qualityRating": "1.5",
+            "review": "His lectures bored me to death, but he allowed AIM in class so it wasnt so bad. You didnt need to pay attention to do well, just keep up with the assignments."
+        },
+        {
+            "className": " WRITINGWWW",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "I had Grice for Writing to the WWW, but I knew who he was before I took the course.  He's a great guy with good sense of humor.  His classes are always fun and that makes them a lot easier.  Great professor and an asset to the school."
+        },
+        {
+            "className": " USABILITYTSTNG",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "Great teacher.  Funny, energetic, creative and a good teacher.  He may be easier than some teachers, but who cares?  As long as you learn the material, you're getting what you paid for.  And with this guy, you have fun in the process."
+        },
+        {
+            "className": " HCI",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "Very Approachable outside of class, made a subject I thought was dull very interesting and fun"
+        },
+        {
+            "className": " USABILITY",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "No Comments"
+        },
+        {
+            "className": " COMM6770",
+            "reviewEmotion": "awesome",
+            "qualityRating": "4.0",
+            "review": "Its a grice class"
+        },
+        {
+            "className": " COMM6420",
+            "reviewEmotion": "awesome",
+            "qualityRating": "4.0",
+            "review": "This is a good interductory class into the area of Human Computer Interaction.  The teachers is also very easy.  I recieve a 100% in the class.  The only problem with the class is that is has a lot of animations that do not stream well over the Internet to the distance students."
+        },
+        {
+            "className": " CDW",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "Roger is the best professor ever.  Bring him a Diet Pepsi and win an A."
+        },
+        {
+            "className": " COMDESWWW",
+            "reviewEmotion": "awesome",
+            "qualityRating": "4.5",
+            "review": "Roger is as easy as he is friendly.  He is a great guy, and although his classes are not the most extensive at RPI, you do learn something."
+        },
+        {
+            "className": " WWWW",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "Roger is the best professor at this school by far.  He also loves hockey and coming up to his fraternity house to hang out afterwards."
+        },
+        {
+            "className": " HCI",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "ROGER is the man!"
+        },
+        {
+            "className": " COMM6960",
+            "reviewEmotion": "awesome",
+            "qualityRating": "5.0",
+            "review": "This professor is one of the elite at RPI.  Other professors should be honored to hold his coffee cup (just to sip from it once)!    ROGER IS THE BEST!!!!!!"
+        }
+    ]
+}
