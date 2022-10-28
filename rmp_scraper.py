@@ -80,6 +80,7 @@ def access_review_page(professor):
     tid = str(professor["tid"])
     #request professors page
     r = requests.get("https://www.ratemyprofessors.com/professor?tid="+tid)
+    requests.get("https://www.ratemyprofessors.com/graphql")
     response = r.text
     #generate all html code of website
     soup = BeautifulSoup(response, "html.parser")
@@ -90,12 +91,15 @@ def access_review_page(professor):
     reviews = soup.find_all('div',{'class':'Comments__StyledComments-dzzyvm-0'})
     for i in range(len(reviews)):
         j = i*2
-        review = {}
-        review["className"] = classNames[j].text
-        review["reviewEmotion"] = reviewEmotion[j].text[1:len(reviewEmotion)]
-        review["qualityRating"] = qualityRating[j].text
-        review["review"] = reviews[i].text
-        professor_ratings.append(review)
+        if(j <= len(classNames)-1):
+            review = {}
+            review["className"] = classNames[j].text
+            review["reviewEmotion"] = reviewEmotion[j].text[1:len(reviewEmotion)]
+            review["qualityRating"] = qualityRating[j].text
+            review["review"] = reviews[i].text
+            professor_ratings.append(review)
+        else:
+            break
     return professor_ratings
 
 
@@ -106,8 +110,6 @@ def access_review_page(professor):
 need to make professor objects
 """
 
-professor = get_professor(professor_list,Fname,Mname,Lname)
-
 profs = {}
 
 
@@ -117,9 +119,9 @@ for prof in professor_list:
     last_name = prof["tLname"]
 
     if(middle_name != ''):
-        profs[first_name + " " + middle_name + " " + last_name] = access_review_page(professor)
+        profs[first_name + " " + middle_name + " " + last_name] = access_review_page(prof)
     else:
-        profs[first_name + " " + last_name] = access_review_page(professor)
+        profs[first_name + " " + last_name] = access_review_page(prof)
         
     
 
