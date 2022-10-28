@@ -97,6 +97,7 @@ def access_review_page(professor):
             review["reviewEmotion"] = reviewEmotion[j].text[1:len(reviewEmotion)]
             review["qualityRating"] = qualityRating[j].text
             review["review"] = reviews[i].text
+            review["profOverallRating"] = str(professor["overall_rating"])
             professor_ratings.append(review)
         else:
             break
