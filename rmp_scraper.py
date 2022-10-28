@@ -111,21 +111,25 @@ def access_review_page(professor):
 need to make professor objects
 """
 
-profs = {}
-
-
+list_of_profs = []
 for prof in professor_list:
+    profs = {}
     first_name = prof["tFname"]
     middle_name = prof["tMiddlename"]
     last_name = prof["tLname"]
 
     if(middle_name != ''):
-        profs[first_name + " " + middle_name + " " + last_name] = access_review_page(prof)
+        profs["profname"] = first_name + " " + middle_name + " " + last_name
     else:
-        profs[first_name + " " + last_name] = access_review_page(prof)
+        profs["profname"] = first_name + " " + last_name
+    profs["overall_rating"] = prof["overall_rating"]
+    profs["reviews"] = access_review_page(prof)
+    list_of_profs.append(profs)
+
+
         
     
 
 
 with open("results.json", "w") as outfile:
-    json.dump(profs, outfile,indent = 4)
+    json.dump(list_of_profs, outfile,indent = 4)
