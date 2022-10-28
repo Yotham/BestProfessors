@@ -110,14 +110,18 @@ professor = get_professor(professor_list,Fname,Mname,Lname)
 
 profs = {}
 
-first_name = professor["tFname"]
-middle_name = professor["tMiddlename"]
-last_name = professor["tLname"]
 
-if(middle_name != ''):
-    profs[first_name + " " + middle_name + " " + last_name] = access_review_page(professor)
-else:
-    profs[first_name + " " + last_name] = access_review_page(professor)
+for prof in professor_list:
+    first_name = prof["tFname"]
+    middle_name = prof["tMiddlename"]
+    last_name = prof["tLname"]
+
+    if(middle_name != ''):
+        profs[first_name + " " + middle_name + " " + last_name] = access_review_page(professor)
+    else:
+        profs[first_name + " " + last_name] = access_review_page(professor)
+        
+    
 
 
 with open("results.json", "w") as outfile:
