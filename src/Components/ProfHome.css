@@ -1,0 +1,11 @@
+.prof-list {
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.prof-name {
+    border: 2px outset black;
+    padding-top: 1%;
+}
