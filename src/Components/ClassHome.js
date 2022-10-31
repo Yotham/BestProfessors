@@ -17,6 +17,7 @@ export default function ClassHome({ data }) {
                       return (
                         <div key={ courseSections.crn }>
                           { courseSections.crn }
+                          <br></br>
                           { courseSections.cap }
                           { courseSections.rem }
                           { courseSections.timeslots && courseSections.timeslots.map( courseInstructor => {
