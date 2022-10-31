@@ -16,10 +16,12 @@ export default function ClassHome({ data }) {
                     { availableCourses.sections && availableCourses.sections.map( courseSections => {
                       return (
                         <div key={ courseSections.crn }>
-                          { courseSections.crn }
+                          <span>CRN: </span>{ courseSections.crn }
                           <br></br>
-                          { courseSections.cap }
-                          { courseSections.rem }
+                          <span>CAP: </span>{ courseSections.cap }
+                          <br></br>
+                          <span>REM: </span>{ courseSections.rem }
+                          <br></br>
                           { courseSections.timeslots && courseSections.timeslots.map( courseInstructor => {
                             return (
                               <div key={ courseSections.crn }>
