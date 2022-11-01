@@ -20,6 +20,7 @@ export default function ClassHome({ data }) {
                             return (
                               <div key={ courseSections.crn }>
                                 <span>Professor: </span>{ courseInstructor.instructor }
+                                <br></br>
                               </div>
                             )
                           }) }
