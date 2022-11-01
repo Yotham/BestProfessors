@@ -17,6 +17,8 @@ import { Route, Routes } from 'react-router-dom'
 function App() {
   return (
     <div className="App">
+      {/* Taking all the components and displaying the appropriate ones */}
+      {/* depending on the current page */}
       <Header bplLogo={ BPLLogo }/>
       <NavBar />
       <div className="container">

@@ -14,6 +14,9 @@ export default function Header({ bplLogo }) {
   )
 }
 
+// this function creates a custom "Link" component which sets the class
+// to reflect if the page is currently active as well as setting the id,
+// redirect address and displayed information
 function CustomLink({ id, to, children, ...props }) {
   const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({ path : resolvedPath.pathname, end: true })
