@@ -26,7 +26,7 @@ export default function ClassHome({ data }) {
                           }) }
                           <span>CRN: </span>{ courseSections.crn }
                           <br></br>
-                          <span>Seats Available:</span>{ courseSections.rem }<span>/</span>{ courseSections.cap }
+                          <span>Seats Available: </span>{ courseSections.rem }<span>/</span>{ courseSections.cap }
                           <br></br>
                         </div>
                       )
