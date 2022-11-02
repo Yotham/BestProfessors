@@ -56,6 +56,7 @@ function App() {
           <Route path="/" element={<HomeBody/>} />
           <Route path="/classhome" element={<ClassHome data={CourseData}/>} />
           <Route path="/profhome" element={<ProfHome data={RMPData}/>} />
+          <Route path="/profresults" element={<ProfResults data={RMPData} search={"Roger Grice"}/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
@@ -78,9 +79,9 @@ function HomeBody() {
   return (
     <div>
       <input className="professor-search" type="text" placeholder="Search Professors...." />
-      <CustomLink to="/classresults">Search</CustomLink>
-      <input className="class-search" type="text" placeholder="Search Classes...." />
       <CustomLink to="/profresults">Search</CustomLink>
+      <input className="class-search" type="text" placeholder="Search Classes...." />
+      <CustomLink to="/classresults">Search</CustomLink>
     </div>
   )
 }
