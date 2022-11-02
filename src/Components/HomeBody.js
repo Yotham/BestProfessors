@@ -11,7 +11,7 @@ export default function HomeBody({ data }) {
     const professor = this.professor.value;
     const classN = this.classN.value;
     this.setState({professor: professor, className: classN});
-  }
+  };
   handleSubmit = (event) => {
     event.preventDefault();
     const professor = this.state.professor;
