@@ -11,11 +11,15 @@
     border-top: 1px solid black;
     border-top-width: 0.2vh;
 }
-.footer a {
+#git-link {
     text-decoration: none;
     width: 100%;
     text-align: center;
-}
-.git {
+    vertical-align: auto;
     color: black;
+}
+#git-logo {
+    width: 1%;
+    height: 1%;
+    padding-right: 0.2%;
 }

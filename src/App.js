@@ -10,6 +10,7 @@ import ProfResults from "./Components/ProfResults"
 import Footer from "./Components/Footer"
 import Contact from "./Components/Contact"
 import BPLLogo from "./Images/logo.png"
+import GitHubLogo from "./Images/github-logo.png"
 import RMPData from './Data/rmp.json'
 import CourseData from './Data/courses.json'
 import { Route, Routes } from 'react-router-dom'
@@ -58,7 +59,7 @@ function App() {
           <Route path="/contact" element={<Contact/>} />
         </Routes>
       </div>
-      <Footer />
+      <Footer gitLogo={GitHubLogo}/>
     </div>
   )
 }

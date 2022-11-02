@@ -1,11 +1,13 @@
 import React from 'react'
 import './Footer.css'
 
-export default function Footer() {
+export default function Footer({ gitLogo }) {
   return (
     <div className='footer'>
-        <img id="git-logo" className="git" src="github-logo.png" alt="github logo" width="11vh" height="11vh/" />
-        <a className="git" href="https://github.com/ifoster01/ifoster01">GitHub</a>
+        <a id="git-link" href="https://github.com/Yotham/BestProfessorsList">
+          <img id="git-logo" src={ gitLogo } alt="github logo" />
+          GitHub
+        </a>
     </div>
   )
 }
