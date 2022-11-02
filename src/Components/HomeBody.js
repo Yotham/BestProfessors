@@ -3,6 +3,7 @@ import { Link, useMatch, useResolvedPath } from 'react-router-dom'
 import './HomeBody.css'
 
 export default function HomeBody({ data }) {
+  /*
   state = {
     value: ''
   };
@@ -19,11 +20,13 @@ export default function HomeBody({ data }) {
     console.log("professor on submit", professor);
     console.log("classN",classN );
   };
+  */
+  
   return (
     <div>
-      <input className="professor-search" type="proffesor" onChange = {this.getValue} ref = {(input) => this.professor = input} placeholder="Search Professors...." />
+      <input className="professor-search" type="professor" /*onChange = {this.getValue} ref = {(input) => this.professor = input}*/ placeholder="Search Professors...." />
       <CustomLink to="/classresults">Search</CustomLink>
-      <input className="class-search" type="classN" onChange = {this.getValue} ref = {(input) => this.classN = input} placeholder="Search Classes...." />
+      <input className="class-search" type="classN" /*onChange = {this.getValue} ref = {(input) => this.classN = input}*/ placeholder="Search Classes...." />
       <CustomLink onClick = {this.handleSubmit} to="/profresults">Search</CustomLink>
     </div>
   )
