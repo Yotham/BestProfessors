@@ -14,10 +14,10 @@ import BPLLogo from "./Images/logo.png"
 import GitHubLogo from "./Images/github-logo.png"
 import RMPData from './Data/rmp.json'
 import CourseData from './Data/courses.json'
+import CourseProfs from './Data/courseProfs.json'
 import { Route, Routes, useResolvedPath, useMatch, Link } from 'react-router-dom'
 
 function App() {
-
   return (
     <div className="App">
       {/* Taking all the components and displaying the appropriate ones */}
@@ -30,6 +30,7 @@ function App() {
           <Route path="/classhome" element={<ClassHome data={CourseData}/>} />
           <Route path="/profhome" element={<ProfHome data={RMPData}/>} />
           <Route path="/profresults" element={<ProfResults data={RMPData} search={"Roger Grice"}/>} />
+          <Route path="/classresults" element={<ClassResults courseData={CourseProfs["CSCI6980"]} rmpData={RMPData} search={"CSCI6980"}/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
         </Routes>
