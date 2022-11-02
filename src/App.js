@@ -15,7 +15,7 @@ import GitHubLogo from "./Images/github-logo.png"
 import RMPData from './Data/rmp.json'
 import CourseData from './Data/courses.json'
 import CourseProfs from './Data/courseProfs.json'
-import { Route, Routes, useResolvedPath, useMatch, Link } from 'react-router-dom'
+import { Route, Routes, useResolvedPath, useMatch, Link, useNavigate } from 'react-router-dom'
 
 function App() {
   return (
@@ -29,7 +29,7 @@ function App() {
           <Route path="/" element={<HomeBody/>} />
           <Route path="/classhome" element={<ClassHome data={CourseData}/>} />
           <Route path="/profhome" element={<ProfHome data={RMPData}/>} />
-          <Route path="/profresults" element={<ProfResults data={RMPData} search={"Roger Grice"}/>} />
+          <Route path="/profresults" element={<ProfResults/>} />
           <Route path="/classresults" element={<ClassResults courseData={CourseProfs["CSCI6980"]} rmpData={RMPData} search={"CSCI6980"}/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
@@ -49,13 +49,20 @@ function CustomLink({ to, children, ...props }) {
   return <Link id='search-btn' className={isActive ? "active" : ""} to={to} {...props}>{children}</Link>
 }
 
+
 function HomeBody() {
+  const [message, setMessage] = useState('');
+  const handleChange = event => {
+    setMessage(event.target.value);
+    console.log('value is:', event.target.value);
+  }
   return (
+
     <div>
-      <input className="professor-search" type="text" placeholder="Search Professors...." />
-      <CustomLink to="/profresults">Search</CustomLink>
-      <input className="class-search" type="text" placeholder="Search Classes...." />
-      <CustomLink to="/classresults">Search</CustomLink>
+      <input className="professor-search" onChange = {handleChange} type="text" placeholder="Search Professors...." />
+      <CustomLink to = "/profresults"state={{data: RMPData, professor: {message}}}>Search</CustomLink>
+      <input className="class-search" onChange = {handleChange} type="text" placeholder="Search Classes...." />
+      <CustomLink to = "/classresults"state={{data: RMPData, professor: {message}}}>Search</CustomLink>
     </div>
   )
 }

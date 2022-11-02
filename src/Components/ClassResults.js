@@ -1,6 +1,10 @@
 import React from 'react'
-
-export default function ClassResults({ courseData, rmpData, search }) {
+import {useLocation } from 'react-router-dom'
+export default function ClassResults({rmpData, search }) {
+  const location = useLocation();
+  console.log(location)
+  let courseData = location.state.data;
+  let prof = location.state.professor.message;
   return (
     <div>
       <div className='course-search'>

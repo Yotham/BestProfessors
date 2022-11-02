@@ -1,7 +1,12 @@
 import React from 'react'
 import './ProfResults.css'
+import {useLocation } from 'react-router-dom'
 
-export default function ProfResults({ data, search }) {
+export default function ProfResults() {
+  const location = useLocation();
+  console.log(location)
+  let data = location.state.data;
+  let search = location.state.professor.message;
   return (
     <div>
       {
