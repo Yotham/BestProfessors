@@ -27,7 +27,7 @@ export default function HomeBody({ data }) {
       <input className="professor-search" type="text" /*onChange = {this.getValue} ref = {(input) => this.professor = input}*/ placeholder="Search Professors...." />
       <CustomLink to="/classresults">Search</CustomLink>
       <input className="class-search" type="text" /*onChange = {this.getValue} ref = {(input) => this.classN = input}*/ placeholder="Search Classes...." />
-      <CustomLink onClick = {this.handleSubmit} to="/profresults">Search</CustomLink>
+      <CustomLink to="/profresults">Search</CustomLink>
     </div>
   )
 }
