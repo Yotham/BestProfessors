@@ -1,0 +1,15 @@
+.prof {
+    text-align: center;
+}
+.full-review {
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+#prof-name {
+    font-size: 4vh;
+}
+.rating {
+    margin: 1%;
+    border: 1px outset black;
+}
