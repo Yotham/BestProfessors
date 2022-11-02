@@ -1,15 +1,16 @@
 import React from 'react'
 import {useLocation } from 'react-router-dom'
-export default function ClassResults({rmpData, search }) {
+export default function ClassResults() {
   const location = useLocation();
   console.log(location)
-  let courseData = location.state.data;
-  let prof = location.state.professor.message;
+  let rmpData = location.state.data
+  let search = location.state.professor.message
+  let courseData = location.state.courseData.CourseProfs[search.toString()]
   return (
     <div>
-      <div className='course-search'>
+      <center><div className='course-search'>
         { search }
-      </div>
+      </div></center>
       {
         courseData && courseData.map( prof => {
           return (
@@ -40,11 +41,6 @@ export default function ClassResults({rmpData, search }) {
                             </div>
                           )
                         }
-                        // else {
-                        //   return (
-                        //     <div>No data found for prof</div>
-                        //   )
-                        // }
                       })()}
                     </div>
                   )
@@ -55,5 +51,6 @@ export default function ClassResults({rmpData, search }) {
         })
       }
     </div>
+    
   )
 }
