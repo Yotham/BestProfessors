@@ -17,33 +17,6 @@ import CourseData from './Data/courses.json'
 import { Route, Routes, useResolvedPath, useMatch, Link } from 'react-router-dom'
 
 function App() {
-  // for class search data structure:
-  // {
-    // "CSCI1100": [
-      // {
-        // "professor": Uzma Mushtaque,
-        // "rating": 2.6
-      // },
-      // {
-        // "professor": Uzma Mushtaque,
-        // "rating": 2.6
-      // }
-    // ]
-  // },
-  // {
-    // "CSCI1200": [
-      // {
-        // "professor": Uzma Mushtaque,
-        // "rating": 2.6
-      // },
-      // {
-        // "professor": Uzma Mushtaque,
-        // "rating": 2.6
-      // }
-    // ]
-  // }
-  // pass to the ClassResults component all the data in the desired course value
-  // as well as the course name
 
   return (
     <div className="App">
