@@ -16,7 +16,7 @@ export default function ProfResults() {
               {(() => {
                 if (professors.profname === search) {
                   return (
-                    <div className='full-review'>
+                    <div className='full-review-prof'>
                       <div id='prof-name'>
                         { professors.profname }
                         <span> - </span>
