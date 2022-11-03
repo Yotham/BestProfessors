@@ -1,5 +1,7 @@
 import React from 'react'
 import {useLocation } from 'react-router-dom'
+import './ClassResults.css'
+
 export default function ClassResults() {
   const location = useLocation();
   console.log(location)
@@ -8,7 +10,7 @@ export default function ClassResults() {
   let courseData = location.state.courseData.CourseProfs[search.toString()]
   return (
     <div>
-      <center><div className='course-search'>
+      <center><div id='course-search'>
         { search }
       </div></center>
       {
@@ -23,7 +25,7 @@ export default function ClassResults() {
                         if (professors.profname === prof) {
                           return (
                             <div className='full-review'>
-                              <div id='prof-name'>
+                              <div id='prof-name-class'>
                                 { professors.profname }
                                 <span> - </span>
                                 { professors.overall_rating }
