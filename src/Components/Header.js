@@ -5,8 +5,8 @@ import './Header.css'
 export default function Header({ bplLogo }) {
   return (
     <div className="header-top">
-      <CustomLink to="/">
-        <img id='logo' src={ bplLogo } alt='best professor list'/>
+      <CustomLink id="logo-item" to="/">
+        <img id='rt-logo' src={ bplLogo } alt='best professor list'/>
       </CustomLink>
       <CustomLink id="title-name" to="/">Best Professor List</CustomLink>
       <CustomLink id="contact-link" to="/contact">Contact</CustomLink>

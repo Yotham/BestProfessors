@@ -1,34 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 .header-top {
-    padding-bottom: 5vh;
-    border-bottom: 1px solid black;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    padding-top: 0.5%;
+    padding-bottom: 0.1%;
+    background-color: white;
     border-bottom-width: 0.2vh;
+    font-family: 'Playfair Display', serif;
 }
-.header-top :active {
-    color: black;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 4vh;
-}
-#logo {
+#logo-item {
     float: left;
-    height: 10vh;
-    width: 8.5%;
+    width: 10%;
+}
+#rt-logo {
+    width: 80%;
+    padding-left: 1%;
 }
 #title-name {
-    font-size: 4.7vw;
+    float: left;
+    width: 80%;
     color: black;
-    margin-left: 21vw;
-    padding-top: 5vh;
+    font-size: 4vmax;
+    text-align: center;
     text-decoration: none;
 }
 #title-name:hover {
     color: #595959;
 }
 #contact-link {
-    float: right;
-    font-size: 4vh;
-    padding-top: 2.5vh;
+    float: left;
+    width: 9%;
     color: black;
+    font-size: 2vmax;
+    padding-top: 1%;
+    text-align: right;
     text-decoration: none;
 }
 #contact-link:hover {

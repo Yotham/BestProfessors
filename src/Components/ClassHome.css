@@ -1,12 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 .course-cataloge {
-    text-align: center;
     margin-top: 4%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
-
-.code {
-    border: 2px outset black;
+.class-home {
+    margin-left: 20%;
+    margin-right: 20%;
     margin-bottom: 1%;
-    margin-right: 15%;
-    margin-left: 15%;
-    padding-top: 1%;
+}
+#code {
+    font-size: 3vmax;
+    font-family: 'Playfair Display', serif;
+}
+#course {
+    padding-top: 2%;
+    margin-bottom: 2%;
+    border: 3px outset black;
+}
+#bottom-margin {
+    height: 10%;
 }

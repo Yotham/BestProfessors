@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import Header from "./Components/Header"
 import NavBar from "./Components/NavBar"
-// import HomeBody from "./Components/HomeBody"
 import './Components/HomeBody.css'
 import About from "./Components/About"
 import ClassHome from "./Components/ClassHome"
@@ -15,6 +14,7 @@ import GitHubLogo from "./Images/github-logo.png"
 import RMPData from './Data/rmp.json'
 import CourseData from './Data/courses.json'
 import CourseProfs from './Data/courseProfs.json'
+import './App.css'
 import { Route, Routes, useResolvedPath, useMatch, Link} from 'react-router-dom'
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
     <div className="App">
       {/* Taking all the components and displaying the appropriate ones */}
       {/* depending on the current page */}
-      <Header bplLogo={ BPLLogo }/>
+      <Header bplLogo={ BPLLogo } />
       <NavBar />
       <div className="container">
         <Routes>
