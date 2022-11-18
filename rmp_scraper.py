@@ -34,21 +34,6 @@ def generate_professor_list():
 
 professor_list = generate_professor_list()
 
-Fname = "Roger"
-Mname = NULL
-Lname = "Grice"
-"""
-WRITE CODE HERE
-
-We need to write  a parser for the professor input i.e input = "Roger A Grice"
-
-Parser(string) --> output tuple(Roger,A,Grice)
-
-Fname = output[0]
-Mname = output[1]
-Lname = output[2]
-"""
-
 def get_professor(professor_list,Fname,Mname,Lname):
     Fname_check = False
     Mname_check = False
