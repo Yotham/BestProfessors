@@ -7,6 +7,45 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 from html.parser import HTMLParser
 
+class Professor:
+    def __init__(self, fname, mname, lname, fullname, overall_rating, reviews):
+        self.fname = fname
+        self.mname = mname
+        self.lname = lname
+        self.fullname = fullname
+        self.overall_rating = overall_rating
+        self.reviews = reviews
+    def get_first_name(self):
+        return self.fname
+    def get_middle_name(self):
+        return self.mname
+    def get_last_name(self):
+        return self.lname
+    def get_full_name(self):
+        return self.fullname
+    def get_overall_rating(self):
+        return overall_rating
+    def get_reviews(self):
+        return self.reviews
+
+class Review:
+    def __init__(self, className, reviewEmotion, qualityRating, review):
+        self.className = className
+        self.reviewEmotion = reviewEmotion
+        self.qualityRating = qualityRating
+        self.review = review
+    def get_class_name(self):
+        return self.className
+    def get_review_emotion(self):
+        return self.reviewEmotion
+    def get_quality_rating(self):
+        return self.qualityRating
+    def get_review(self):
+        return self.review
+
+
+
+
 class htmlParser(HTMLParser):
     def handle_data(self, data):
         return self.data
@@ -33,6 +72,21 @@ def generate_professor_list():
     return professor_list
 
 professor_list = generate_professor_list()
+
+Fname = "Roger"
+Mname = NULL
+Lname = "Grice"
+"""
+WRITE CODE HERE
+
+We need to write  a parser for the professor input i.e input = "Roger A Grice"
+
+Parser(string) --> output tuple(Roger,A,Grice)
+
+Fname = output[0]
+Mname = output[1]
+Lname = output[2]
+"""
 
 def get_professor(professor_list,Fname,Mname,Lname):
     Fname_check = False
@@ -77,43 +131,54 @@ def access_review_page(professor):
     for i in range(len(reviews)):
         j = i*2
         if(j <= len(classNames)-1):
-            review = {}
-            review["className"] = classNames[j].text
-            review["reviewEmotion"] = reviewEmotion[j].text[1:len(reviewEmotion)]
-            review["qualityRating"] = qualityRating[j].text
-            review["review"] = reviews[i].text
+            review = Review(classNames[j].text,reviewEmotion[j].text[1:len(reviewEmotion)],qualityRating[j].text,reviews[i].text)
             professor_ratings.append(review)
         else:
             break
     return professor_ratings
 
 
-
-
-
 """
 need to make professor objects
 """
 
+
 list_of_profs = []
-for prof in professor_list:
-    profs = {}
-    first_name = prof["tFname"]
-    middle_name = prof["tMiddlename"]
-    last_name = prof["tLname"]
+#fix overall_rating 
+for i in range(len(professor_list)):
+    first_name = professor_list[i]["tFname"]
+    middle_name = professor_list[i]["tMiddlename"]
+    last_name = professor_list[i]["tLname"]
+    overall_rating = professor_list[i]["overall_rating"]
 
     if(middle_name != ''):
-        profs["profname"] = first_name + " " + middle_name + " " + last_name
+        full_name = first_name + " " + middle_name + " " + last_name
     else:
-        profs["profname"] = first_name + " " + last_name
-    profs["overall_rating"] = prof["overall_rating"]
-    profs["reviews"] = access_review_page(prof)
-    list_of_profs.append(profs)
+        full_name = first_name + " " + last_name
+    review_temp = access_review_page(professor_list[i])
+    review_list = []
+    for review in review_temp:
+        review_dict = {}
+        review_dict["className"] = review.get_class_name()
+        review_dict["reviewEmotion"] = review.get_review_emotion()
+        review_dict["qualityRating"] = review.get_quality_rating()
+        review_dict["review"] = review.get_review()
+        review_list.append(review_dict)
+    reviews = review_list
+    professor = Professor(first_name, middle_name, last_name, full_name, overall_rating, reviews)
+    list_of_profs.append(professor)
 
 
-        
-    
+dictionary_list = []
+for profs in list_of_profs:
+    prof_dict = {}
+    prof_dict["profname"] = profs.get_full_name()
+    prof_dict["overall_rating"] = profs.get_overall_rating()
+    prof_dict["reviews"] = profs.get_reviews()
+    dictionary_list.append(prof_dict)
 
 
-with open("results.json", "w") as outfile:
-    json.dump(list_of_profs, outfile,indent = 4)
+
+with open("test.json", "w") as outfile:
+    json.dump(dictionary_list, outfile,indent = 4)
+
