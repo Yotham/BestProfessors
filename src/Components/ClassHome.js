@@ -52,8 +52,8 @@ export default function ClassHome({ data }) {
                       </div>
                     )
                   }
+                  <div id='bottom-margin'></div>
                 })()}
-                <div id='bottom-margin'></div>
               </div>
             )
           } )
