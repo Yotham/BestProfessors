@@ -7,6 +7,7 @@ export default function ProfResults() {
   console.log(location)
   let data = location.state.data;
   let search = location.state.professor.message;
+  let seenProf = false
   return (
     <div>
       {
@@ -15,6 +16,7 @@ export default function ProfResults() {
             <div className='prof' key={ professors.profname }>
               {(() => {
                 if (professors.profname === search) {
+                  seenProf = true
                   return (
                     <div className='full-review-prof'>
                       <div id='prof-name'>
@@ -35,6 +37,19 @@ export default function ProfResults() {
                     </div>
                   )
                 }
+                // Handle invalid user input. Tell user that their input was wrong, then provide a link
+                // to the professor list page, and a link back to the home page
+                else if(seenProf === false && (professors.profname === data[data.length - 1].profname)){
+                  return (
+                    <div>
+                      <div><span>{search} is not an RPI professor that has any ratings.</span></div>
+                      <div><span><a href="/profhome">Click Here to See a List of RPI Professors with Ratings</a></span></div>
+                      <div><span><a href="/">Click Here to Return to Search</a></span></div>
+                    </div>
+
+                  )
+                }
+
               })()}
             </div>
           )
