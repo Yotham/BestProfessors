@@ -12,7 +12,7 @@ function isAlpha(s)
 //if the input is formatted properly but doesn't exist in catalog,
 // 1 is returned.
 //else the input is valid, return 2
-// || !(str.substring(0,4).isalpha())
+
 function validInput(str, dat){
   if(str.length != 8 || !(isAlpha(str.substring(0,4))) || isNaN(str.substring(5))) {
     return (0)
@@ -39,7 +39,7 @@ export default function ClassResults() {
       <center><div>
         <div><span> {search} is not a properly formatted search.</span></div>
         <div><span> Please try again with an RPI course ID; four letters followed by four numbers without spaces.</span></div>
-        <div><span> An example of a valid course ID is: 'CSCI4400' without the quotation marks. </span></div>
+        <div><span> An example of a valid course ID is: 'CSCI1100' without the quotation marks. </span></div>
         <div><span><a href="/">Click Here to Try Another Search</a></span></div>
       </div></center>
     )
@@ -50,7 +50,7 @@ export default function ClassResults() {
       <center><div>
         <div><span> {search} is not a course in the RPI catalog.</span></div>
         <div><span> Please try again with an RPI course that actually exists.</span></div>
-        <div><span> An example of a valid course ID is: 'CSCI4400' without the quotation marks. </span></div>
+        <div><span> An example of a valid course ID is: 'CSCI1100' without the quotation marks. </span></div>
         <div><span><a href="/">Click Here to Try Another Search</a></span></div>
       </div></center>
     )
