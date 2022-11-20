@@ -60,9 +60,9 @@ function HomeBody() {
 
     <div>
       <input className="professor-search" onChange = {handleChange} type="text" placeholder="Search Professors...." />
-      <CustomLink to = "/profresults"state={{data: RMPData, professor: {message}}}>Search</CustomLink>
+      <CustomLink id = "search_button" to = "/profresults"state={{data: RMPData, professor: {message}}}>Search</CustomLink>
       <input className="class-search" onChange = {handleChange} type="text" placeholder="Search Classes...." />
-      <CustomLink to = "/classresults"state={{data: RMPData, courseData: {CourseProfs}, professor: {message}}}>Search</CustomLink>
+      <CustomLink id = "search_button" to = "/classresults"state={{data: RMPData, courseData: {CourseProfs}, professor: {message}}}>Search</CustomLink>
     </div>
   )
 }
