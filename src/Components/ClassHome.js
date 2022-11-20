@@ -17,7 +17,7 @@ export default function ClassHome({ data }) {
             return (
               <div className='class-home'>
                 {(() => {
-                  if (searchText === "" || courseCode.code === searchText) {
+                  if (searchText === "" || courseCode.code.includes(searchText)) {
                     return (
                       <div key={ courseCode.code }>
                         <div id="code">
