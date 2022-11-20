@@ -7,6 +7,7 @@ export default function ProfHome({ data }) {
     setText(event.target.value.toLowerCase());
     console.log('value is:', searchText);
   }
+  var foundFlag = false;
 
   return (
     <div>
@@ -20,6 +21,7 @@ export default function ProfHome({ data }) {
             <div>
             {(() => {
               if ((profName.profname.toLowerCase().includes(searchText) || searchText === "") && profName.overall_rating != 0.0) {
+                foundFlag = true;
                 return(
                   <div className='prof-name' key={ profName.profName }>
                   { profName.profname } --- <span> </span>
@@ -44,6 +46,15 @@ export default function ProfHome({ data }) {
           })
         }
       </div>
+      {(() => {
+        if (!foundFlag) {
+          return (
+            <div id='no-course-found'>
+              no professor found with that name!
+            </div>
+          )
+        }
+      })()}
     </div>
   )
 }
