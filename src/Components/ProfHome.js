@@ -16,7 +16,7 @@ export default function ProfHome({ data }) {
                   <div key={ ratings.className }>
                     { ratings.className } <br></br>
                     { ratings.reviewEmotion } <br></br>
-                    { ratings.qualityRating.toFixed() } <br></br>
+                    { ratings.qualityRating.toFixed(1)} <br></br>
                     { ratings.review } <br></br><br></br>
                   </div>
                 )
