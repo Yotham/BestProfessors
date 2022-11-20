@@ -15,7 +15,7 @@ export default function ProfResults() {
           return (
             <div className='prof' key={ professors.profname }>
               {(() => {
-                if (professors.profname === search) {
+                if (professors.profname.toUpperCase() === search.toUpperCase()) {
                   seenProf = true
                   return (
                     <div className='full-review-prof'>
@@ -23,15 +23,20 @@ export default function ProfResults() {
                         { professors.profname }
                         <span> - </span>
                         { professors.overall_rating }
+                        
+                        <span> - </span><button>Click to view reviews</button>
                       </div>
                       { professors.reviews && professors.reviews.map( ratings => {
                         return (
+                          <button></button>
+                          /*
                           <div className='rating'>
                             <span> Class: </span> { ratings.className } <br></br>
                             { ratings.reviewEmotion }
                             <span> : </span> { ratings.qualityRating } <br></br>
                             <span> Review: </span> { ratings.review }
                           </div>
+                          */
                         )
                       }) }
                     </div>

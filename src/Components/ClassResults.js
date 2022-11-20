@@ -68,7 +68,9 @@ export default function ClassResults() {
           return (
             <div>
               {
-                rmpData && rmpData.map( professors => {
+                rmpData && rmpData
+                
+                .map( professors => {
                   return (
                     <div className='prof' key={ professors.profname }>
                       {(() => {
