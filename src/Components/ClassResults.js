@@ -7,11 +7,27 @@ function isAlpha(s)
 {
   return /^[a-zA-Z()]+$/.test(s);
 }
+
+// function handles output for when a course has no reviewed professors
+// takes the number of reviews a course has as input
+// outputs error message when numRevs  === 0, empty string otherwise
+// called after looping through json data to get course review data
+function ifNoRevs(numRevs){
+  if(numRevs === 0)
+    return(<div><center>
+              <div><span>Unfortunately, there are no rated professors teaching this course.</span></div>
+              <div><span><a href="/">Click Here to Try Another Search</a></span></div>
+           </center></div>
+          )
+  return("")
+}
+
 //checks if search was valid. If the input is too long
 //or not formatted like: CSCI4440, 0 is returned
 //if the input is formatted properly but doesn't exist in catalog,
 // 1 is returned.
 //else the input is valid, return 2
+
 
 function validInput(str, dat){
   if(str.length != 8 || !(isAlpha(str.substring(0,4))) || isNaN(str.substring(5))) {
@@ -85,29 +101,28 @@ export default function ClassResults() {
                                       professors.reviews && professors.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
                                       }
 
-                             </select></center>                             
+                             </select></center>
                             </div>
 
                           )
                         }// end of if
                         //if there are no reviews after looking at every prof, bad input
-                        if(numRevs === 0 && (professors.profname === rmpData[rmpData.length - 1].profname)){
-                          return(<div><center>
-                                  <div><span>Unfortunately, there are no rated professors teaching this course.</span></div>
-                                  <div><span><a href="/">Click Here to Try Another Search</a></span></div>
-                                </center></div>
-                          )
-                        }
+
                       })()}
+
                     </div>
                   )
                 })
               }
 
+
             </div>
           )
         })
       }
+      <div>
+      {ifNoRevs(numRevs)}
+      </div>
     </div>
 
   )
