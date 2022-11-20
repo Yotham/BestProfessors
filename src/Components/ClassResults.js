@@ -91,6 +91,7 @@ export default function ClassResults() {
                           numRevs = numRevs + 1
                           return (
                             <div className='full-review'>
+                              <br></br>
                               <div id='prof-name-class'>
                                 { professors.profname }
                                 <span> - </span>
@@ -102,6 +103,7 @@ export default function ClassResults() {
                                       }
 
                              </select></center>
+                             <br></br>
                             </div>
 
                           )
@@ -109,7 +111,7 @@ export default function ClassResults() {
                         //if there are no reviews after looking at every prof, bad input
 
                       })()}
-
+                      
                     </div>
                   )
                 })
@@ -123,6 +125,7 @@ export default function ClassResults() {
       <div>
       {ifNoRevs(numRevs)}
       </div>
+      <br></br>
     </div>
 
   )

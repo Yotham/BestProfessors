@@ -7,9 +7,23 @@
     margin-bottom: 2%;
 }
 #prof-name {
-    font-size: 4vh;
+    font-size: 3vmax;
+    font-family: 'Raleway', sans-serif;
 }
 .rating {
     margin: 1%;
     border: 1px outset black;
 }
+
+select{
+    max-width: 150px;
+    word-wrap: break-word;
+    white-space: normal;
+}
+.dropdown-menu {
+    width: 170px;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    white-space: normal;
+  }

@@ -1,9 +1,12 @@
 #course-search {
-    font-size: 4vh;
+    font-size: 3vmax;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom:10px;
 }
 #prof-name-class {
-    font-size: 2vh;
+    font-family: 'Raleway', sans-serif;
 }
 .full-review {
     border: 2px outset black;
+    margin-bottom:10px;
 }

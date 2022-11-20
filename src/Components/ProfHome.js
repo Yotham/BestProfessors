@@ -12,6 +12,7 @@ export default function ProfHome({ data }) {
   return (
     <div>
       <input id="class-search-home" onChange = {handleChange} type="text" placeholder="Search by professor name...." />
+      <div id = "heading">Professors</div>
       <div className='prof-list'>
         {
           data && data
@@ -24,7 +25,7 @@ export default function ProfHome({ data }) {
                 foundFlag = true;
                 return(
                   <div className='prof-name' key={ profName.profName }>
-                  { profName.profname } --- <span> </span>
+                  { profName.profname } - <span> </span>
                   { profName.overall_rating.toFixed(1)}
                   <br></br><br></br>
                   <center><select >
@@ -33,10 +34,12 @@ export default function ProfHome({ data }) {
                         }
 
                   </select></center>
+                  <br></br>
                 </div>
                 )
               }
             })()}
+
             </div>
             )
           })
@@ -51,6 +54,8 @@ export default function ProfHome({ data }) {
           )
         }
       })()}
+    <br></br>
+    <br></br>
     </div>
   )
 }
