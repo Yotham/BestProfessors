@@ -8,15 +8,15 @@ export default function ProfHome({ data }) {
         data && data.map( profName => {
           return (
             <div className='prof-name' key={ profName.profName }>
-              { profName.profname } ---
-              { profName.overall_rating }
+              { profName.profname } --- <span> </span>
+              { profName.overall_rating.toFixed(1)}
               <br></br><br></br>
               { profName.reviews && profName.reviews.map( ratings => {
                 return (
                   <div key={ ratings.className }>
                     { ratings.className } <br></br>
                     { ratings.reviewEmotion } <br></br>
-                    { ratings.qualityRating } <br></br>
+                    { ratings.qualityRating.toFixed() } <br></br>
                     { ratings.review } <br></br><br></br>
                   </div>
                 )
