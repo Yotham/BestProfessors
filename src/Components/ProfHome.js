@@ -27,16 +27,12 @@ export default function ProfHome({ data }) {
                   { profName.profname } --- <span> </span>
                   { profName.overall_rating.toFixed(1)}
                   <br></br><br></br>
-                  { profName.reviews && profName.reviews.map( ratings => {
-                    return (
-                      <div key={ ratings.className }>
-                        { ratings.className } <br></br>
-                        { ratings.reviewEmotion } <br></br>
-                        { ratings.qualityRating.toFixed(1) } <br></br>
-                        { ratings.review } <br></br><br></br>
-                      </div>
-                    )
-                  }) }
+                  <center><select >
+                        <option selected disabled = "true" >Professor Reviews</option>{
+                          profName.reviews && profName.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
+                        }
+
+                  </select></center>
                 </div>
                 )
               }
@@ -49,9 +45,9 @@ export default function ProfHome({ data }) {
       {(() => {
         if (!foundFlag) {
           return (
-            <div id='no-course-found'>
+            <center><div id='no-course-found'>
               no professor found with that name!
-            </div>
+            </div></center>
           )
         }
       })()}

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ProfResults.css'
 import {useLocation } from 'react-router-dom'
 
@@ -8,10 +8,20 @@ export default function ProfResults() {
   let data = location.state.data;
   let search = location.state.professor.message;
   let seenProf = false
+  const [Display, setFlag] = useState(false);
+  const handleChange = event => {
+    if(Display === false){
+      setFlag = true;
+    }
+    else{
+      setFlag = false;
+    }
+  }
   return (
     <div>
       {
-        data && data.map( professors => {
+        data && data
+        .map( professors => {
           return (
             <div className='prof' key={ professors.profname }>
               {(() => {
@@ -23,22 +33,14 @@ export default function ProfResults() {
                         { professors.profname }
                         <span> - </span>
                         { professors.overall_rating }
-                        
-                        <span> - </span><button>Click to view reviews</button>
+                        <br></br>
+                      <center><select >
+                        <option selected disabled = "true" >Professor Reviews</option>{
+                          professors.reviews && professors.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
+                        }
+
+                      </select></center>
                       </div>
-                      { professors.reviews && professors.reviews.map( ratings => {
-                        return (
-                          <button></button>
-                          /*
-                          <div className='rating'>
-                            <span> Class: </span> { ratings.className } <br></br>
-                            { ratings.reviewEmotion }
-                            <span> : </span> { ratings.qualityRating } <br></br>
-                            <span> Review: </span> { ratings.review }
-                          </div>
-                          */
-                        )
-                      }) }
                     </div>
                   )
                 }

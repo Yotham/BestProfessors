@@ -55,9 +55,6 @@ export default function ClassResults() {
       </div></center>
     )
   }
-
-
-
   return (
     <div>
       <center><div id='course-search'>
@@ -69,7 +66,7 @@ export default function ClassResults() {
             <div>
               {
                 rmpData && rmpData
-                
+                .sort((a,b) => a.overall_rating > b.overall_rating ? 1 : -1)
                 .map( professors => {
                   return (
                     <div className='prof' key={ professors.profname }>
@@ -83,20 +80,12 @@ export default function ClassResults() {
                                 <span> - </span>
                                 { professors.overall_rating }
                               </div>
-                              { professors.reviews && professors.reviews.map( ratings => {
-                                return (
-                                  <div className='rating'>
-                                    <span> Class: </span> { ratings.className } <br></br>
-                                    { ratings.reviewEmotion }
-                                    <span> : </span> { ratings.qualityRating } <br></br>
-                                    <span> Review: </span> { ratings.review }
-                                  </div>
-                                )
-                              }) }
+                              <center><select >
+                                     <option selected disabled = "true" >Professor Reviews</option>{
+                                      professors.reviews && professors.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
+                                      }
 
-
-
-
+                             </select></center>                             
                             </div>
 
                           )
