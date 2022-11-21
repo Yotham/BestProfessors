@@ -32,7 +32,6 @@ export default function ProfHome({ data }) {
                         <option selected disabled = "true" >Professor Reviews</option>{
                           profName.reviews && profName.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
                         }
-
                   </select></center>
                   <br></br>
                 </div>

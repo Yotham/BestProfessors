@@ -58,7 +58,6 @@ export default function ProfResults() {
                         <option selected disabled = "true" >Professor Reviews</option>{
                           professors.reviews && professors.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
                         }
-
                       </select></center>
                       </div>
                     </div>
