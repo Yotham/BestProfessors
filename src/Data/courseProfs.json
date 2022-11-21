@@ -5,9 +5,6 @@
     "USAF2080": [
         "Joshua J. Lavin"
     ],
-    "ARCH2810": [
-        "Walaid Sehwail"
-    ],
     "ARCH4770": [
         "Zbigniew Oksiuta"
     ],
@@ -125,17 +122,11 @@
     "BMED4480": [
         "Uwe Kruger"
     ],
-    "BMED4650": [
-        "Elizabeth Blaber"
-    ],
     "BMED4960": [
         "Steven Cramer"
     ],
     "BMED6480": [
         "Uwe Kruger"
-    ],
-    "BMED6650": [
-        "Elizabeth Blaber"
     ],
     "BMED6960": [
         "Steven Cramer"
@@ -146,14 +137,10 @@
     "BMED9990": [
         "Ge Wang",
         "Suvranu De",
-        "Uwe Kruger",
-        "Elizabeth Blaber"
+        "Uwe Kruger"
     ],
     "CHME1100": [
         "Pankaj Karande"
-    ],
-    "CHME2020": [
-        "Sufei Shi"
     ],
     "CHME2050": [
         "Nihat Baysal"
@@ -175,9 +162,6 @@
     ],
     "CHME4400": [
         "Steven Cramer"
-    ],
-    "CHME4964": [
-        "Sangwoo Lee"
     ],
     "CHME4965": [
         "Mattheos Koffas"
@@ -202,8 +186,7 @@
         "Pankaj Karande",
         "Vidhya Chakrapani",
         "Steven Cramer",
-        "Joel Plawsky",
-        "Sangwoo Lee"
+        "Joel Plawsky"
     ],
     "CHME9990": [
         "Mattheos Koffas",
@@ -212,17 +195,7 @@
         "Richard Alan Gross",
         "Steven Cramer",
         "Joel Plawsky",
-        "Theodorian Borca-Tasciuc",
-        "Sufei Shi",
-        "Sangwoo Lee",
-        "Sufei Shi",
-        "Sangwoo Lee"
-    ],
-    "CHEM1100": [
-        "Amgalanbaatar Baldansuren"
-    ],
-    "CHEM1200": [
-        "Amgalanbaatar Baldansuren"
+        "Theodorian Borca-Tasciuc"
     ],
     "CHEM1600": [
         "Yunfeng Shi",
@@ -281,31 +254,20 @@
     "COGS2120": [
         "Bram Van Heuveln"
     ],
-    "COGS4880": [
-        "Sergei Nirenburg"
-    ],
     "COGS4990": [
         "Bram Van Heuveln",
         "Selmer Bringsjord",
         "John R Milanese",
         "Mei Si"
     ],
-    "COGS6880": [
-        "Sergei Nirenburg"
-    ],
     "COGS6980": [
         "Selmer Bringsjord",
-        "Mei Si",
-        "Sergei Nirenburg"
-    ],
-    "COGS6990": [
-        "Sergei Nirenburg"
+        "Mei Si"
     ],
     "COGS9990": [
         "Christopher Robert Sims",
         "Selmer Bringsjord",
-        "Mei Si",
-        "Sergei Nirenburg"
+        "Mei Si"
     ],
     "COMM2520": [
         "Weina Ran"
@@ -376,14 +338,11 @@
         "Lirong Xia",
         "Malik Magdon-Ismail",
         "Barbara Cutler",
-        "Sibel Adali",
         "Wesley D Turner",
         "Sibel Adali",
-        "Wesley D Turner",
         "Konstantin Kuzmin",
         "Bulent Yener",
-        "John Wen",
-        "Sergei Nirenburg"
+        "John Wen"
     ],
     "CSCI6990": [
         "Jianxi Gao",
@@ -393,8 +352,7 @@
         "Barbara Cutler",
         "Sibel Adali",
         "Bulent Yener",
-        "Mei Si",
-        "Sergei Nirenburg"
+        "Mei Si"
     ],
     "CSCI9990": [
         "Jianxi Gao",
@@ -425,26 +383,14 @@
         "Huaming Peng",
         "Mina Mahmoudi"
     ],
-    "ECON4170": [
-        "Jason Ung Huh"
-    ],
     "ECON4190": [
         "Mina Mahmoudi"
-    ],
-    "ECON4280": [
-        "Jason Ung Huh"
     ],
     "ECON4570": [
         "Huaming Peng"
     ],
-    "ECON6170": [
-        "Jason Ung Huh"
-    ],
     "ECON6190": [
         "Mina Mahmoudi"
-    ],
-    "ECON6280": [
-        "Jason Ung Huh"
     ],
     "ECSE2110": [
         "Prabhakar Neti"
@@ -461,9 +407,6 @@
     "ECSE4090": [
         "Sandipan Mishra"
     ],
-    "ECSE4110": [
-        "Luigi Vanfretti"
-    ],
     "ECSE4130": [
         "Meng Wang"
     ],
@@ -473,35 +416,14 @@
     "ECSE4320": [
         "Tong Zhang"
     ],
-    "ECSE4660": [
-        "Koushik Kar"
-    ],
-    "ECSE4850": [
-        "Qiang Ji"
-    ],
     "ECSE4962": [
         "Birsen Yazici"
-    ],
-    "ECSE4966": [
-        "Michael Shur"
-    ],
-    "ECSE6110": [
-        "Luigi Vanfretti"
     ],
     "ECSE6141": [
         "Jian Sun"
     ],
-    "ECSE6210": [
-        "Michael Shur"
-    ],
     "ECSE6320": [
         "Tong Zhang"
-    ],
-    "ECSE6660": [
-        "Koushik Kar"
-    ],
-    "ECSE6850": [
-        "Qiang Ji"
     ],
     "ECSE6962": [
         "Birsen Yazici"
@@ -509,92 +431,30 @@
     "ECSE6980": [
         "Tianyi Chen",
         "Ali Tajer",
-        "Bulent Yener",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Luigi Vanfretti",
-        "Koushik Kar"
+        "Bulent Yener"
     ],
     "ECSE6990": [
         "Sandipan Mishra",
         "Ge Wang",
-        "Ali Tajer",
         "Tong Zhang",
         "Ali Tajer",
-        "Tong Zhang",
         "Meng Wang",
         "Bulent Yener",
         "Jian Sun",
-        "John Wen",
-        "Michael Shur",
-        "Qiang Ji",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Michael Shur",
-        "Qiang Ji",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Michael Shur",
-        "Qiang Ji",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Michael Shur",
-        "Qiang Ji",
-        "Luigi Vanfretti",
-        "Koushik Kar"
+        "John Wen"
     ],
     "ECSE9990": [
         "Sandipan Mishra",
         "Zhaoran Huang",
         "Ge Wang",
-        "Zhaoran Huang",
-        "Ge Wang",
         "Tianyi Chen",
-        "Ali Tajer",
-        "Tong Zhang",
         "Ali Tajer",
         "Tong Zhang",
         "Meng Wang",
         "Bulent Yener",
         "Jian Sun",
         "John Wen",
-        "Birsen Yazici",
-        "Sufei Shi",
-        "Michael Shur",
-        "Qiang Ji",
-        "Santiago Paternain",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Sufei Shi",
-        "Michael Shur",
-        "Qiang Ji",
-        "Santiago Paternain",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Sufei Shi",
-        "Michael Shur",
-        "Qiang Ji",
-        "Santiago Paternain",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Sufei Shi",
-        "Michael Shur",
-        "Qiang Ji",
-        "Santiago Paternain",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Sufei Shi",
-        "Michael Shur",
-        "Qiang Ji",
-        "Santiago Paternain",
-        "Luigi Vanfretti",
-        "Koushik Kar",
-        "Sufei Shi",
-        "Michael Shur",
-        "Qiang Ji",
-        "Santiago Paternain",
-        "Luigi Vanfretti",
-        "Koushik Kar"
+        "Birsen Yazici"
     ],
     "ESCI9990": [
         "Toh-Ming Lu"
@@ -651,23 +511,14 @@
     "LITR4230": [
         "June Deery"
     ],
-    "MGMT2320": [
-        "Johan Maharjan"
-    ],
     "MGMT2430": [
         "Gaurav Jain"
     ],
     "MGMT4110": [
         "Christopher McDermott"
     ],
-    "MGMT6020": [
-        "Bill Francis"
-    ],
     "MGMT6140": [
         "Nishtha Langer"
-    ],
-    "MGMT6410": [
-        "Johan Maharjan"
     ],
     "MGMT7760": [
         "Aparna Gupta"
@@ -675,12 +526,9 @@
     "MGMT9990": [
         "Gaurav Jain",
         "Hao Zhao",
-        "Christopher McDermott",
         "Nishtha Langer",
         "Christopher McDermott",
-        "Nishtha Langer",
-        "Aparna Gupta",
-        "Bill Francis"
+        "Aparna Gupta"
     ],
     "MTLE2960": [
         "Yunfeng Shi"
@@ -756,16 +604,11 @@
         "Bruce Piper",
         "Gregor Kovacic",
         "Rongjie Lai",
-        "Gregor Kovacic",
-        "Rongjie Lai",
         "David Isaacson",
         "Yangyang Xu"
     ],
     "MANE1060": [
         "Fotios Kopsaftopoulos"
-    ],
-    "MANE2110": [
-        "Shaowu Pan"
     ],
     "MANE2220": [
         "Asish Ghosh"
@@ -788,9 +631,6 @@
     "MANE4080": [
         "Amir Hirsa"
     ],
-    "MANE4100": [
-        "Sandeep Singh"
-    ],
     "MANE4140": [
         "Onkar Sahni"
     ],
@@ -803,9 +643,6 @@
     "MANE4220": [
         "Asish Ghosh"
     ],
-    "MANE4230": [
-        "Kevin Wayne Housley"
-    ],
     "MANE4330": [
         "Asish Ghosh"
     ],
@@ -814,9 +651,6 @@
     ],
     "MANE4520": [
         "Sandipan Mishra"
-    ],
-    "MANE4740": [
-        "Kevin Wayne Housley"
     ],
     "MANE4900": [
         "Nikhil Koratkar"
@@ -849,16 +683,10 @@
         "Fudong Han"
     ],
     "MANE6980": [
-        "Shanbin Shi",
         "Fotios Kopsaftopoulos",
         "Shanbin Shi",
-        "Fotios Kopsaftopoulos",
         "Johnson Samuel",
         "Daniel Walczyk",
-        "Johnson Samuel",
-        "Daniel Walczyk",
-        "Sandipan Mishra",
-        "Yaron Danon",
         "Sandipan Mishra",
         "Yaron Danon",
         "Michael Amitay",
@@ -873,22 +701,14 @@
         "John Wen"
     ],
     "MANE6990": [
-        "Shanbin Shi",
         "Fotios Kopsaftopoulos",
         "Shanbin Shi",
-        "Fotios Kopsaftopoulos",
-        "Johnson Samuel",
-        "Daniel Walczyk",
         "Johnson Samuel",
         "Daniel Walczyk",
         "Sandipan Mishra",
         "Yaron Danon",
-        "Sandipan Mishra",
-        "Yaron Danon",
-        "Nikhil Koratkar",
         "Michael Amitay",
         "Nikhil Koratkar",
-        "Michael Amitay",
         "Suvranu De",
         "Amir Hirsa",
         "Onkar Sahni",
@@ -898,34 +718,23 @@
         "John Wen"
     ],
     "MANE9990": [
-        "Shanbin Shi",
         "Fotios Kopsaftopoulos",
         "Shanbin Shi",
-        "Fotios Kopsaftopoulos",
-        "Johnson Samuel",
-        "Daniel Walczyk",
         "Johnson Samuel",
         "Daniel Walczyk",
         "Sandipan Mishra",
         "Yaron Danon",
-        "Sandipan Mishra",
-        "Yaron Danon",
-        "Nikhil Koratkar",
         "Michael Amitay",
         "Nikhil Koratkar",
-        "Michael Amitay",
         "Suvranu De",
-        "Amir Hirsa",
         "Fudong Han",
         "Amir Hirsa",
-        "Fudong Han",
         "Onkar Sahni",
         "Farhan Gandhi",
         "Antoinette Maniatty",
         "Theodorian Borca-Tasciuc",
         "Jie Lian",
-        "John Wen",
-        "Hyun Gook Kang"
+        "John Wen"
     ],
     "PHIL2100": [
         "Bram Van Heuveln",
@@ -1007,14 +816,11 @@
         "Yunfeng Shi",
         "Vincent Meunier",
         "Peter Persans",
-        "Zhaoran Huang",
         "Shengbai Zhang",
         "Zhaoran Huang",
-        "Shengbai Zhang",
         "Gyorgy Korniss",
         "Toh-Ming Lu",
-        "Ingrid Wilke",
-        "Michael Shur"
+        "Ingrid Wilke"
     ],
     "PSYC2100": [
         "Bram Van Heuveln",
@@ -1056,4 +862,4 @@
     "STSO9990": [
         "Atsushi Akera"
     ]
-  }
+}
