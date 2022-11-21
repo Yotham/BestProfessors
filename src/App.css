@@ -24,7 +24,19 @@ input.professor-search{
         font-family: 'Raleway', sans-serif;
 }
 
-#search_button{
+#search_button1{
+        border-radius: 1vh;
+        padding: 12px;
+        border: 1px solid black;
+        margin-left: 10px;
+        margin-top:10px;
+        height: 7vh;
+        font-family: 'Raleway', sans-serif;
+        text-decoration:none;
+        color:black;
+
+}
+#search_button2{
         border-radius: 1vh;
         padding: 12px;
         border: 1px solid black;

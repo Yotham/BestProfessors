@@ -49,7 +49,6 @@ function CustomLink({ to, children, ...props }) {
   return <Link id='search-btn' className={isActive ? "active" : ""} to={to} {...props}>{children}</Link>
 }
 
-
 function HomeBody() {
   const [message, setMessage] = useState('');
   const handleChange = event => {
@@ -59,10 +58,10 @@ function HomeBody() {
   return (
 
     <div>
-      <input className="professor-search" onChange = {handleChange} type="text" placeholder="Search Professors...." />
-      <CustomLink id = "search_button" to = "/profresults"state={{data: RMPData, professor: {message}}}>Search</CustomLink>
-      <input className="class-search" onChange = {handleChange} type="text" placeholder="Search Classes...." />
-      <CustomLink id = "search_button" to = "/classresults"state={{data: RMPData, courseData: {CourseProfs}, professor: {message}}}>Search</CustomLink>
+      <input id = "prof_search" className="professor-search" onChange = {handleChange} type="text" placeholder="Search Professors...." />
+      <CustomLink id = "search_button1" to = "/profresults"state={{data: RMPData, professor: {message}}}>Search</CustomLink>
+      <input id = "class_search" className="class-search" maxlength = "8" onChange = {handleChange} onSubmit type="text" placeholder="Search Classes...." />
+      <CustomLink id = "search_button2" to = "/classresults"state={{data: RMPData, courseData: {CourseProfs}, professor: {message}}}>Search</CustomLink>
     </div>
   )
 }
