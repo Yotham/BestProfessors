@@ -20,7 +20,7 @@ export default function About() {
               <p>Isaac Foster</p>
           </div>
           <div class = "column">
-              <img id = "member_photo" alt = "Julia Maguire" src = "https://i.ibb.co/8YCb791/yotham-sage.jpg" ></img>
+              <img id = "member_photo" alt = "Julia Maguire" src = "https://i.ibb.co/10my9ZV/Julia-Maguire.jpg" ></img>
               <p>Julia Maguire</p>
           </div>
           <div class = "column">
