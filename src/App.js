@@ -57,7 +57,7 @@ function HomeBody() {
   }
   return (
 
-    <div>
+    <div id = "search_bars">
       <input id = "prof_search" className="professor-search" onChange = {handleChange} type="text" placeholder="Search Professors...." />
       <CustomLink id = "search_button1" to = "/profresults"state={{data: RMPData, professor: {message}}}>Search</CustomLink>
       <input id = "class_search" className="class-search" maxlength = "8" onChange = {handleChange} onSubmit type="text" placeholder="Search Classes...." />

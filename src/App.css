@@ -34,6 +34,7 @@ input.professor-search{
         font-family: 'Raleway', sans-serif;
         text-decoration:none;
         color:black;
+        font-weight:bold;
 
 }
 #search_button2{
@@ -45,6 +46,13 @@ input.professor-search{
         height: 7vh;
         font-family: 'Raleway', sans-serif;
         text-decoration:none;
+        font-weight: bold;
         color:black;
 
+}
+#search_bars{
+        float: center;
+        margin-top:75px;
+        margin-right:100px;
+        
 }
