@@ -28,6 +28,8 @@ for key in courseProfs:
    for i in range(len(courseProfs[key])):
       if(exist(new_dict,courseProfs[key][i])):
          num_list.append(new_dict[courseProfs[key][i]])
+      else:
+         final_dict[key] = courseProfs[key]
    num_list = sorted(num_list, reverse = True)
    sorted_profs = []
    for k in range(len(num_list)):
@@ -41,7 +43,7 @@ for key in courseProfs:
       final_dict[key] = sorted_profs
       
 
-with open("courseProfs.json", "w") as outfile:
+with open("test.json", "w") as outfile:
      json.dump(final_dict, outfile,indent = 4)
 
 
