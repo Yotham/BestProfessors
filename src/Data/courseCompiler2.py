@@ -36,10 +36,12 @@ for key in courseProfs:
             if(num_list[k] == new_dict[courseProfs[key][i]]):
                sorted_profs.append(courseProfs[key][i])
    if(sorted_profs != []):
+      sorted_profs = set(sorted_profs)
+      sorted_profs = list(sorted_profs)
       final_dict[key] = sorted_profs
       
 
-with open("test.json", "w") as outfile:
+with open("courseProfs.json", "w") as outfile:
      json.dump(final_dict, outfile,indent = 4)
 
 

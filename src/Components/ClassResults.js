@@ -86,7 +86,7 @@ export default function ClassResults() {
                   return (
                     <div className='prof' key={ professors.profname }>
                       {(() => {
-                        if (professors.profname === prof) {
+                        if (professors.profname === prof && professors.overall_rating !== 0) {
                           numRevs = numRevs + 1
                           return (
                             <div className='full-review'>
@@ -94,7 +94,7 @@ export default function ClassResults() {
                               <div id='prof-name-class'>
                                 { professors.profname }
                                 <span> - </span>
-                                { professors.overall_rating }
+                                { professors.overall_rating.toFixed(1) }
                               </div>
                               <center><select >
                                      <option selected disabled = "true" >Professor Reviews</option>{
