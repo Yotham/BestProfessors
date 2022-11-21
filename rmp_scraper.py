@@ -7,6 +7,7 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 from html.parser import HTMLParser
 
+#professor object
 class Professor:
     def __init__(self, fname, mname, lname, fullname, overall_rating, reviews):
         self.fname = fname
@@ -28,6 +29,7 @@ class Professor:
     def get_reviews(self):
         return self.reviews
 
+#review object
 class Review:
     def __init__(self, className, reviewEmotion, qualityRating, review):
         self.className = className
@@ -58,17 +60,22 @@ def generate_professor_list():
     num_of_prof = (temp_jsonpage["searchResultsTotal"])
 
     professor_list = []
+    #find the number of pages
     num_of_pages = math.ceil(num_of_prof / 20)
     i = 1
-    while i <= num_of_pages:  # the loop insert all professor into list
+    #loop through each page 
+    while i <= num_of_pages:
         page = requests.get(
             "http://www.ratemyprofessors.com/filter/professor/?&page="
             + str(i) + "&filter=teacherlastname_sort_s+asc&query=*%3A*&queryoption=TEACHER&queryBy=schoolId&sid=795"
         )
+        #load page content
         temp_jsonpage = json.loads(page.content)
+        #add each professor to a list
         temp_list = temp_jsonpage["professors"]
         professor_list.extend(temp_list)
         i += 1
+    #return list of professors
     return professor_list
 
 professor_list = generate_professor_list()
@@ -85,22 +92,30 @@ def get_professor(professor_list,Fname,Mname,Lname):
         #check if middle name = rate my prof middle name or is NULL
         if(Mname == NULL or Mname == professor_list[i]["tMiddlename"]):
             Mname_check = True
+        #check if last name = rate my prof last name
         if(Lname == professor_list[i]["tLname"]):
             Lname_check = True
+        #if all names match then set reset to false
         if(Fname_check == True):
             if(Mname_check == True):
                 if(Lname_check == True):
                     reset = False
+        #if reset is true then the name didn't match reset
+        #all checks back to false
         if(reset):
             Fname_check = False
             Mname_check = False
             Lname_check = False
+        #if reset is false
+        #return the professor from professor list
         else:
             #get professor
             return professor_list[i]
 
+
 def access_review_page(professor):
     professor_ratings = []
+    #professors  page id
     tid = str(professor["tid"])
     #request professors page
     r = requests.get("https://www.ratemyprofessors.com/professor?tid="+tid)
@@ -113,9 +128,11 @@ def access_review_page(professor):
     reviewEmotion = soup.find_all('div',{'class':'EmotionLabel__StyledEmotionLabel-sc-1u525uj-0'})
     qualityRating = soup.find_all('div',{'class':'CardNumRating__CardNumRatingNumber-sc-17t4b9u-2'})
     reviews = soup.find_all('div',{'class':'Comments__StyledComments-dzzyvm-0'})
+    #loop through all reviews on the page
     for i in range(len(reviews)):
         j = i*2
         if(j <= len(classNames)-1):
+            #add total review object to professor ratings
             review = Review(classNames[j].text,reviewEmotion[j].text[1:len(reviewEmotion)],qualityRating[j].text,reviews[i].text)
             professor_ratings.append(review)
         else:
@@ -125,17 +142,21 @@ def access_review_page(professor):
 list_of_profs = []
 #fix overall_rating 
 for i in range(len(professor_list)):
+    #set professor attributes = to current professors attributes
     first_name = professor_list[i]["tFname"]
     middle_name = professor_list[i]["tMiddlename"]
     last_name = professor_list[i]["tLname"]
     overall_rating = professor_list[i]["overall_rating"]
 
+    #create full name, either omit middle name or add it depending on the professor
     if(middle_name != ''):
         full_name = first_name + " " + middle_name + " " + last_name
     else:
         full_name = first_name + " " + last_name
+    
     review_temp = access_review_page(professor_list[i])
     review_list = []
+    #append the reviews a review dictionary for easy storing for json
     for review in review_temp:
         review_dict = {}
         review_dict["className"] = review.get_class_name()
@@ -143,21 +164,26 @@ for i in range(len(professor_list)):
         review_dict["qualityRating"] = review.get_quality_rating()
         review_dict["review"] = review.get_review()
         review_list.append(review_dict)
+    #set reviews = to review list
     reviews = review_list
+    #create a professor object
     professor = Professor(first_name, middle_name, last_name, full_name, overall_rating, reviews)
+    #append that professor to the list of the professors
     list_of_profs.append(professor)
 
-
+#create a dictionary list for the json
 dictionary_list = []
+#add each professor into a dictionary for json output
 for profs in list_of_profs:
     prof_dict = {}
     prof_dict["profname"] = profs.get_full_name()
     prof_dict["overall_rating"] = profs.get_overall_rating()
     prof_dict["reviews"] = profs.get_reviews()
+    #append each dictionary into the list of dictionaries
     dictionary_list.append(prof_dict)
 
 
-
+#dump the dictionary list into a json file
 with open("test.json", "w") as outfile:
     json.dump(dictionary_list, outfile,indent = 4)
 
