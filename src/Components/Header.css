@@ -20,23 +20,11 @@
 #title-name {
     float: left;
     width: 80%;
-    color: black;
+    color: #5C0705;
     font-size: 4vmax;
     text-align: center;
     text-decoration: none;
 }
 #title-name:hover {
-    color: #595959;
-}
-#contact-link {
-    float: left;
-    width: 9%;
-    color: black;
-    font-size: 2vmax;
-    padding-top: 1%;
-    text-align: right;
-    text-decoration: none;
-}
-#contact-link:hover {
-    text-decoration: underline;
+    color: #56423E
 }

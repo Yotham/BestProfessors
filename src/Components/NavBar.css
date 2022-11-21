@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 .nav-bar {
     padding-top: 6%;
+    font-weight:bold;
 }
 .nav-bar a {
     width: 25%;

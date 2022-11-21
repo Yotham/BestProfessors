@@ -9,7 +9,6 @@ export default function Header({ bplLogo }) {
         <img id='rt-logo' src={ bplLogo } alt='best professor list'/>
       </CustomLink>
       <CustomLink id="title-name" to="/">Best Professor List</CustomLink>
-      <CustomLink id="contact-link" to="/contact">Contact</CustomLink>
     </div>
   )
 }

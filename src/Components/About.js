@@ -16,7 +16,7 @@ export default function About() {
               <p>Jen Lawless</p>
           </div>
           <div class = "column">
-              <img id = "member_photo" alt = "Isaac Foster" src = "https://i.ibb.co/8YCb791/yotham-sage.jpg" ></img>
+              <img id = "member_photo" alt = "Isaac Foster" src = "https://i.ibb.co/syFXhGS/isaac-foster.jpg" ></img>
               <p>Isaac Foster</p>
           </div>
           <div class = "column">
