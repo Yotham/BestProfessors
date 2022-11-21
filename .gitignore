@@ -1,4 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Add the path(s) (with a forward slash in front) to your file(s) which you would like to ignore to your .gitignore file and commit them.
+# These file entries will also apply to others checking out the repository.
 
 # dependencies
 /node_modules
