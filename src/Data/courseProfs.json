@@ -1,54 +1,301 @@
 {
+    "ADMN1030": [
+        "Philip Bruce"
+    ],
+    "ADMN1100": [
+        "Matthew Joseph Lopez"
+    ],
+    "ADMN1824": [
+        "Joseph Louis Trzepacz"
+    ],
+    "ADMN1962": [
+        "Jeannie Steigler",
+        "Nanjie Caihua",
+        "Arielle Serena Roberts",
+        "David W. Milford",
+        "Janelle P. Fayette"
+    ],
+    "ADMN6700": [
+        "Natalina Ann Sutera",
+        "Constance M Grega"
+    ],
+    "ADMN6800": [
+        "Jennifer Sue Mullet"
+    ],
     "USAF20": [
         "Joshua J. Lavin"
+    ],
+    "USAF1020": [
+        "Kristen Gibson"
+    ],
+    "USAF2040": [
+        "Kristen Gibson"
+    ],
+    "USAF2060": [
+        "Nicholas C. Graham"
     ],
     "USAF2080": [
         "Joshua J. Lavin"
     ],
+    "ARCH2360": [
+        "Michael Todd Stradley"
+    ],
+    "ARCH2370": [
+        "Lonn J. Combs",
+        "John Clifford Loercher"
+    ],
+    "ARCH2530": [
+        "Edwin Jhinang Liu",
+        "Adam Hassan Dayem"
+    ],
+    "ARCH2550": [
+        "Matthew Joseph Lopez",
+        "Ryosuke Imaeda"
+    ],
+    "ARCH2810": [
+        "Walaid Sehwail",
+        "Per S. Svedberg",
+        "Ryosuke Imaeda",
+        "Yael Erel",
+        "Anthony Titus"
+    ],
+    "ARCH2830": [
+        "Michael Todd Stradley",
+        "David H Bell",
+        "Matthew Joseph Lopez",
+        "Edwin Jhinang Liu",
+        "Adam Hassan Dayem"
+    ],
+    "ARCH2850": [
+        "John Clifford Loercher"
+    ],
+    "ARCH4020": [
+        "Marcin D. Marchewka"
+    ],
+    "ARCH4090": [
+        "Yael Erel",
+        "Per S. Svedberg",
+        "Florencia Vetcher",
+        "Gustavo Enrique Alberto Crembil"
+    ],
+    "ARCH4100": [
+        "David H Bell"
+    ],
+    "ARCH4150": [
+        "Jillian Marie Crandall",
+        "Carla Leitao"
+    ],
+    "ARCH4200": [
+        "Hseng Tai Ja Reng Lintner",
+        "Matthew Joseph Lopez"
+    ],
+    "ARCH4330": [
+        "Justin Henry Den Herder"
+    ],
+    "ARCH4520": [
+        "Lonn J. Combs"
+    ],
+    "ARCH4530": [
+        "John Clifford Loercher"
+    ],
+    "ARCH4540": [
+        "Katrina Pacheco"
+    ],
+    "ARCH4550": [
+        "David Jonathon Pacheco"
+    ],
+    "ARCH4580": [
+        "Joshua William Hugo Draper"
+    ],
+    "ARCH4740": [
+        "Marcus Carter",
+        "John Clifford Loercher"
+    ],
     "ARCH4770": [
-        "Zbigniew Oksiuta"
+        "Michael James Oatman",
+        "James Fleet Hower",
+        "Zbigniew Oksiuta",
+        "Christianna Grace Bennett"
     ],
     "ARCH4780": [
-        "Zbigniew Oksiuta"
+        "Michael James Oatman",
+        "James Fleet Hower",
+        "Zbigniew Oksiuta",
+        "Christianna Grace Bennett"
     ],
     "ARCH4790": [
-        "Zbigniew Oksiuta"
+        "Michael James Oatman",
+        "Zbigniew Oksiuta",
+        "Christianna Grace Bennett"
+    ],
+    "ARCH4820": [
+        "Florencia Vetcher",
+        "Gustavo Enrique Alberto Crembil"
     ],
     "ARCH4830": [
+        "Lonn J. Combs",
+        "Jillian Marie Crandall",
         "Ted Krueger"
+    ],
+    "ARCH4850": [
+        "Ning Xiang"
     ],
     "ARCH4880": [
         "Jonas Braasch"
     ],
+    "ARCH4920": [
+        "Christopher S Perry",
+        "John Rhett Russo",
+        "Hseng Tai Ja Reng Lintner",
+        "Carla Leitao"
+    ],
+    "ARCH4936": [
+        "Joshua William Hugo Draper"
+    ],
+    "ARCH4952": [
+        "James Fleet Hower"
+    ],
+    "ARCH4960": [
+        "Dennis Robert Shelden"
+    ],
+    "ARCH4961": [
+        "Edwin Jhinang Liu"
+    ],
+    "ARCH4962": [
+        "Justin Henry Den Herder"
+    ],
+    "ARCH4963": [
+        "Christianna Grace Bennett"
+    ],
+    "ARCH4964": [
+        "Michael James Oatman"
+    ],
+    "ARCH4965": [
+        "Nadarajah Narendran"
+    ],
     "ARCH4966": [
         "Zbigniew Oksiuta"
+    ],
+    "ARCH4967": [
+        "Cathryn M Dwyre"
     ],
     "ARCH4968": [
         "Ted Krueger"
     ],
+    "ARCH4969": [
+        "Anthony Titus"
+    ],
+    "ARCH4970": [
+        "James Fleet Hower"
+    ],
+    "ARCH4971": [
+        "Charles A. Portelli"
+    ],
+    "ARCH5110": [
+        "David H Bell"
+    ],
+    "ARCH5170": [
+        "Matthew Joseph Lopez",
+        "Ryosuke Imaeda"
+    ],
+    "ARCH5210": [
+        "David H Bell",
+        "Matthew Joseph Lopez",
+        "Adam Hassan Dayem"
+    ],
+    "ARCH5310": [
+        "Michael Todd Stradley"
+    ],
+    "ARCH5360": [
+        "John Clifford Loercher"
+    ],
+    "ARCH5380": [
+        "Katrina Pacheco"
+    ],
+    "ARCH5390": [
+        "David Jonathon Pacheco"
+    ],
+    "ARCH6360": [
+        "Alexandros Tsamis"
+    ],
+    "ARCH6620": [
+        "John Clifford Loercher"
+    ],
+    "ARCH6680": [
+        "Christianna Grace Bennett"
+    ],
+    "ARCH6810": [
+        "Ning Xiang",
+        "Joshua William Hugo Draper"
+    ],
     "ARCH6830": [
         "Jonas Braasch"
+    ],
+    "ARCH6880": [
+        "Ning Xiang"
     ],
     "ARCH6890": [
         "Jonas Braasch"
     ],
     "ARCH6910": [
+        "Nadarajah Narendran",
         "Jonas Braasch"
     ],
     "ARCH6920": [
+        "Alexandros Tsamis",
+        "Nadarajah Narendran",
         "Jonas Braasch"
+    ],
+    "ARCH6948": [
+        "Marcus Carter"
     ],
     "ARCH6960": [
         "Zbigniew Oksiuta"
     ],
+    "ARCH6961": [
+        "Cathryn M Dwyre"
+    ],
+    "ARCH6962": [
+        "James Fleet Hower"
+    ],
+    "ARCH6963": [
+        "Christianna Grace Bennett"
+    ],
+    "ARCH6964": [
+        "Michael James Oatman"
+    ],
+    "ARCH6965": [
+        "Nadarajah Narendran"
+    ],
+    "ARCH6966": [
+        "Dennis Robert Shelden"
+    ],
     "ARCH6968": [
         "Ted Krueger"
     ],
+    "ARCH6969": [
+        "Anthony Titus"
+    ],
+    "ARCH6980": [
+        "Alexandros Tsamis",
+        "Dennis Robert Shelden",
+        "Christopher S Perry"
+    ],
     "ARCH6990": [
+        "Alexandros Tsamis",
+        "Ning Xiang",
+        "Dennis Robert Shelden",
         "Jonas Braasch"
     ],
     "ARCH9990": [
+        "Alexandros Tsamis",
+        "Nadarajah Narendran",
+        "Dennis Robert Shelden",
+        "Ning Xiang",
         "Jonas Braasch"
+    ],
+    "ARTS1020": [
+        "Nathan Scott Meltz"
     ],
     "ARTS1030": [
         "Elizabeth Press"
@@ -56,8 +303,57 @@
     "ARTS1050": [
         "Jefferson Wille Kielwagen"
     ],
+    "ARTS1200": [
+        "Kenneth A. Ragsdale",
+        "Jennifer Mae Kemp"
+    ],
+    "ARTS1380": [
+        "Matthew William Goodheart"
+    ],
+    "ARTS2060": [
+        "Nathan Scott Meltz"
+    ],
+    "ARTS2090": [
+        "Nathan Scott Meltz"
+    ],
+    "ARTS2180": [
+        "Stephanie D Loveless"
+    ],
     "ARTS2210": [
         "Jefferson Wille Kielwagen"
+    ],
+    "ARTS2300": [
+        "Robert Michael Whalen"
+    ],
+    "ARTS2310": [
+        "Robert Michael Whalen"
+    ],
+    "ARTS2350": [
+        "Robert Michael Whalen"
+    ],
+    "ARTS2380": [
+        "Christopher James Fisher-Lochhead"
+    ],
+    "ARTS2540": [
+        "Maryanne Staniszewski"
+    ],
+    "ARTS2700": [
+        "Ross A. Rice"
+    ],
+    "ARTS2750": [
+        "Akina Yura",
+        "Jamecyn F. Morey",
+        "Paul J. Quigley",
+        "Jingwen Tu",
+        "Charles W. Olencki",
+        "Karlinda D. Caldicott",
+        "Omar Williams",
+        "Thomas J. Gerbino",
+        "Chrysi Nanou",
+        "Matthew P. Steckler",
+        "David Bebe",
+        "Elissa Marie Harrigan",
+        "Christopher James Fisher-Lochhead"
     ],
     "ARTS4040": [
         "Branda Miller"
@@ -68,79 +364,403 @@
     "ARTS4080": [
         "Branda Miller"
     ],
+    "ARTS4200": [
+        "Kenneth A. Ragsdale"
+    ],
+    "ARTS4260": [
+        "Jennifer Mae Kemp"
+    ],
+    "ARTS4380": [
+        "Christopher James Fisher-Lochhead"
+    ],
     "ARTS4460": [
         "Silvia Ruzanka"
+    ],
+    "ARTS4700": [
+        "Ross A. Rice"
+    ],
+    "ARTS4850": [
+        "Stephanie D Loveless"
+    ],
+    "ARTS4880": [
+        "Kathleen A. Galloway"
+    ],
+    "ARTS4961": [
+        "Monica A. Hughes"
+    ],
+    "ARTS4962": [
+        "Kathryn High"
+    ],
+    "ARTS6110": [
+        "Maryanne Staniszewski"
+    ],
+    "ARTS6130": [
+        "Michael L. Century"
     ],
     "ARTS6900": [
         "Jefferson Wille Kielwagen"
     ],
+    "ARTS6961": [
+        "Monica A. Hughes"
+    ],
+    "ARTS6962": [
+        "Kathryn High"
+    ],
+    "ARTS6963": [
+        "Kathleen A. Galloway"
+    ],
+    "ARTS6965": [
+        "Matthew William Goodheart"
+    ],
     "ARTS9990": [
+        "Matthew William Goodheart",
+        "Maryanne Staniszewski",
         "Igor Vamos",
+        "Mary Simoni",
+        "Michael L. Century",
+        "Robert F. Nideffer",
+        "Kathryn High",
+        "Robert Kyle Hamilton",
+        "Benjamin Chia-Ming Chang",
         "Branda Miller"
+    ],
+    "ASTR4120": [
+        "Heidi Jo Newberg"
+    ],
+    "ASTR4240": [
+        "Joel T. Giedt"
+    ],
+    "ASTR4941": [
+        "Heidi Jo Newberg"
+    ],
+    "ASTR4961": [
+        "Ethan Craig Brown"
+    ],
+    "ASTR6970": [
+        "Ethan Craig Brown"
+    ],
+    "ASTR9990": [
+        "Heidi Jo Newberg"
+    ],
+    "BCBP4310": [
+        "Keith Fraser"
+    ],
+    "BCBP4550": [
+        "Christopher Bystroff"
+    ],
+    "BCBP4710": [
+        "Eric Matthew Rutledge"
+    ],
+    "BCBP4770": [
+        "Keith Fraser"
+    ],
+    "BCBP4990": [
+        "Robert J. Linhardt"
+    ],
+    "BCBP6310": [
+        "Keith Fraser"
+    ],
+    "BCBP6420": [
+        "Christopher Bystroff"
+    ],
+    "BCBP6910": [
+        "Catherine Ann Royer"
     ],
     "BCBP6963": [
         "Steven Cramer"
     ],
     "BCBP6970": [
-        "Wilfredo Colon"
+        "Wilfredo Colon",
+        "Catherine Ann Royer"
     ],
     "BCBP9990": [
+        "Douglas Martin Swank",
+        "Chunyu Wang",
+        "Steven Cramer",
+        "George I. Makhatadze",
+        "Christopher Bystroff",
+        "Susan P. Gilbert",
         "Mattheos Koffas",
-        "Steven Cramer"
+        "Blanca L. Barquera",
+        "Scott Thomas Forth",
+        "Jennifer Marie Hurley",
+        "Catherine Ann Royer"
+    ],
+    "BIOL1010": [
+        "Darrin Scott Hunt",
+        "Jonathan T Stetler",
+        "Jeremy Lynch Farrell"
     ],
     "BIOL1015": [
+        "Darrin Scott Hunt",
+        "Jonathan T Stetler",
         "Seemanti Ramanath"
+    ],
+    "BIOL2120": [
+        "Michael T Klein"
+    ],
+    "BIOL2125": [
+        "Richard Peter Bonocora"
+    ],
+    "BIOL4120": [
+        "Douglas Martin Swank"
+    ],
+    "BIOL4150": [
+        "Marvin D Bentley"
+    ],
+    "BIOL4200": [
+        "Kevin Christopher Rose",
+        "Jeremy Lynch Farrell"
+    ],
+    "BIOL4250": [
+        "Douglas Martin Swank"
+    ],
+    "BIOL4310": [
+        "Blanca L. Barquera"
+    ],
+    "BIOL4550": [
+        "Christopher Bystroff"
+    ],
+    "BIOL4620": [
+        "Eric Matthew Rutledge"
+    ],
+    "BIOL4710": [
+        "Eric Matthew Rutledge"
+    ],
+    "BIOL4770": [
+        "Keith Fraser"
+    ],
+    "BIOL4850": [
+        "Isaac Daniel Shepard"
+    ],
+    "BIOL4941": [
+        "Keith Fraser"
+    ],
+    "BIOL6150": [
+        "Marvin D Bentley"
+    ],
+    "BIOL6310": [
+        "Blanca L. Barquera"
+    ],
+    "BIOL6420": [
+        "Christopher Bystroff"
     ],
     "BIOL6520": [
         "Lee Ligon"
     ],
+    "BIOL6900": [
+        "Marvin D Bentley"
+    ],
+    "BIOL6930": [
+        "George I. Makhatadze"
+    ],
+    "BIOL6960": [
+        "Scott Thomas Forth"
+    ],
     "BIOL6970": [
+        "Douglas Martin Swank",
+        "Eric Matthew Rutledge",
+        "Kevin Christopher Rose",
+        "Qun Wan",
         "Mattheos Koffas",
-        "Lee Ligon"
+        "Ricky A Relyea",
+        "Christopher Bystroff",
+        "Lee Ligon",
+        "Catherine Ann Royer"
+    ],
+    "BIOL6980": [
+        "Eric Matthew Rutledge"
     ],
     "BIOL6990": [
-        "Sandra Nierzwicki-Bauer"
+        "Sandra Nierzwicki-Bauer",
+        "Eric Matthew Rutledge",
+        "Christopher Bystroff",
+        "Susan P. Gilbert"
     ],
     "BIOL9990": [
-        "Mattheos Koffas",
-        "Richard Alan Gross",
+        "Douglas Martin Swank",
         "Lee Ligon",
-        "Sandra Nierzwicki-Bauer"
+        "Marvin D Bentley",
+        "Chunyu Wang",
+        "George I. Makhatadze",
+        "Sandra Nierzwicki-Bauer",
+        "Kevin Christopher Rose",
+        "Richard Alan Gross",
+        "Susan P. Gilbert",
+        "Jonathan Dordick",
+        "Mattheos Koffas",
+        "Ricky A Relyea",
+        "Blanca L. Barquera",
+        "Scott Thomas Forth",
+        "Christopher Bystroff",
+        "Jennifer Marie Hurley",
+        "Catherine Ann Royer"
     ],
     "BMED2050": [
+        "George Jiren Lee",
         "Monica Agarwal"
     ],
+    "BMED2100": [
+        "Ryan James Gilbert",
+        "Mariah Somer Hahn"
+    ],
+    "BMED2300": [
+        "Hisham S. Mohamed",
+        "Natalia Maldonado Martinez"
+    ],
     "BMED2540": [
+        "Qun Wan",
         "Xun Wang"
     ],
     "BMED4010": [
         "Monica Agarwal"
     ],
+    "BMED4120": [
+        "Douglas Martin Swank"
+    ],
+    "BMED4130": [
+        "Douglas Martin Swank"
+    ],
     "BMED4200": [
         "Uwe Kruger"
+    ],
+    "BMED4250": [
+        "Deanna Marie Thompson"
+    ],
+    "BMED4260": [
+        "Hisham S. Mohamed"
+    ],
+    "BMED4410": [
+        "Deanna Marie Thompson"
+    ],
+    "BMED4440": [
+        "Xavier R. M. Intes"
+    ],
+    "BMED4460": [
+        "Pingkun Yan"
     ],
     "BMED4480": [
         "Uwe Kruger"
     ],
+    "BMED4500": [
+        "Juergen Hahn"
+    ],
+    "BMED4600": [
+        "George Jiren Lee",
+        "Hisham S. Mohamed"
+    ],
+    "BMED4650": [
+        "Elizabeth Blaber"
+    ],
+    "BMED4660": [
+        "David Thomas Corr"
+    ],
     "BMED4960": [
         "Steven Cramer"
+    ],
+    "BMED4962": [
+        "Deanna Marie Thompson"
+    ],
+    "BMED6410": [
+        "Deanna Marie Thompson"
+    ],
+    "BMED6440": [
+        "Xavier R. M. Intes"
+    ],
+    "BMED6460": [
+        "Pingkun Yan"
     ],
     "BMED6480": [
         "Uwe Kruger"
     ],
+    "BMED6650": [
+        "Elizabeth Blaber"
+    ],
+    "BMED6660": [
+        "David Thomas Corr"
+    ],
+    "BMED6800": [
+        "Deanna Marie Thompson"
+    ],
     "BMED6960": [
         "Steven Cramer"
     ],
+    "BMED6961": [
+        "M.V. Shyam Kumar"
+    ],
+    "BMED6962": [
+        "Deanna Marie Thompson"
+    ],
     "BMED6980": [
-        "Ge Wang"
+        "Deanna Marie Thompson",
+        "Pingkun Yan",
+        "Ryan James Gilbert",
+        "Qun Wan",
+        "Ge Wang",
+        "Xavier R. M. Intes",
+        "Deepak Vashishth",
+        "David Thomas Corr",
+        "Juergen Hahn",
+        "Eric Howard Ledet",
+        "Mariah Somer Hahn"
+    ],
+    "BMED6990": [
+        "Deanna Marie Thompson",
+        "Pingkun Yan",
+        "Ryan James Gilbert",
+        "Qun Wan",
+        "Xavier R. M. Intes",
+        "Robert J. Linhardt",
+        "Deepak Vashishth",
+        "David Thomas Corr",
+        "Eric Howard Ledet",
+        "Mariah Somer Hahn"
     ],
     "BMED9990": [
-        "Ge Wang",
+        "Douglas Martin Swank",
+        "Uwe Kruger",
+        "Deanna Marie Thompson",
         "Suvranu De",
-        "Uwe Kruger"
+        "Pingkun Yan",
+        "Ryan James Gilbert",
+        "Qun Wan",
+        "Ge Wang",
+        "Xavier R. M. Intes",
+        "Deepak Vashishth",
+        "Robert J. Linhardt",
+        "Juergen Hahn",
+        "David Thomas Corr",
+        "Stanley M. Dunn",
+        "Eric Howard Ledet",
+        "Mariah Somer Hahn",
+        "Elizabeth Blaber"
+    ],
+    "BUSN6102": [
+        "Elaine Renz"
+    ],
+    "BUSN6103": [
+        "Thomas M. Abbott"
+    ],
+    "BUSN6104": [
+        "Michael Borbath"
+    ],
+    "BUSN6105": [
+        "David Joseph Stec"
+    ],
+    "BUSN6106": [
+        "Himali J. Stoccatore"
+    ],
+    "BUSN6107": [
+        "Richard Green Chapman"
+    ],
+    "BUSN6300": [
+        "Thomas M. Abbott"
     ],
     "CHME1100": [
         "Pankaj Karande"
+    ],
+    "CHME2020": [
+        "Sufei Shi"
     ],
     "CHME2050": [
         "Nihat Baysal"
@@ -154,14 +774,29 @@
     "CHME4011": [
         "Vidhya Chakrapani"
     ],
+    "CHME4020": [
+        "Corey Christopher Woodcock"
+    ],
     "CHME4050": [
         "Nihat Baysal"
     ],
     "CHME4100": [
         "Joel Plawsky"
     ],
+    "CHME4160": [
+        "Ronald C. Hedden"
+    ],
+    "CHME4170": [
+        "Runye H. Zha"
+    ],
     "CHME4400": [
         "Steven Cramer"
+    ],
+    "CHME4961": [
+        "B Wayne Bequette"
+    ],
+    "CHME4964": [
+        "Sangwoo Lee"
     ],
     "CHME4965": [
         "Mattheos Koffas"
@@ -172,43 +807,142 @@
     "CHME6440": [
         "Steven Cramer"
     ],
+    "CHME6510": [
+        "Patrick T. Underhill"
+    ],
+    "CHME6830": [
+        "Matthew Adam Oehlschlaeger"
+    ],
+    "CHME6961": [
+        "B Wayne Bequette"
+    ],
     "CHME6963": [
         "Pankaj Karande"
     ],
+    "CHME6964": [
+        "Todd Przybycien"
+    ],
     "CHME6965": [
         "Mattheos Koffas"
+    ],
+    "CHME6966": [
+        "Deepak Vashishth"
     ],
     "CHME6980": [
         "Steven Cramer"
     ],
     "CHME6990": [
-        "Mattheos Koffas",
-        "Pankaj Karande",
-        "Vidhya Chakrapani",
         "Steven Cramer",
-        "Joel Plawsky"
+        "Vidhya Chakrapani",
+        "Joel Plawsky",
+        "Patrick T. Underhill",
+        "Sangwoo Lee",
+        "Runye H. Zha",
+        "Robert J. Linhardt",
+        "Georges Belfort",
+        "Mattheos Koffas",
+        "Todd Przybycien",
+        "Pankaj Karande"
     ],
     "CHME9990": [
-        "Mattheos Koffas",
-        "Pankaj Karande",
+        "Sufei Shi",
+        "B Wayne Bequette",
+        "Diana Andra Borca Tasciuc",
+        "Patrick T. Underhill",
+        "Theodorian Borca-Tasciuc",
+        "Robert J. Linhardt",
+        "Shekhar S Garde",
         "Vidhya Chakrapani",
-        "Richard Alan Gross",
-        "Steven Cramer",
         "Joel Plawsky",
-        "Theodorian Borca-Tasciuc"
+        "Sangwoo Lee",
+        "Runye H. Zha",
+        "Mattheos Koffas",
+        "Georges Belfort",
+        "Juergen Hahn",
+        "Pankaj Karande",
+        "Esther Alexandra Wertz",
+        "Steven Cramer",
+        "Richard Alan Gross",
+        "Jonathan Dordick",
+        "Todd Przybycien"
+    ],
+    "CHEM1100": [
+        "Steven A. Tysoe",
+        "Amgalanbaatar Baldansuren"
+    ],
+    "CHEM1200": [
+        "Amgalanbaatar Baldansuren",
+        "Alexander C. Ma"
+    ],
+    "CHEM1210": [
+        "Alexander C. Ma"
     ],
     "CHEM1600": [
-        "Yunfeng Shi",
-        "Jian Shi"
+        "Daniel J. Lewis",
+        "Jian Shi",
+        "Edmund Francis Palermo",
+        "Yunfeng Shi"
+    ],
+    "CHEM2030": [
+        "Peter Henry Dinolfo"
+    ],
+    "CHEM2240": [
+        "Margarita L Kirova-Snover"
+    ],
+    "CHEM2260": [
+        "Margarita L Kirova-Snover"
     ],
     "CHEM2290": [
         "Filbert Totsingan"
     ],
+    "CHEM2360": [
+        "Elizabeth Anne Sprague"
+    ],
+    "CHEM4120": [
+        "Elizabeth Anne Sprague"
+    ],
+    "CHEM4140": [
+        "K. V. Lakshmi"
+    ],
+    "CHEM4200": [
+        "Alexander C. Ma"
+    ],
+    "CHEM4420": [
+        "Gerald M Korenowski"
+    ],
+    "CHEM4530": [
+        "Simon Nicholas Platts",
+        "Elizabeth Anne Sprague"
+    ],
+    "CHEM4690": [
+        "Karyn Lynne Rogers"
+    ],
+    "CHEM4770": [
+        "Keith Fraser"
+    ],
+    "CHEM4810": [
+        "Simon Nicholas Platts"
+    ],
     "CHEM4950": [
         "Wilfredo Colon"
     ],
+    "CHEM4961": [
+        "Peter John Bonitatibus"
+    ],
+    "CHEM4962": [
+        "Gaetano T. Montelione"
+    ],
     "CHEM4963": [
         "Richard Alan Gross"
+    ],
+    "CHEM4964": [
+        "Steven A. Tysoe"
+    ],
+    "CHEM6140": [
+        "K. V. Lakshmi"
+    ],
+    "CHEM6200": [
+        "Steven A. Tysoe"
     ],
     "CHEM6610": [
         "Richard Alan Gross"
@@ -216,22 +950,102 @@
     "CHEM6900": [
         "Wilfredo Colon"
     ],
+    "CHEM6961": [
+        "Peter John Bonitatibus"
+    ],
+    "CHEM6962": [
+        "Gaetano T. Montelione"
+    ],
     "CHEM6990": [
         "Richard Alan Gross",
-        "Wilfredo Colon"
+        "Robert J. Linhardt",
+        "Peter Henry Dinolfo",
+        "Wilfredo Colon",
+        "Chulsung Bae"
     ],
     "CHEM9990": [
+        "Marianne C. Nyman",
+        "Gaetano T. Montelione",
+        "Chunyu Wang",
+        "George I. Makhatadze",
         "Richard Alan Gross",
-        "Wilfredo Colon"
+        "Curtis Breneman",
+        "Catherine Ann Royer",
+        "Jacob Thomas Shelley",
+        "Robert J. Linhardt",
+        "Peter Henry Dinolfo",
+        "Wilfredo Colon",
+        "Blanca L. Barquera",
+        "K. V. Lakshmi",
+        "Chulsung Bae"
+    ],
+    "CIVL1100": [
+        "Christos Varsamis"
+    ],
+    "CIVL1300": [
+        "Xiaokun Wang"
+    ],
+    "CIVL2030": [
+        "Xiaozheng He"
     ],
     "CIVL2060": [
         "Daniel Chapman Lander"
     ],
+    "CIVL2630": [
+        "Victoria Gene Bennett"
+    ],
+    "CIVL2670": [
+        "Christopher W Letchford"
+    ],
+    "CIVL4020": [
+        "James Norman Richardson"
+    ],
+    "CIVL4080": [
+        "Christos Varsamis"
+    ],
+    "CIVL4150": [
+        "Omar Osama El-Shafee"
+    ],
     "CIVL4240": [
-        "Antoinette Maniatty"
+        "Ali Shahsavari",
+        "Antoinette Maniatty",
+        "Kartik Josyula"
+    ],
+    "CIVL4270": [
+        "Paul McCoy"
+    ],
+    "CIVL4280": [
+        "Ryan Christopher McClure"
     ],
     "CIVL4440": [
         "Michael Symans"
+    ],
+    "CIVL4450": [
+        "Justin Henry Den Herder"
+    ],
+    "CIVL4570": [
+        "Xiaokun Wang"
+    ],
+    "CIVL4620": [
+        "John M. Reilly"
+    ],
+    "CIVL4640": [
+        "Jose E. Holguin-Veras"
+    ],
+    "CIVL4920": [
+        "John M. Reilly"
+    ],
+    "CIVL4961": [
+        "Jillian Marie Crandall"
+    ],
+    "CIVL6250": [
+        "Jose E. Holguin-Veras"
+    ],
+    "CIVL6320": [
+        "Mark C. Kanonik"
+    ],
+    "CIVL6340": [
+        "James Norman Richardson"
     ],
     "CIVL6520": [
         "Mourad Zeghal"
@@ -242,59 +1056,153 @@
     "CIVL6900": [
         "Shun Uchida"
     ],
+    "CIVL6980": [
+        "Marianne C. Nyman"
+    ],
     "CIVL6990": [
+        "Christopher W Letchford",
+        "Tarek H Abdoun",
         "Mourad Zeghal",
-        "Michael Symans"
+        "Victoria Gene Bennett",
+        "Michael Symans",
+        "Xiaokun Wang",
+        "Jose E. Holguin-Veras"
     ],
     "CIVL9990": [
+        "Christopher W Letchford",
         "Shun Uchida",
+        "Tarek H Abdoun",
         "Mourad Zeghal",
-        "Michael Symans"
+        "Victoria Gene Bennett",
+        "Michael Symans",
+        "Xiaokun Wang",
+        "Jose E. Holguin-Veras",
+        "Xiaozheng He"
     ],
     "COGS2120": [
+        "Benjamin P. Weissman",
         "Bram Van Heuveln"
     ],
+    "COGS2340": [
+        "Marjorie McShane",
+        "Benjamin P. Weissman"
+    ],
+    "COGS4220": [
+        "Marjorie McShane"
+    ],
+    "COGS4610": [
+        "Alicia Ann Walf"
+    ],
+    "COGS4880": [
+        "Sergei Nirenburg"
+    ],
+    "COGS4960": [
+        "Tomasz Strzalkowski"
+    ],
     "COGS4990": [
+        "Ralph G Noble",
         "Bram Van Heuveln",
+        "Ron Sun",
         "Selmer Bringsjord",
+        "Brett R. Fajen",
+        "Alicia Ann Walf",
+        "Mei Si",
         "John R Milanese",
-        "Mei Si"
+        "Marjorie McShane"
+    ],
+    "COGS6880": [
+        "Sergei Nirenburg"
+    ],
+    "COGS6960": [
+        "Tomasz Strzalkowski"
+    ],
+    "COGS6961": [
+        "Ron Sun"
     ],
     "COGS6980": [
+        "Sergei Nirenburg",
         "Selmer Bringsjord",
+        "Ron Sun",
+        "Brett R. Fajen",
+        "Alicia Ann Walf",
         "Mei Si"
+    ],
+    "COGS6990": [
+        "Brett R. Fajen",
+        "Sergei Nirenburg",
+        "Wayne D. Gray"
     ],
     "COGS9990": [
+        "Wayne D. Gray",
+        "Sergei Nirenburg",
         "Christopher Robert Sims",
+        "Tomasz Strzalkowski",
         "Selmer Bringsjord",
-        "Mei Si"
+        "Ron Sun",
+        "James A. Hendler",
+        "Brett R. Fajen",
+        "Mei Si",
+        "Marjorie McShane"
     ],
     "COMM2520": [
+        "Alexander Scott Hiland",
         "Weina Ran"
+    ],
+    "COMM2570": [
+        "Sara L. Tack"
+    ],
+    "COMM2660": [
+        "Sara L. Tack"
+    ],
+    "COMM2750": [
+        "Christopher C. Jeansonne"
     ],
     "COMM4188": [
         "Weina Ran"
     ],
+    "COMM4470": [
+        "Miles A Kimball"
+    ],
+    "COMM4540": [
+        "Andrew Arthur Fitzgerald"
+    ],
     "COMM4580": [
         "June Deery"
     ],
+    "COMM4730": [
+        "Sara L. Tack"
+    ],
     "COMM4780": [
         "Patricia Search"
+    ],
+    "COMM6730": [
+        "Sara L. Tack"
     ],
     "COMM6780": [
         "Patricia Search"
     ],
     "COMM9990": [
         "Patricia Search",
-        "June Deery",
+        "Ellen Esrock",
+        "James P Zappen",
         "Tamar Gordon",
-        "Ellen Esrock"
+        "June Deery",
+        "Miles A Kimball"
     ],
     "CSCI1100": [
         "Uzma Mushtaque"
     ],
+    "CSCI1200": [
+        "Jasmine A. Plum"
+    ],
+    "CSCI2200": [
+        "Stacy Elizabeth Patterson"
+    ],
     "CSCI2300": [
         "Jianxi Gao"
+    ],
+    "CSCI2500": [
+        "David Eric Goldschmidt"
     ],
     "CSCI2600": [
         "Konstantin Kuzmin"
@@ -302,20 +1210,62 @@
     "CSCI2961": [
         "Wesley D Turner"
     ],
+    "CSCI4020": [
+        "Elliot I. Anshelevich"
+    ],
     "CSCI4100": [
         "Uzma Mushtaque"
     ],
     "CSCI4150": [
         "Lirong Xia"
     ],
+    "CSCI4210": [
+        "David Eric Goldschmidt"
+    ],
+    "CSCI4260": [
+        "George M. Slota"
+    ],
+    "CSCI4270": [
+        "Charles V Stewart"
+    ],
+    "CSCI4320": [
+        "Christopher D. Carothers"
+    ],
     "CSCI4380": [
         "Konstantin Kuzmin"
+    ],
+    "CSCI4400": [
+        "Thilanka Munasinghe"
     ],
     "CSCI4440": [
         "John Sturman"
     ],
+    "CSCI4450": [
+        "Ana L. Milanova"
+    ],
     "CSCI4470": [
         "Wesley D Turner"
+    ],
+    "CSCI4600": [
+        "Thilanka Munasinghe"
+    ],
+    "CSCI4800": [
+        "Mark H Holmes"
+    ],
+    "CSCI4820": [
+        "William Douglas Henshaw"
+    ],
+    "CSCI4960": [
+        "Tomasz Strzalkowski"
+    ],
+    "CSCI4962": [
+        "Carlos A Varela"
+    ],
+    "CSCI4964": [
+        "George M. Slota"
+    ],
+    "CSCI4965": [
+        "Radoslav Svetlozarov Ivanov"
     ],
     "CSCI4966": [
         "Barbara Cutler"
@@ -323,8 +1273,47 @@
     "CSCI4967": [
         "Lirong Xia"
     ],
+    "CSCI4968": [
+        "Alex Algernon Theodore Gittens"
+    ],
+    "CSCI4969": [
+        "Mohammed J. Zaki"
+    ],
+    "CSCI4976": [
+        "Brian Robert Callahan"
+    ],
     "CSCI6100": [
         "Uzma Mushtaque"
+    ],
+    "CSCI6270": [
+        "Charles V Stewart"
+    ],
+    "CSCI6360": [
+        "Christopher D. Carothers"
+    ],
+    "CSCI6400": [
+        "Thilanka Munasinghe"
+    ],
+    "CSCI6450": [
+        "Ana L. Milanova"
+    ],
+    "CSCI6840": [
+        "Jeffrey William Banks"
+    ],
+    "CSCI6900": [
+        "Elliot I. Anshelevich"
+    ],
+    "CSCI6960": [
+        "Elliot I. Anshelevich"
+    ],
+    "CSCI6962": [
+        "Carlos A Varela"
+    ],
+    "CSCI6964": [
+        "George M. Slota"
+    ],
+    "CSCI6965": [
+        "Radoslav Svetlozarov Ivanov"
     ],
     "CSCI6966": [
         "Barbara Cutler"
@@ -332,65 +1321,355 @@
     "CSCI6967": [
         "Lirong Xia"
     ],
+    "CSCI6968": [
+        "Alex Algernon Theodore Gittens"
+    ],
+    "CSCI6969": [
+        "Mohammed J. Zaki"
+    ],
     "CSCI6980": [
+        "W. Randolph Franklin",
+        "Tomasz Strzalkowski",
+        "Mohammed J. Zaki",
+        "Bulent Yener",
+        "John Wen",
+        "Sibel Adali",
+        "Lirong Xia",
+        "Ana L. Milanova",
+        "Wesley D Turner",
+        "Malik Magdon-Ismail",
+        "Stacy Elizabeth Patterson",
+        "Boleslaw Szymanski",
+        "Sergei Nirenburg",
+        "Konstantin Kuzmin",
+        "Kristin P Bennett",
         "Jianxi Gao",
         "Selmer Bringsjord",
-        "Lirong Xia",
-        "Malik Magdon-Ismail",
+        "George M. Slota",
+        "Deborah L. McGuinness",
+        "Elliot I. Anshelevich",
+        "Jasmine A. Plum",
+        "James A. Hendler",
+        "Alex Algernon Theodore Gittens",
         "Barbara Cutler",
-        "Wesley D Turner",
-        "Sibel Adali",
-        "Konstantin Kuzmin",
-        "Bulent Yener",
-        "John Wen"
+        "Christopher D. Carothers"
     ],
     "CSCI6990": [
+        "W. Randolph Franklin",
+        "Mohammed J. Zaki",
+        "Bulent Yener",
+        "Carlos A Varela",
+        "Sibel Adali",
+        "Ana L. Milanova",
+        "Lirong Xia",
+        "Mei Si",
+        "Malik Magdon-Ismail",
+        "Boleslaw Szymanski",
+        "Stacy Elizabeth Patterson",
+        "Sergei Nirenburg",
+        "Kristin P Bennett",
         "Jianxi Gao",
         "Selmer Bringsjord",
-        "Lirong Xia",
-        "Malik Magdon-Ismail",
+        "Deborah L. McGuinness",
+        "Charles V Stewart",
+        "Jasmine A. Plum",
+        "James A. Hendler",
+        "Mark S Shephard",
         "Barbara Cutler",
-        "Sibel Adali",
-        "Bulent Yener",
-        "Mei Si"
+        "Christopher D. Carothers",
+        "Christopher Bystroff"
     ],
     "CSCI9990": [
+        "W. Randolph Franklin",
+        "Tomasz Strzalkowski",
+        "Mohammed J. Zaki",
+        "Ron Sun",
+        "Bulent Yener",
+        "Carlos A Varela",
+        "Sibel Adali",
+        "Lirong Xia",
+        "Ana L. Milanova",
+        "Malik Magdon-Ismail",
+        "Boleslaw Szymanski",
+        "Stacy Elizabeth Patterson",
+        "Kristin P Bennett",
         "Jianxi Gao",
         "Selmer Bringsjord",
-        "Lirong Xia",
-        "Malik Magdon-Ismail",
+        "George M. Slota",
+        "Deborah L. McGuinness",
+        "Charles V Stewart",
+        "Elliot I. Anshelevich",
+        "James A. Hendler",
+        "Mark S Shephard",
+        "Alex Algernon Theodore Gittens",
         "Barbara Cutler",
-        "Sibel Adali",
-        "Bulent Yener"
+        "Christopher D. Carothers",
+        "Christopher Bystroff"
+    ],
+    "ENGR1010": [
+        "Christine M Allard"
     ],
     "ENGR1100": [
-        "Shun Uchida"
+        "Shun Uchida",
+        "Jason Mark Warner",
+        "Christos Varsamis"
+    ],
+    "ENGR1200": [
+        "Jeffrey Phillip Morris"
+    ],
+    "ENGR1300": [
+        "John P Szczesniak",
+        "Scott Frederick Yerbury"
+    ],
+    "ENGR1400": [
+        "Jeffrey Phillip Morris"
     ],
     "ENGR1600": [
-        "Yunfeng Shi",
-        "Jian Shi"
+        "Daniel J. Lewis",
+        "Jian Shi",
+        "Edmund Francis Palermo",
+        "Yunfeng Shi"
+    ],
+    "ENGR2050": [
+        "Dana M Chichester"
+    ],
+    "ENGR2090": [
+        "John A Tichy"
+    ],
+    "ENGR2250": [
+        "Dana M Chichester"
     ],
     "ENGR2300": [
         "Amelia Harriet Peterson"
     ],
+    "ENGR2350": [
+        "Russell P. Kraft",
+        "Kyle Richard Wilt"
+    ],
+    "ENGR2530": [
+        "Omar Osama El-Shafee",
+        "Kristen Lynn Mills"
+    ],
     "ENGR2600": [
         "Xun Wang"
+    ],
+    "ENGR2700": [
+        "Diana Gineth Ramirez Rios"
+    ],
+    "ENGR2710": [
+        "Samuel G Chiappone"
+    ],
+    "ENGR4010": [
+        "Glen R Gross",
+        "Judith A. Obiero",
+        "Amy Corron Youmans",
+        "Susan Victoria Henry"
+    ],
+    "ENGR4100": [
+        "Kevin R. Stewart"
+    ],
+    "ENGR4720": [
+        "Samuel G Chiappone"
+    ],
+    "ENGR4760": [
+        "Tathagata Bhaduri"
     ],
     "ENGR4961": [
         "Azita Hirsa"
     ],
+    "ENGR6100": [
+        "Thomas M. Abbott",
+        "Kevin R. Stewart"
+    ],
+    "ENGR6200": [
+        "Stefanie Gwen Reay"
+    ],
+    "ENGR6205": [
+        "Christopher Shiu-Pui Tong"
+    ],
+    "ENGR6206": [
+        "Rushabh S. Padalia"
+    ],
+    "ENGR6215": [
+        "Christopher Shiu-Pui Tong"
+    ],
+    "ENGR6216": [
+        "Rushabh S. Padalia"
+    ],
+    "ENGR6220": [
+        "Jan P. Olausson"
+    ],
+    "ENGR6221": [
+        "Rushabh S. Padalia"
+    ],
+    "ENGR6222": [
+        "Jan P. Olausson"
+    ],
+    "ENGR6230": [
+        "Antonella Zompa"
+    ],
+    "ENGR6970": [
+        "Michael David Hughes"
+    ],
+    "ERTH1200": [
+        "Sarah Beth Cadieux"
+    ],
+    "ERTH1250": [
+        "Sarah Beth Cadieux"
+    ],
+    "ERTH2100": [
+        "Steven W Roecker"
+    ],
+    "ERTH4400": [
+        "Thilanka Munasinghe"
+    ],
+    "ERTH4500": [
+        "Sarah Beth Cadieux"
+    ],
+    "ERTH4690": [
+        "Karyn Lynne Rogers"
+    ],
+    "ERTH4810": [
+        "Simon Nicholas Platts"
+    ],
+    "ERTH6400": [
+        "Thilanka Munasinghe"
+    ],
+    "ERTH6690": [
+        "Karyn Lynne Rogers"
+    ],
+    "ERTH6980": [
+        "Miriam Ellen Katz",
+        "Steven W Roecker",
+        "Karyn Lynne Rogers",
+        "Morgan Frederick Schaller",
+        "Sasha Joy Wagner",
+        "Frank Spear"
+    ],
+    "ERTH6990": [
+        "Miriam Ellen Katz",
+        "Steven W Roecker",
+        "Karyn Lynne Rogers",
+        "Morgan Frederick Schaller",
+        "Sasha Joy Wagner",
+        "Frank Spear"
+    ],
+    "ERTH9990": [
+        "Miriam Ellen Katz",
+        "Steven W Roecker",
+        "Karyn Lynne Rogers",
+        "Morgan Frederick Schaller",
+        "Sasha Joy Wagner",
+        "Frank Spear"
+    ],
+    "ECON2010": [
+        "Robert W. Jones"
+    ],
     "ECON2020": [
-        "Huaming Peng",
-        "Mina Mahmoudi"
-    ],
-    "ECON4190": [
-        "Mina Mahmoudi"
-    ],
-    "ECON4570": [
+        "Mina Mahmoudi",
         "Huaming Peng"
     ],
+    "ECON4110": [
+        "Kenneth L. Simons"
+    ],
+    "ECON4130": [
+        "Sarah Marsden Greene"
+    ],
+    "ECON4170": [
+        "Jason Ung Huh"
+    ],
+    "ECON4190": [
+        "Mina Mahmoudi",
+        "Michael A. Klein"
+    ],
+    "ECON4210": [
+        "Jianjing Lin"
+    ],
+    "ECON4220": [
+        "Jianjing Lin"
+    ],
+    "ECON4270": [
+        "Ian S. Chadd"
+    ],
+    "ECON4280": [
+        "Jason Ung Huh"
+    ],
+    "ECON4290": [
+        "Vivek Ghosal"
+    ],
+    "ECON4310": [
+        "Robert W. Jones"
+    ],
+    "ECON4320": [
+        "Ian S. Chadd"
+    ],
+    "ECON4340": [
+        "Billur Aksoy"
+    ],
+    "ECON4360": [
+        "Billur Aksoy"
+    ],
+    "ECON4430": [
+        "Michael A. Klein"
+    ],
+    "ECON4570": [
+        "Rui Fan",
+        "Huaming Peng"
+    ],
+    "ECON6040": [
+        "Rui Fan"
+    ],
+    "ECON6110": [
+        "Kenneth L. Simons"
+    ],
+    "ECON6130": [
+        "Michael A. Klein"
+    ],
+    "ECON6170": [
+        "Jason Ung Huh"
+    ],
     "ECON6190": [
-        "Mina Mahmoudi"
+        "Mina Mahmoudi",
+        "Michael A. Klein"
+    ],
+    "ECON6210": [
+        "Jianjing Lin"
+    ],
+    "ECON6220": [
+        "Jianjing Lin"
+    ],
+    "ECON6270": [
+        "Ian S. Chadd"
+    ],
+    "ECON6280": [
+        "Jason Ung Huh"
+    ],
+    "ECON6290": [
+        "Vivek Ghosal"
+    ],
+    "ECON6320": [
+        "Ian S. Chadd"
+    ],
+    "ECON6340": [
+        "Billur Aksoy"
+    ],
+    "ECON6360": [
+        "Billur Aksoy"
+    ],
+    "ECON9990": [
+        "Kenneth L. Simons"
+    ],
+    "ECSE1010": [
+        "Alex Patterson"
+    ],
+    "ECSE2010": [
+        "Shayla Maya Sawyer"
+    ],
+    "ECSE2050": [
+        "Ishwara B Bhat"
+    ],
+    "ECSE2100": [
+        "Alex Patterson"
     ],
     "ECSE2110": [
         "Prabhakar Neti"
@@ -398,14 +1677,32 @@
     "ECSE2410": [
         "Prabhakar Neti"
     ],
+    "ECSE2500": [
+        "W. Randolph Franklin"
+    ],
     "ECSE2610": [
         "Amelia Harriet Peterson"
     ],
     "ECSE2660": [
         "Tong Zhang"
     ],
+    "ECSE2900": [
+        "Partha S. Dutta"
+    ],
+    "ECSE2960": [
+        "Jianqiang Lu"
+    ],
+    "ECSE4040": [
+        "Tat-Sing Chow"
+    ],
+    "ECSE4050": [
+        "Paul Matthew Schoch"
+    ],
     "ECSE4090": [
         "Sandipan Mishra"
+    ],
+    "ECSE4110": [
+        "Luigi Vanfretti"
     ],
     "ECSE4130": [
         "Meng Wang"
@@ -413,51 +1710,203 @@
     "ECSE4141": [
         "Jian Sun"
     ],
+    "ECSE4220": [
+        "Russell P. Kraft"
+    ],
     "ECSE4320": [
         "Tong Zhang"
+    ],
+    "ECSE4490": [
+        "Kimberly Irene Oakes"
+    ],
+    "ECSE4540": [
+        "Richard J Radke"
+    ],
+    "ECSE4660": [
+        "Koushik Kar"
+    ],
+    "ECSE4760": [
+        "Russell P. Kraft"
+    ],
+    "ECSE4850": [
+        "Qiang Ji"
+    ],
+    "ECSE4961": [
+        "Jianqiang Lu"
     ],
     "ECSE4962": [
         "Birsen Yazici"
     ],
+    "ECSE4966": [
+        "Michael Shur"
+    ],
+    "ECSE6050": [
+        "Paul Matthew Schoch"
+    ],
+    "ECSE6110": [
+        "Luigi Vanfretti"
+    ],
     "ECSE6141": [
         "Jian Sun"
     ],
+    "ECSE6210": [
+        "Michael Shur"
+    ],
+    "ECSE6300": [
+        "Jianqiang Lu"
+    ],
     "ECSE6320": [
         "Tong Zhang"
+    ],
+    "ECSE6420": [
+        "Anak Agung Julius"
+    ],
+    "ECSE6490": [
+        "Kimberly Irene Oakes"
+    ],
+    "ECSE6660": [
+        "Koushik Kar"
+    ],
+    "ECSE6850": [
+        "Qiang Ji"
+    ],
+    "ECSE6900": [
+        "Mona Mostafa Hella"
+    ],
+    "ECSE6961": [
+        "Jianqiang Lu"
     ],
     "ECSE6962": [
         "Birsen Yazici"
     ],
     "ECSE6980": [
+        "Robert Frank Karlicek",
         "Tianyi Chen",
+        "E. Fred Schubert",
+        "Luigi Vanfretti",
+        "Koushik Kar",
+        "Mona Mostafa Hella",
+        "Bulent Yener",
         "Ali Tajer",
-        "Bulent Yener"
+        "Richard J Radke"
     ],
     "ECSE6990": [
+        "W. Randolph Franklin",
         "Sandipan Mishra",
-        "Ge Wang",
-        "Tong Zhang",
-        "Ali Tajer",
-        "Meng Wang",
         "Bulent Yener",
+        "Ali Tajer",
+        "Jianqiang Lu",
+        "Richard J Radke",
+        "Michael Shur",
+        "John Wen",
+        "Partha S. Dutta",
+        "Joe H Chow",
+        "Qiang Ji",
+        "Ishwara B Bhat",
+        "Tat-Sing Chow",
+        "Mona Mostafa Hella",
+        "Meng Wang",
         "Jian Sun",
-        "John Wen"
+        "Luigi Vanfretti",
+        "Koushik Kar",
+        "Tong Zhang",
+        "Shayla Maya Sawyer",
+        "Christian M. Wetzel",
+        "Paul Matthew Schoch",
+        "Anak Agung Julius",
+        "Ge Wang",
+        "Alhussein A Abouzeid"
     ],
     "ECSE9990": [
+        "W. Randolph Franklin",
+        "Sufei Shi",
         "Sandipan Mishra",
-        "Zhaoran Huang",
-        "Ge Wang",
-        "Tianyi Chen",
-        "Ali Tajer",
-        "Tong Zhang",
-        "Meng Wang",
         "Bulent Yener",
-        "Jian Sun",
+        "Ali Tajer",
+        "Richard J Radke",
+        "Jianqiang Lu",
+        "Birsen Yazici",
+        "Moussa Ngom",
+        "Michael Shur",
         "John Wen",
-        "Birsen Yazici"
+        "Partha S. Dutta",
+        "Joe H Chow",
+        "Qiang Ji",
+        "Stacy Elizabeth Patterson",
+        "Robert Frank Karlicek",
+        "Tianyi Chen",
+        "Zhaoran Huang",
+        "Ishwara B Bhat",
+        "Tat-Sing Chow",
+        "Mona Mostafa Hella",
+        "Meng Wang",
+        "Jian Sun",
+        "E. Fred Schubert",
+        "Santiago Paternain",
+        "Luigi Vanfretti",
+        "Koushik Kar",
+        "Tong Zhang",
+        "Shayla Maya Sawyer",
+        "Paul Matthew Schoch",
+        "Anak Agung Julius",
+        "Ge Wang",
+        "Alhussein A Abouzeid"
     ],
     "ESCI9990": [
-        "Toh-Ming Lu"
+        "Toh-Ming Lu",
+        "Robert Frank Karlicek",
+        "Ishwara B Bhat",
+        "E. Fred Schubert"
+    ],
+    "ENVE2110": [
+        "Eyosias Legesse Ashenafi"
+    ],
+    "ENVE4110": [
+        "Karyn Lynne Rogers"
+    ],
+    "ENVE4180": [
+        "James Kilduff"
+    ],
+    "ENVE4200": [
+        "Eyosias Legesse Ashenafi"
+    ],
+    "ENVE4320": [
+        "Marianne C. Nyman"
+    ],
+    "ENVE4340": [
+        "James Kilduff"
+    ],
+    "ENVE4961": [
+        "Eyosias Legesse Ashenafi"
+    ],
+    "ENVE6980": [
+        "James Kilduff"
+    ],
+    "ENVE6990": [
+        "Marianne C. Nyman",
+        "James Kilduff"
+    ],
+    "ENVE9990": [
+        "Marianne C. Nyman",
+        "James Kilduff"
+    ],
+    "GSAS1040": [
+        "Kolel Christopher Pryor"
+    ],
+    "GSAS1600": [
+        "Nicholas J. Mizer"
+    ],
+    "GSAS2520": [
+        "Nicholas J. Mizer"
+    ],
+    "GSAS2540": [
+        "Eric Louis Ameres"
+    ],
+    "GSAS2560": [
+        "Kathleen A. Galloway"
+    ],
+    "GSAS4260": [
+        "Nicholas J. Mizer"
     ],
     "GSAS4270": [
         "Sylvain Payen"
@@ -465,38 +1914,193 @@
     "GSAS4540": [
         "Sylvain Payen"
     ],
+    "GSAS4550": [
+        "Eric Louis Ameres"
+    ],
+    "GSAS4960": [
+        "Ralph G Noble"
+    ],
     "GSAS4961": [
         "Sylvain Payen"
     ],
     "GSAS6200": [
+        "Benjamin Chia-Ming Chang",
         "Sylvain Payen"
     ],
+    "GSAS6300": [
+        "James Wilson Malazita"
+    ],
+    "GSAS6500": [
+        "Benjamin Chia-Ming Chang"
+    ],
     "GSAS6980": [
-        "Silvia Ruzanka",
+        "Eric Louis Ameres",
+        "Robert F. Nideffer",
+        "Nicholas J. Mizer",
         "Kathleen Ruiz",
-        "Mei Si"
+        "Mei Si",
+        "Silvia Ruzanka"
     ],
     "GSAS9990": [
+        "Robert F. Nideffer",
         "Kathleen Ruiz"
     ],
     "ISYE4140": [
         "Rostyslav Korolov"
     ],
+    "ISYE4240": [
+        "Antonella Zompa"
+    ],
+    "ISYE4290": [
+        "Nima Ahmadi"
+    ],
+    "ISYE4330": [
+        "Nima Ahmadi"
+    ],
     "ISYE4350": [
         "Rostyslav Korolov"
+    ],
+    "ISYE4960": [
+        "James Bailey"
     ],
     "ISYE4961": [
         "Azita Hirsa"
     ],
+    "ISYE6020": [
+        "Nima Ahmadi"
+    ],
     "ISYE6350": [
         "Rostyslav Korolov"
     ],
+    "ISYE6600": [
+        "David Joseph Stec"
+    ],
+    "ISYE6610": [
+        "Amit Mathur"
+    ],
+    "ISYE6620": [
+        "Michael David Hughes",
+        "Nima Ahmadi"
+    ],
+    "ISYE6960": [
+        "James Bailey"
+    ],
+    "ISYE6990": [
+        "William Alan Wallace",
+        "David Joseph Mendonca",
+        "Jennifer Ann Pazour"
+    ],
+    "ISYE9990": [
+        "Kristin P Bennett",
+        "Kristen Rene Schell",
+        "David Joseph Mendonca",
+        "William Alan Wallace",
+        "Jennifer Ann Pazour"
+    ],
+    "ITWS1100": [
+        "Richard M. Plotka"
+    ],
+    "ITWS1220": [
+        "Christopher James Tozzi"
+    ],
+    "ITWS2210": [
+        "Miles A Kimball"
+    ],
+    "ITWS4100": [
+        "Kevin R. Stewart"
+    ],
+    "ITWS4300": [
+        "Kevin R. Stewart"
+    ],
+    "ITWS4310": [
+        "Matthew John Grill"
+    ],
+    "ITWS4370": [
+        "Brian Robert Callahan"
+    ],
+    "ITWS4400": [
+        "Thilanka Munasinghe"
+    ],
+    "ITWS4500": [
+        "Brian Robert Callahan"
+    ],
+    "ITWS4600": [
+        "Thilanka Munasinghe"
+    ],
+    "ITWS6300": [
+        "Kevin R. Stewart"
+    ],
+    "ITWS6400": [
+        "Thilanka Munasinghe"
+    ],
+    "ITWS6440": [
+        "Kathleen Sturey Fontaine"
+    ],
+    "ITWS6600": [
+        "Thilanka Munasinghe"
+    ],
+    "ITWS6700": [
+        "Richard M. Plotka"
+    ],
+    "ITWS6800": [
+        "Kevin R. Stewart"
+    ],
+    "ITWS6980": [
+        "Brian Robert Callahan",
+        "Thilanka Munasinghe",
+        "Richard M. Plotka"
+    ],
+    "IENV1910": [
+        "Sarah Beth Cadieux"
+    ],
+    "IHSS1160": [
+        "Susan Lynn Smith"
+    ],
+    "IHSS1165": [
+        "Daniel Peter Thero"
+    ],
+    "IHSS1200": [
+        "Sarah Marsden Greene"
+    ],
+    "IHSS1220": [
+        "Christopher James Tozzi"
+    ],
+    "IHSS1510": [
+        "Patrick Y Royer"
+    ],
+    "IHSS1560": [
+        "Christopher C. Jeansonne"
+    ],
+    "IHSS1700": [
+        "Ross A. Rice"
+    ],
+    "IHSS1966": [
+        "Ralph G Noble"
+    ],
+    "IHSS2960": [
+        "Alicia Ann Walf"
+    ],
     "ISCI1600": [
-        "Yunfeng Shi",
-        "Jian Shi"
+        "Daniel J. Lewis",
+        "Jian Shi",
+        "Edmund Francis Palermo",
+        "Yunfeng Shi"
+    ],
+    "ISCI4510": [
+        "Karyn Lynne Rogers"
+    ],
+    "ISCI4610": [
+        "Jacob Thomas Shelley",
+        "Karyn Lynne Rogers"
+    ],
+    "ISCI6510": [
+        "Karyn Lynne Rogers"
     ],
     "ISCI9990": [
         "Gyorgy Korniss",
+        "Karyn Lynne Rogers",
+        "Chaitanya Kishore Ullal",
+        "Richard M. Plotka",
         "Sibel Adali"
     ],
     "LANG1410": [
@@ -505,33 +2109,215 @@
     "LANG2410": [
         "Jianling Yue"
     ],
+    "LANG4420": [
+        "Yalun Zhou"
+    ],
     "LANG4470": [
         "Jianling Yue"
+    ],
+    "LITR2110": [
+        "Carolin Alice Hofmann"
+    ],
+    "LITR2150": [
+        "Cristina Claudia Caruso James"
     ],
     "LITR4230": [
         "June Deery"
     ],
+    "LITR4770": [
+        "Skye Anicca"
+    ],
+    "MGMT1100": [
+        "Clinton T. Ballinger",
+        "Margaret A McDermott",
+        "Brett Orzechowski"
+    ],
+    "MGMT1250": [
+        "Graham C. Knowles"
+    ],
+    "MGMT1260": [
+        "Sarah Elena Gold"
+    ],
+    "MGMT2100": [
+        "Raffi Enmanuel Garcia"
+    ],
+    "MGMT2300": [
+        "Jamshed Jal Mistry"
+    ],
+    "MGMT2320": [
+        "Johan Maharjan"
+    ],
     "MGMT2430": [
         "Gaurav Jain"
+    ],
+    "MGMT2510": [
+        "Jonathan Alexis McKinney"
+    ],
+    "MGMT4100": [
+        "Mert Hakan Hekimoglu"
     ],
     "MGMT4110": [
         "Christopher McDermott"
     ],
+    "MGMT4140": [
+        "Thiagarajan Ravichandran"
+    ],
+    "MGMT4150": [
+        "Jonathan Alexis McKinney"
+    ],
+    "MGMT4160": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT4170": [
+        "Jonathan Alexis McKinney"
+    ],
+    "MGMT4260": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT4420": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT4450": [
+        "Margaret A McDermott"
+    ],
+    "MGMT4490": [
+        "Sarah Kathleen Ward"
+    ],
+    "MGMT4520": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT4530": [
+        "Clinton T. Ballinger"
+    ],
+    "MGMT4850": [
+        "Julia Yuching Lee"
+    ],
+    "MGMT4860": [
+        "Timothy D. Golden"
+    ],
+    "MGMT4870": [
+        "Murali Dharan Raman Chari"
+    ],
+    "MGMT4961": [
+        "Margaret A McDermott"
+    ],
+    "MGMT4963": [
+        "John D'Argenio"
+    ],
+    "MGMT4964": [
+        "Timothy D. Golden"
+    ],
+    "MGMT4965": [
+        "Julia Yuching Lee"
+    ],
+    "MGMT4966": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT4967": [
+        "Clinton T. Ballinger"
+    ],
+    "MGMT6020": [
+        "Bill Francis"
+    ],
+    "MGMT6100": [
+        "Sebastian Souyris"
+    ],
     "MGMT6140": [
         "Nishtha Langer"
+    ],
+    "MGMT6160": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT6410": [
+        "Johan Maharjan"
+    ],
+    "MGMT6420": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT6430": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT6445": [
+        "Jason Nicholas Kuruzovich",
+        "Thiagarajan Ravichandran"
+    ],
+    "MGMT6510": [
+        "Brian John Clark"
+    ],
+    "MGMT6511": [
+        "Brett Orzechowski"
+    ],
+    "MGMT6540": [
+        "Sarah Kathleen Ward"
+    ],
+    "MGMT6560": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT6570": [
+        "Jonathan Alexis McKinney"
+    ],
+    "MGMT6580": [
+        "Sarah Kathleen Ward"
+    ],
+    "MGMT6600": [
+        "Thilanka Munasinghe"
+    ],
+    "MGMT6620": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT6630": [
+        "Clinton T. Ballinger"
+    ],
+    "MGMT6690": [
+        "Timothy D. Golden"
+    ],
+    "MGMT6720": [
+        "Margaret A McDermott"
+    ],
+    "MGMT6961": [
+        "M.V. Shyam Kumar"
+    ],
+    "MGMT6962": [
+        "Brian John Clark"
+    ],
+    "MGMT6965": [
+        "Julia Yuching Lee"
+    ],
+    "MGMT7030": [
+        "Murali Dharan Raman Chari"
+    ],
+    "MGMT7240": [
+        "Adrienne Susan Frank"
     ],
     "MGMT7760": [
         "Aparna Gupta"
     ],
+    "MGMT7780": [
+        "Adrienne Susan Frank"
+    ],
     "MGMT9990": [
-        "Gaurav Jain",
-        "Hao Zhao",
-        "Nishtha Langer",
         "Christopher McDermott",
-        "Aparna Gupta"
+        "Gaurav Jain",
+        "Nishtha Langer",
+        "Shan Yu",
+        "Thomas Michael Begley",
+        "Aparna Gupta",
+        "Hao Zhao",
+        "Jason Nicholas Kuruzovich",
+        "Thiagarajan Ravichandran",
+        "Raffi Enmanuel Garcia",
+        "M.V. Shyam Kumar",
+        "Bill Francis",
+        "Mert Hakan Hekimoglu"
+    ],
+    "MTLE2100": [
+        "Edwin B. Fohtung"
     ],
     "MTLE2960": [
         "Yunfeng Shi"
+    ],
+    "MTLE4030": [
+        "Minoru Tomozawa"
     ],
     "MTLE4100": [
         "Rahmi Ozisik"
@@ -542,35 +2328,78 @@
     "MTLE4400": [
         "Rahmi Ozisik"
     ],
+    "MTLE4910": [
+        "Daniel J. Lewis"
+    ],
     "MTLE6060": [
         "Jian Shi"
+    ],
+    "MTLE6120": [
+        "Ravishankar Sundararaman"
+    ],
+    "MTLE6300": [
+        "Jianqiang Lu"
     ],
     "MTLE6440": [
         "Daniel Gall"
     ],
+    "MTLE6900": [
+        "Edwin B. Fohtung"
+    ],
+    "MTLE6962": [
+        "Minoru Tomozawa"
+    ],
     "MTLE6980": [
-        "Daniel Gall",
+        "Paul George Keblinski",
+        "Edmund Francis Palermo",
+        "Chaitanya Kishore Ullal",
         "Rahmi Ozisik",
-        "Jian Shi"
+        "David J Duquette",
+        "Ravishankar Sundararaman",
+        "Jian Shi",
+        "Robert Hull",
+        "Daniel J. Lewis",
+        "Minoru Tomozawa",
+        "Daniel Gall"
     ],
     "MTLE6990": [
-        "Daniel Gall",
+        "Paul George Keblinski",
+        "Robert Hull",
         "Yunfeng Shi",
+        "Chaitanya Kishore Ullal",
+        "Partha S. Dutta",
+        "Edmund Francis Palermo",
+        "David J Duquette",
         "Vincent Meunier",
+        "Ganpati Ramanath",
         "Liping Huang",
         "Jian Shi",
-        "Ganpati Ramanath",
-        "Jie Lian"
+        "Jie Lian",
+        "Ravishankar Sundararaman",
+        "Daniel J. Lewis",
+        "Christian M. Wetzel",
+        "Minoru Tomozawa",
+        "Daniel Gall"
     ],
     "MTLE9990": [
-        "Daniel Gall",
+        "Paul George Keblinski",
+        "Edmund Francis Palermo",
         "Yunfeng Shi",
-        "Nikhil Koratkar",
-        "Liping Huang",
+        "Edwin B. Fohtung",
+        "Chaitanya Kishore Ullal",
         "Rahmi Ozisik",
-        "Jian Shi",
+        "David J Duquette",
+        "Nikhil Koratkar",
         "Ganpati Ramanath",
-        "Jie Lian"
+        "Ravishankar Sundararaman",
+        "Liping Huang",
+        "Jian Shi",
+        "Jie Lian",
+        "Robert Hull",
+        "Daniel J. Lewis",
+        "Christian M. Wetzel",
+        "Minoru Tomozawa",
+        "Daniel Gall"
     ],
     "MATP4400": [
         "Elisabeth Maria Brown"
@@ -581,46 +2410,137 @@
     "MATP6610": [
         "Yangyang Xu"
     ],
+    "MATP6620": [
+        "John E. Mitchell"
+    ],
+    "MATH1010": [
+        "Kseniya Yevgenyevna Klyachko"
+    ],
     "MATH1020": [
+        "Gina Irene Kucinski",
+        "Margaret Z. Kiehl",
+        "Eliane Zerbetto Traldi",
+        "Kseniya Yevgenyevna Klyachko",
+        "Belmiro Galo da Silva",
         "Elisabeth Maria Brown"
+    ],
+    "MATH1520": [
+        "Wing Sze E Kam"
+    ],
+    "MATH2010": [
+        "Eliane Zerbetto Traldi",
+        "Daniel Franklin Stevenson"
+    ],
+    "MATH2400": [
+        "Wing Sze E Kam",
+        "Mark H Holmes",
+        "Daniel Franklin Stevenson",
+        "Yuri V Lvov"
+    ],
+    "MATH4010": [
+        "Gina Irene Kucinski"
     ],
     "MATH4020": [
         "Bruce Piper"
     ],
+    "MATH4090": [
+        "Margaret Z. Kiehl"
+    ],
+    "MATH4100": [
+        "Belmiro Galo da Silva",
+        "Chjan C Lim"
+    ],
     "MATH4300": [
         "Fengyan Li"
     ],
+    "MATH4500": [
+        "Donald W Schwendeman"
+    ],
+    "MATH4600": [
+        "Ashwani Kumar Kapila"
+    ],
+    "MATH4800": [
+        "Jeffrey William Banks"
+    ],
+    "MATH4840": [
+        "Mark H Holmes"
+    ],
+    "MATH6190": [
+        "Chjan C Lim"
+    ],
+    "MATH6640": [
+        "Ashwani Kumar Kapila"
+    ],
+    "MATH6840": [
+        "William Douglas Henshaw"
+    ],
+    "MATH6951": [
+        "Donald W Schwendeman"
+    ],
     "MATH6970": [
-        "Bruce Piper",
-        "Gregor Kovacic"
+        "Gregor Kovacic",
+        "Bruce Piper"
     ],
     "MATH6980": [
-        "Bruce Piper",
+        "William Douglas Henshaw",
         "David Isaacson",
+        "Kristin P Bennett",
+        "Bruce Piper",
+        "Jeffrey William Banks",
+        "Mark S Shephard",
         "Yangyang Xu"
     ],
+    "MATH6990": [
+        "Jeffrey William Banks"
+    ],
     "MATH9990": [
-        "Fengyan Li",
-        "Bruce Piper",
         "Gregor Kovacic",
+        "William Douglas Henshaw",
+        "Ashwani Kumar Kapila",
+        "Mark H Holmes",
         "Rongjie Lai",
         "David Isaacson",
-        "Yangyang Xu"
+        "Kristin P Bennett",
+        "John E. Mitchell",
+        "Bruce Piper",
+        "Jeffrey William Banks",
+        "Yuri V Lvov",
+        "Fengyan Li",
+        "Donald W Schwendeman",
+        "Yangyang Xu",
+        "Peter R Kramer",
+        "Chjan C Lim"
     ],
     "MANE1060": [
         "Fotios Kopsaftopoulos"
     ],
+    "MANE1100": [
+        "Bimal K Malaviya"
+    ],
+    "MANE2110": [
+        "Samaneh Rakhshan Pouri",
+        "Jason Edward Hicken",
+        "Shaowu Pan"
+    ],
     "MANE2220": [
         "Asish Ghosh"
     ],
+    "MANE2400": [
+        "Wei Ji"
+    ],
     "MANE2710": [
-        "Theodorian Borca-Tasciuc"
+        "Theodorian Borca-Tasciuc",
+        "Fred Thomas Willett"
+    ],
+    "MANE2720": [
+        "Corey Christopher Woodcock"
     ],
     "MANE4030": [
         "Bharat Bagepalli"
     ],
     "MANE4040": [
-        "Bharat Bagepalli"
+        "Bharat Bagepalli",
+        "Luiz Victor Repolho Cagliari"
     ],
     "MANE4060": [
         "Fotios Kopsaftopoulos"
@@ -631,8 +2551,14 @@
     "MANE4080": [
         "Amir Hirsa"
     ],
+    "MANE4100": [
+        "Sandeep Singh"
+    ],
     "MANE4140": [
         "Onkar Sahni"
+    ],
+    "MANE4170": [
+        "Joshua Lucas Hurst"
     ],
     "MANE4180": [
         "Johnson Samuel"
@@ -643,17 +2569,66 @@
     "MANE4220": [
         "Asish Ghosh"
     ],
+    "MANE4230": [
+        "Kevin Wayne Housley"
+    ],
+    "MANE4240": [
+        "Karthikeyan Panneerselvam",
+        "Kartik Josyula"
+    ],
     "MANE4330": [
         "Asish Ghosh"
+    ],
+    "MANE4350": [
+        "Samaneh Rakhshan Pouri"
+    ],
+    "MANE4390": [
+        "Bimal K Malaviya"
+    ],
+    "MANE4410": [
+        "James Edward Olson"
     ],
     "MANE4430": [
         "Yaron Danon"
     ],
+    "MANE4500": [
+        "Sarah Helen Felix"
+    ],
+    "MANE4510": [
+        "Sarah Helen Felix",
+        "Joshua Lucas Hurst"
+    ],
     "MANE4520": [
         "Sandipan Mishra"
     ],
+    "MANE4530": [
+        "Anak Agung Julius"
+    ],
+    "MANE4640": [
+        "Ernesto Gutierrez-Miravete",
+        "Thierry Blanchet"
+    ],
+    "MANE4730": [
+        "Shankar Narayan"
+    ],
+    "MANE4740": [
+        "Bimal K Malaviya",
+        "Ukwatte Lokuliyanage Indika Upendra Perera",
+        "Kevin Wayne Housley",
+        "Ali Shahsavari"
+    ],
+    "MANE4750": [
+        "Matthew Adam Oehlschlaeger"
+    ],
+    "MANE4790": [
+        "Diana Andra Borca Tasciuc"
+    ],
     "MANE4900": [
         "Nikhil Koratkar"
+    ],
+    "MANE4910": [
+        "Etana Alemayehe Ferede",
+        "Keith Robert Taylor"
     ],
     "MANE4920": [
         "Nikhil Koratkar"
@@ -661,8 +2636,26 @@
     "MANE4941": [
         "Suvranu De"
     ],
+    "MANE4960": [
+        "Karthikeyan Panneerselvam"
+    ],
+    "MANE4961": [
+        "Thomas Clark Haley"
+    ],
+    "MANE5000": [
+        "Francisco J Cunha"
+    ],
+    "MANE6080": [
+        "Robert John Niemiec"
+    ],
     "MANE6140": [
         "Onkar Sahni"
+    ],
+    "MANE6210": [
+        "Robert John Niemiec"
+    ],
+    "MANE6250": [
+        "Catalin R Picu"
     ],
     "MANE6380": [
         "Jie Lian"
@@ -673,72 +2666,181 @@
     "MANE6570": [
         "Michael Amitay"
     ],
+    "MANE6720": [
+        "Francisco J Cunha"
+    ],
+    "MANE6790": [
+        "Francisco J Cunha",
+        "Diana Andra Borca Tasciuc"
+    ],
     "MANE6800": [
         "Daniel Walczyk"
+    ],
+    "MANE6830": [
+        "Matthew Adam Oehlschlaeger"
+    ],
+    "MANE6900": [
+        "Shankar Narayan"
     ],
     "MANE6960": [
         "Fotios Kopsaftopoulos"
     ],
+    "MANE6961": [
+        "Karthikeyan Panneerselvam"
+    ],
     "MANE6962": [
         "Fudong Han"
     ],
+    "MANE6963": [
+        "Thomas Clark Haley"
+    ],
+    "MANE6970": [
+        "Francisco J Cunha",
+        "Ernesto Gutierrez-Miravete"
+    ],
     "MANE6980": [
-        "Fotios Kopsaftopoulos",
-        "Shanbin Shi",
-        "Johnson Samuel",
-        "Daniel Walczyk",
-        "Sandipan Mishra",
-        "Yaron Danon",
-        "Michael Amitay",
         "Suvranu De",
-        "Amir Hirsa",
-        "Onkar Sahni",
+        "Sandipan Mishra",
+        "Diana Andra Borca Tasciuc",
         "Asish Ghosh",
-        "Farhan Gandhi",
-        "Antoinette Maniatty",
         "Theodorian Borca-Tasciuc",
+        "Jason Edward Hicken",
         "Jie Lian",
-        "John Wen"
+        "Matthew Adam Oehlschlaeger",
+        "Catalin R Picu",
+        "Kristen Lynn Mills",
+        "Lucy T. Zhang",
+        "John Wen",
+        "Shankar Narayan",
+        "Amir Hirsa",
+        "Li Liu",
+        "Johnson Samuel",
+        "Onkar Sahni",
+        "Farhan Gandhi",
+        "Michael Amitay",
+        "Daniel Walczyk",
+        "John A Tichy",
+        "Antoinette Maniatty",
+        "Yaron Danon",
+        "Shanbin Shi",
+        "Fotios Kopsaftopoulos",
+        "Thierry Blanchet",
+        "Michael David Hughes",
+        "Kurt S Anderson",
+        "Mamadou Lamine Diagne"
     ],
     "MANE6990": [
-        "Fotios Kopsaftopoulos",
-        "Shanbin Shi",
-        "Johnson Samuel",
-        "Daniel Walczyk",
-        "Sandipan Mishra",
-        "Yaron Danon",
-        "Michael Amitay",
-        "Nikhil Koratkar",
         "Suvranu De",
+        "Sandipan Mishra",
+        "Diana Andra Borca Tasciuc",
+        "Theodorian Borca-Tasciuc",
+        "Jason Edward Hicken",
+        "Catalin R Picu",
+        "Matthew Adam Oehlschlaeger",
+        "Lucy T. Zhang",
+        "Kristen Lynn Mills",
+        "John Wen",
+        "Shankar Narayan",
+        "Nikhil Koratkar",
         "Amir Hirsa",
+        "Wei Ji",
+        "Johnson Samuel",
         "Onkar Sahni",
         "Farhan Gandhi",
+        "Michael Amitay",
+        "Daniel Walczyk",
+        "Yaron Danon",
         "Antoinette Maniatty",
-        "Theodorian Borca-Tasciuc",
-        "John Wen"
+        "Shanbin Shi",
+        "Fotios Kopsaftopoulos",
+        "Thierry Blanchet",
+        "Michael David Hughes",
+        "Mark S Shephard",
+        "Kurt S Anderson",
+        "Mamadou Lamine Diagne"
     ],
     "MANE9990": [
-        "Fotios Kopsaftopoulos",
-        "Shanbin Shi",
-        "Johnson Samuel",
-        "Daniel Walczyk",
-        "Sandipan Mishra",
-        "Yaron Danon",
-        "Michael Amitay",
-        "Nikhil Koratkar",
         "Suvranu De",
-        "Fudong Han",
-        "Amir Hirsa",
-        "Onkar Sahni",
-        "Farhan Gandhi",
-        "Antoinette Maniatty",
+        "Sandipan Mishra",
+        "Diana Andra Borca Tasciuc",
         "Theodorian Borca-Tasciuc",
+        "Jason Edward Hicken",
         "Jie Lian",
-        "John Wen"
+        "Catalin R Picu",
+        "Matthew Adam Oehlschlaeger",
+        "Lucy T. Zhang",
+        "Kristen Lynn Mills",
+        "Hyun Gook Kang",
+        "John Wen",
+        "Shankar Narayan",
+        "Nikhil Koratkar",
+        "Amir Hirsa",
+        "Li Liu",
+        "Wei Ji",
+        "Onkar Sahni",
+        "Johnson Samuel",
+        "Farhan Gandhi",
+        "Fudong Han",
+        "Michael Amitay",
+        "Daniel Walczyk",
+        "John A Tichy",
+        "Antoinette Maniatty",
+        "Yaron Danon",
+        "Shanbin Shi",
+        "Fotios Kopsaftopoulos",
+        "Thierry Blanchet",
+        "Mark S Shephard",
+        "Kurt S Anderson",
+        "Mamadou Lamine Diagne"
+    ],
+    "USAR20": [
+        "Luis R. Mejia-Roman"
+    ],
+    "USAR40": [
+        "Luis R. Mejia-Roman"
+    ],
+    "USAR60": [
+        "Luis R. Mejia-Roman"
+    ],
+    "USAR80": [
+        "Donna Lee Carr"
+    ],
+    "USAR1020": [
+        "Donna Lee Carr"
+    ],
+    "USAR2020": [
+        "Donna Lee Carr"
+    ],
+    "USAR2070": [
+        "Donna Lee Carr"
+    ],
+    "USAR4020": [
+        "Donna Lee Carr"
+    ],
+    "USNA20": [
+        "Ryan Pusins"
+    ],
+    "USNA2020": [
+        "Mark Yu Kersey"
+    ],
+    "USNA2050": [
+        "Joseph Michael Miller"
+    ],
+    "USNA2070": [
+        "Steven Anthony Pique"
+    ],
+    "USNA2170": [
+        "Ryan Pusins"
+    ],
+    "USNA4190": [
+        "Jeffrey A. Joseph"
+    ],
+    "PHIL1110": [
+        "Daniel Peter Thero"
     ],
     "PHIL2100": [
-        "Bram Van Heuveln",
-        "John R Milanese"
+        "John R Milanese",
+        "Bram Van Heuveln"
     ],
     "PHIL2140": [
         "Selmer Bringsjord"
@@ -752,22 +2854,45 @@
     "PHIL4140": [
         "Bram Van Heuveln"
     ],
+    "PHIL4300": [
+        "Daniel Peter Thero"
+    ],
+    "PHIL4500": [
+        "Susan Lynn Smith"
+    ],
+    "PHIL4960": [
+        "Susan Lynn Smith"
+    ],
     "PHIL4990": [
+        "Daniel Peter Thero",
+        "Susan Lynn Smith",
         "Bram Van Heuveln"
     ],
+    "PHYS1050": [
+        "Julian S. Georg"
+    ],
     "PHYS1100": [
+        "Shengbai Zhang",
+        "Gwo Ching Wang",
         "Yong Sung Kim",
-        "Shengbai Zhang"
+        "Joseph Darryl Michael",
+        "Julian S. Georg"
     ],
     "PHYS1150": [
         "Gyorgy Korniss"
     ],
     "PHYS1200": [
-        "Glenn Ciolek"
+        "Damien J. West",
+        "Shawn Yu Lin",
+        "Glenn Ciolek",
+        "Nadarajah Narendran"
     ],
     "PHYS1600": [
+        "Edmund Francis Palermo",
         "Yunfeng Shi",
-        "Jian Shi"
+        "John R. LaGraff",
+        "Jian Shi",
+        "Daniel J. Lewis"
     ],
     "PHYS2210": [
         "Peter Persans"
@@ -775,8 +2900,14 @@
     "PHYS2220": [
         "Peter Persans"
     ],
+    "PHYS2620": [
+        "Esther Alexandra Wertz"
+    ],
     "PHYS2962": [
         "Peter Persans"
+    ],
+    "PHYS2990": [
+        "Heidi Jo Newberg"
     ],
     "PHYS4100": [
         "Vincent Meunier"
@@ -784,14 +2915,29 @@
     "PHYS4210": [
         "Ingrid Wilke"
     ],
+    "PHYS4240": [
+        "Joel T. Giedt"
+    ],
     "PHYS4330": [
         "Vincent Meunier"
+    ],
+    "PHYS4420": [
+        "Humberto Terrones Maldonado"
+    ],
+    "PHYS4810": [
+        "Trevor David Rhone"
     ],
     "PHYS4960": [
         "Peter Persans"
     ],
+    "PHYS6410": [
+        "Moussa Ngom"
+    ],
     "PHYS6520": [
         "Gyorgy Korniss"
+    ],
+    "PHYS6530": [
+        "Joel T. Giedt"
     ],
     "PHYS6900": [
         "Ingrid Wilke"
@@ -803,31 +2949,68 @@
         "John Schroeder"
     ],
     "PHYS6980": [
-        "Peter Persans",
-        "Shengbai Zhang",
         "Toh-Ming Lu",
-        "Ingrid Wilke"
+        "Heidi Jo Newberg",
+        "Shengbai Zhang",
+        "Ethan Craig Brown",
+        "Peter Persans",
+        "Gwo Ching Wang",
+        "Esther Alexandra Wertz",
+        "Humberto Terrones Maldonado",
+        "Ingrid Wilke",
+        "Shawn Yu Lin",
+        "Moussa Ngom",
+        "Christian M. Wetzel",
+        "Joel T. Giedt"
     ],
     "PHYS6990": [
         "Vincent Meunier",
-        "Toh-Ming Lu"
+        "Gwo Ching Wang",
+        "Esther Alexandra Wertz",
+        "Toh-Ming Lu",
+        "Joel T. Giedt"
     ],
     "PHYS9990": [
-        "Yunfeng Shi",
-        "Vincent Meunier",
-        "Peter Persans",
-        "Shengbai Zhang",
-        "Zhaoran Huang",
         "Gyorgy Korniss",
+        "Yunfeng Shi",
+        "Gwo Ching Wang",
+        "Humberto Terrones Maldonado",
+        "Trevor David Rhone",
+        "Shawn Yu Lin",
+        "Ravishankar Sundararaman",
+        "Moussa Ngom",
+        "Michael Shur",
+        "Ethan Craig Brown",
+        "Zhaoran Huang",
+        "Shengbai Zhang",
+        "Peter Persans",
+        "Esther Alexandra Wertz",
+        "Heidi Jo Newberg",
+        "Vincent Meunier",
+        "Ingrid Wilke",
         "Toh-Ming Lu",
-        "Ingrid Wilke"
+        "Christian M. Wetzel",
+        "Joel T. Giedt"
+    ],
+    "PSYC1200": [
+        "Alicia Ann Walf",
+        "Jason Sean Jacobskind"
     ],
     "PSYC2100": [
-        "Bram Van Heuveln",
-        "John R Milanese"
+        "John R Milanese",
+        "Bram Van Heuveln"
+    ],
+    "PSYC2310": [
+        "Jason Sean Jacobskind"
     ],
     "PSYC2960": [
         "Yingrui Yang"
+    ],
+    "PSYC4200": [
+        "Holly A Traver"
+    ],
+    "PSYC4220": [
+        "Marjorie McShane"
     ],
     "PSYC4350": [
         "Christopher Robert Sims"
@@ -835,20 +3018,91 @@
     "PSYC4370": [
         "Christopher Robert Sims"
     ],
+    "PSYC4410": [
+        "Jason Sean Jacobskind"
+    ],
+    "PSYC4430": [
+        "Holly A Traver"
+    ],
+    "PSYC4500": [
+        "Larry D Reid"
+    ],
+    "PSYC4610": [
+        "Alicia Ann Walf"
+    ],
+    "PSYC4720": [
+        "Larry D Reid"
+    ],
+    "PSYC4730": [
+        "Holly A Traver"
+    ],
+    "PSYC4940": [
+        "Alicia Ann Walf"
+    ],
+    "PSYC4960": [
+        "Ralph G Noble"
+    ],
     "PSYC4961": [
         "Yingrui Yang"
     ],
+    "STSO1110": [
+        "Eric Drumheller Schaffer"
+    ],
+    "STSO2210": [
+        "Jarah W. Moesch"
+    ],
+    "STSO2300": [
+        "Eric Drumheller Schaffer"
+    ],
+    "STSO2520": [
+        "Eric Drumheller Schaffer"
+    ],
+    "STSO2610": [
+        "James Wilson Malazita"
+    ],
     "STSO4100": [
-        "Azita Hirsa"
+        "Azita Hirsa",
+        "Daniel Allen Lyles",
+        "Allison Beth Hoffman"
+    ],
+    "STSO4250": [
+        "Susan Lynn Smith"
+    ],
+    "STSO4300": [
+        "Brandon James Costelloe-Kuehn"
+    ],
+    "STSO4340": [
+        "Daniel Peter Thero"
+    ],
+    "STSO4430": [
+        "Nancy D. Campbell"
     ],
     "STSO4500": [
         "Jennifer Cardinal"
     ],
+    "STSO4530": [
+        "Christopher James Tozzi"
+    ],
+    "STSO4610": [
+        "Jarah W. Moesch"
+    ],
     "STSO4720": [
         "Atsushi Akera"
     ],
+    "STSO4960": [
+        "Brandon James Costelloe-Kuehn"
+    ],
     "STSO4961": [
         "Jennifer Cardinal"
+    ],
+    "STSO4962": [
+        "Brandon James Costelloe-Kuehn"
+    ],
+    "STSO4963": [
+        "Christopher James Tozzi"
+    ],
+    "STSO4970": [
+        "Raquel Velho"
     ],
     "STSO4990": [
         "Jennifer Cardinal"
@@ -859,7 +3113,33 @@
     "STSO6940": [
         "Atsushi Akera"
     ],
+    "STSO6960": [
+        "Raquel Velho"
+    ],
     "STSO9990": [
-        "Atsushi Akera"
+        "Nancy D. Campbell",
+        "Atsushi Akera",
+        "Abby J. Kinchy",
+        "Raquel Velho",
+        "James Wilson Malazita"
+    ],
+    "WRIT1110": [
+        "Samuel Estabrooks",
+        "Lorelei Nageotte Wagner"
+    ],
+    "WRIT2110": [
+        "Samuel Estabrooks",
+        "Skye Anicca"
+    ],
+    "WRIT2320": [
+        "Thomas Ingram",
+        "Skye Anicca"
+    ],
+    "WRIT2330": [
+        "Skye Anicca"
+    ],
+    "WRIT2340": [
+        "Alexander Scott Hiland",
+        "Terry W. Gipson"
     ]
 }
