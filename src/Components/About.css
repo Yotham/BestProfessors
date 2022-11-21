@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+#about-title{
+    text-align:center;
+    font-size: 3vmax;
+    font-family: 'Playfair Display', serif;
+}
+
+.row{
+    display: flex;
+    margin:10px
+}
+.column{
+    flex: 33.33%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+}
+#member_photo{
+    border: 2px outset black;
+    float: center;
+    width: 200px;
+    height:220px;
+    object-fit: cover;
+}
+#paragraph-about-us{
+    text-align:center;
+    justify-content:center;
+    font-weight:bold;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    word-wrap: break-word;
+    width:50vw;
+}
