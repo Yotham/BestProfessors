@@ -16,15 +16,15 @@ export default function About() {
               <p>Jen Lawless</p>
           </div>
           <div class = "column">
-              <img id = "member_photo" src = "https://i.ibb.co/8YCb791/yotham-sage.jpg" ></img>
+              <img id = "member_photo" alt = "Isaac Foster" src = "https://i.ibb.co/8YCb791/yotham-sage.jpg" ></img>
               <p>Isaac Foster</p>
           </div>
           <div class = "column">
-              <img id = "member_photo" src = "https://i.ibb.co/8YCb791/yotham-sage.jpg" ></img>
+              <img id = "member_photo" alt = "Julia Maguire" src = "https://i.ibb.co/8YCb791/yotham-sage.jpg" ></img>
               <p>Julia Maguire</p>
           </div>
           <div class = "column">
-              <img id = "member_photo" src = "https://i.ibb.co/8YCb791/yotham-sage.jpg" ></img>
+              <img id = "member_photo" alt = "Teddy Clark" src = "https://i.ibb.co/MkzCRmZ/teddy-clark.jpg" ></img>
               <p>Teddy Clark</p>
           </div>
         </div></center>
