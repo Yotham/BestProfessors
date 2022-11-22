@@ -17,7 +17,9 @@ import CourseProfs from './Data/courseProfs.json'
 import './App.css'
 import { Route, Routes, useResolvedPath, useMatch, Link} from 'react-router-dom'
 
+
 function App() {
+  document.title = "Best Professor List"
   return (
     <div className="App">
       {/* Taking all the components and displaying the appropriate ones */}
