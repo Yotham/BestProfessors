@@ -8,7 +8,7 @@ export default function About() {
         </div>
         <center><div class="row">
           <div class = "column">
-              <img id = "member_photo" alt = "Yotham Sage" src = "https://i.ibb.co/8YCb791/yotham-sage.jpg" ></img>
+              <img id = "member_photo" alt = "Yotham Sage" src = "https://i.ibb.co/dKwYy5p/yotham-sage.jpg" ></img>
               <p>Yotham Sage</p>
           </div>
           <div class = "column">
