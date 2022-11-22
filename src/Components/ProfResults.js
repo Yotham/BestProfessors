@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
 import './ProfResults.css'
 import {useLocation } from 'react-router-dom'
-
 
 // handle user input that is not a prof at RPI
 // checks if prof exited in json data after looking through
@@ -28,15 +26,6 @@ export default function ProfResults() {
   let data = location.state.data;
   let search = location.state.professor.message;
   let seenProf = false
-  const [Display, setFlag] = useState(false);
-  const handleChange = event => {
-    if(Display === false){
-      setFlag = true;
-    }
-    else{
-      setFlag = false;
-    }
-  }
   return (
     <div>
       {
@@ -48,17 +37,20 @@ export default function ProfResults() {
                 if (professors.profname.toUpperCase() === search.toUpperCase()) {
                   seenProf = true
                   return (
-                    <div className='full-review-prof'>
+                    <div id = "full-review-prof" className='full-review-prof'>
                       <div id='prof-name'>
                         { professors.profname }
                         <span> - </span>
                         { professors.overall_rating }
                         <br></br>
-                      <center><select >
-                        <option selected disabled = "true" >Professor Reviews</option>{
-                          professors.reviews && professors.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
+                        <br></br>
+                      <center><select>
+                        <option selected disabled = "true" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          Professor Reviews</option>{
+                          professors.reviews && professors.reviews.map((result) => (<option> {result.className} - {result.qualityRating.toFixed(1)} - {result.review}</option>))
                         }
                       </select></center>
+                      <br></br>
                       </div>
                     </div>
                   )

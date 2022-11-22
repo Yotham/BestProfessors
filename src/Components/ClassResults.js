@@ -90,14 +90,15 @@ export default function ClassResults() {
                           numRevs = numRevs + 1
                           return (
                             <div className='full-review'>
-                              <br></br>
                               <div id='prof-name-class'>
                                 { professors.profname }
                                 <span> - </span>
                                 { professors.overall_rating.toFixed(1) }
                               </div>
+                              <br></br>
                               <center><select >
-                                     <option selected disabled = "true" >Professor Reviews</option>{
+                                     <option selected disabled = "true" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                     Professor Reviews</option>{
                                       professors.reviews && professors.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
                                       }
 

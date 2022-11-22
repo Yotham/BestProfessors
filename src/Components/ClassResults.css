@@ -5,9 +5,15 @@
 }
 #prof-name-class {
     font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+    padding-top: 1%;
 }
 .full-review {
     border: 2px outset black;
     margin-bottom:10px;
     background-color:white;
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 2%;
+    
 }

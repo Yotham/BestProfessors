@@ -1,13 +1,19 @@
 .prof {
     text-align: center;
 }
-.full-review {
-    margin-right: 20%;
-    margin-left: 20%;
-    margin-bottom: 2%;
+.full-review-prof {
+    border: 2px outset black;
+    margin-bottom:10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
+    background-color:white;
+    margin-top:5%;
+    margin-bottom: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 #prof-name {
-    font-size: 3vmax;
+    padding-top: 1%;
     font-family: 'Raleway', sans-serif;
 }
 .rating {
@@ -15,15 +21,14 @@
     border: 1px outset black;
 }
 
-select{
-    max-width: 150px;
-    word-wrap: break-word;
-    white-space: normal;
+select {
+    width: 550px;
+    height:100px;
+    white-space: break-spaces;
+    word-wrap:break-word;
+    font-family: 'Raleway', sans-serif;
+  }
+
+select.main{
+    text-align:center;
 }
-.dropdown-menu {
-    width: 170px;
-  }
-  
-  .dropdown-menu .dropdown-item {
-    white-space: normal;
-  }

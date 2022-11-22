@@ -29,8 +29,9 @@ export default function ProfHome({ data }) {
                   { profName.overall_rating.toFixed(1)}
                   <br></br><br></br>
                   <center><select >
-                        <option selected disabled = "true" >Professor Reviews</option>{
-                          profName.reviews && profName.reviews.map((result) => (<option disabled = "true"> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
+                        <option selected disabled = "true" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Professor Reviews</option>{
+                          profName.reviews && profName.reviews.map((result) => (<option> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
                         }
                   </select></center>
                   <br></br>

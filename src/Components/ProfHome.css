@@ -10,6 +10,8 @@
     margin-bottom:0px;
 }
 .prof-name {
+    margin-top:2px;
+    font-weight:bold;
     border: 2px outset black;
     padding-top: 1%;
     margin-bottom:10px;
@@ -29,7 +31,4 @@
 
 br.bottom{
     margin-bottom:10px;
-}
-select{
-    font-family: 'Raleway', sans-serif;
 }
