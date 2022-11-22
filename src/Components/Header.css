@@ -2,10 +2,8 @@
 .header-top {
     height: 10%;
     width: 100%;
-    position: fixed;
     padding-top: 0.5%;
     padding-bottom: 0.1%;
-    background-color: white;
     border-bottom-width: 0.2vh;
     font-family: 'Playfair Display', serif;
 }

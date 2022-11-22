@@ -1,3 +1,9 @@
+head{
+        background-color:#DADDE2
+}
+body{
+        background-color: #DADDE2;
+}
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +40,7 @@ input.professor-search{
         font-family: 'Raleway', sans-serif;
         text-decoration:none;
         color:black;
+        background-color:white;
         font-weight:bold;
 
 }
@@ -45,6 +52,7 @@ input.professor-search{
         margin-top:10px;
         height: 7vh;
         font-family: 'Raleway', sans-serif;
+        background-color:white;
         text-decoration:none;
         font-weight: bold;
         color:black;
@@ -54,5 +62,10 @@ input.professor-search{
         float: center;
         margin-top:75px;
         margin-right:100px;
-        
+}
+#search_button1:hover{
+        color: #303030
+}
+#search_button2:hover{
+        color: #303030
 }
