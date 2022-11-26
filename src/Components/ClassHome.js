@@ -1,11 +1,11 @@
-import React, { useEffect, useState, ReactDOM } from "react"
+import React, { useState } from "react"
 import ReactPaginate from "react-paginate";
 import './ClassHome.css'
 
 
 export default function ClassHome({ data }) {  return (
     <div>
-      <PaginatedItems itemsPerPage={2} data={data}/>
+      <PaginatedItems itemsPerPage={2} data={data} />
     </div>
   )
 }
