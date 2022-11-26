@@ -9,7 +9,7 @@
     text-align:center;
     margin-bottom:0px;
 }
-.prof-name {
+.prof-item {
     margin-top:2px;
     font-weight:bold;
     border: 2px outset black;
@@ -17,6 +17,25 @@
     margin-bottom:10px;
     font-family: 'Raleway', sans-serif;
     background-color:white;
+}
+.prof-item-title {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4vmin;
+    padding-left: 4vmin;
+}
+.prof-item-title:hover {
+    cursor: pointer;
+}
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+.content.show {
+    height: auto;
+    max-height: 100vmax;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 #class-search-home {
     border-radius: 1vh;
@@ -28,7 +47,6 @@
     margin-left: 30%;
     font-family: 'Raleway', sans-serif;
 }
-
-br.bottom{
+br.bottom {
     margin-bottom:10px;
 }

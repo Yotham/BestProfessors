@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import ProfessorReviews from './ProfessorReviews';
 import './ProfHome.css'
 
 export default function ProfHome({ data }) {
@@ -6,8 +7,17 @@ export default function ProfHome({ data }) {
   const handleChange = event => {
     setText(event.target.value.toLowerCase());
     console.log('value is:', searchText);
-  }
+  };
   var foundFlag = false;
+
+  const [selected, setSelected] = useState(null);
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+    setSelected(i);
+  };
+  
 
   return (
     <div>
@@ -17,29 +27,25 @@ export default function ProfHome({ data }) {
         {
           data && data
           .sort((a,b) => a.overall_rating < b.overall_rating ? 1 : -1)
-          .map( profName => {
+          .map((profName, i) => {
             return (
             <div>
             {(() => {
               if ((profName.profname.toLowerCase().includes(searchText) || searchText === "") && profName.overall_rating != 0.0) {
                 foundFlag = true;
                 return(
-                  <div className='prof-name' key={ profName.profName }>
-                  { profName.profname } - <span> </span>
-                  { profName.overall_rating.toFixed(1)}
-                  <br></br><br></br>
-                  <center><select >
-                        <option selected disabled = "true" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        Professor Reviews</option>{
-                          profName.reviews && profName.reviews.map((result) => (<option> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
-                        }
-                  </select></center>
-                  <br></br>
-                </div>
+                  <div className='prof-item' key={ profName.profName }>
+                    <div className='prof-item-title' onClick={() => toggle(i)}>
+                      <h2>{ profName.profname } - { profName.overall_rating.toFixed(1)}</h2>
+                      <span>{selected === i ? '-' : '+'}</span>
+                    </div>
+                    <div className={selected === i ? 'content show' : 'content'}>
+                      <ProfessorReviews reviewData={profName.reviews}/>
+                    </div>
+                  </div>
                 )
               }
             })()}
-
             </div>
             )
           })
