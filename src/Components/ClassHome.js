@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Pagination } from '@aws-amplify/ui-react';
+import ReactPaginate from "react-paginate";
 import './ClassHome.css'
 
 
