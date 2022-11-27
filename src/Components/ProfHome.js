@@ -37,7 +37,7 @@ export default function ProfHome({ data }) {
                   <div className='prof-item' key={ profName.profName }>
                     <div className='prof-item-title' onClick={() => toggle(i)}>
                       <h2>{ profName.profname } - { profName.overall_rating.toFixed(1)}</h2>
-                      <span>{selected === i ? '-' : '+'}</span>
+                      <h2>{selected === i ? '-' : '+'}</h2>
                     </div>
                     <div className={selected === i ? 'content show' : 'content'}>
                       <ProfessorReviews reviewData={profName.reviews}/>

@@ -15,7 +15,8 @@
     padding-top: 1%;
     margin-bottom: 10px;
     font-family: 'Raleway', sans-serif;
-    background-color:white;
+    border: 1px solid gray;
+    /* background-color:rgb(240, 240, 240); */
 }
 .prof-item-title {
     display: flex;
