@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import Header from "./Components/Header"
 import NavBar from "./Components/NavBar"
-import './Components/HomeBody.css'
 import About from "./Components/About"
 import ClassHome from "./Components/ClassHome"
 import ClassResults from "./Components/ClassResults"
@@ -9,11 +8,11 @@ import ProfHome from "./Components/ProfHome"
 import ProfResults from "./Components/ProfResults"
 import Footer from "./Components/Footer"
 import Contact from "./Components/Contact"
-import BPLLogo from "./Images/logo.png"
-import GitHubLogo from "./Images/github-logo.png"
 import RMPData from './Data/rmp.json'
 import CourseData from './Data/courses.json'
 import CourseProfs from './Data/courseProfs.json'
+import GitHubLogo from "./Images/github-logo.png"
+import BPLLogo from "./Images/logo.png"
 import './App.css'
 import { Route, Routes, useResolvedPath, useMatch, Link} from 'react-router-dom'
 
@@ -57,10 +56,16 @@ function HomeBody() {
     setMessage(event.target.value);
     console.log('value is:', event.target.value);
   }
-  return (
 
+  // const handleEnter = event => {
+  //   if (event.key === 'Enter') {
+
+  //   }
+  // }
+
+  return (
     <div id = "search_bars">
-      <input id = "prof_search" className="professor-search" onChange = {handleChange} type="text" placeholder="Search Professors...." />
+      <input id = "prof_search" className="professor-search" onChange = {handleChange} /* onKeyDown={handleEnter} */ type="text" placeholder="Search Professors...." />
       <CustomLink id = "search_button1" to = "/profresults"state={{data: RMPData, professor: {message}}}>Search</CustomLink>
       <input id = "class_search" className="class-search" maxlength = "8" onChange = {handleChange} onSubmit type="text" placeholder="Search Classes...." />
       <CustomLink id = "search_button2" to = "/classresults"state={{data: RMPData, courseData: {CourseProfs}, professor: {message}}}>Search</CustomLink>

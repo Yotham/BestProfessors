@@ -1,14 +1,8 @@
-head{
-        background-color:#DADDE2
-}
-body{
-        background-color: #DADDE2;
-}
 * {
     margin: 0;
     padding: 0;
 }
-input.class-search{
+input.class-search {
         border-radius: 1vh;
         border: 1px solid black;
         height: 7vh;
@@ -19,7 +13,7 @@ input.class-search{
         font-family: 'Raleway', sans-serif;
     
 }
-input.professor-search{
+input.professor-search {
         border-radius: 1vh;
         border: 1px solid black;
         height: 7vh;
@@ -30,7 +24,7 @@ input.professor-search{
         font-family: 'Raleway', sans-serif;
 }
 
-#search_button1{
+#search_button1 {
         border-radius: 1vh;
         padding: 12px;
         border: 1px solid black;
@@ -44,7 +38,7 @@ input.professor-search{
         font-weight:bold;
 
 }
-#search_button2{
+#search_button2 {
         border-radius: 1vh;
         padding: 12px;
         border: 1px solid black;
@@ -58,14 +52,14 @@ input.professor-search{
         color:black;
 
 }
-#search_bars{
+#search_bars {
         float: center;
         margin-top:75px;
         margin-right:100px;
 }
-#search_button1:hover{
+#search_button1:hover {
         color: #303030
 }
-#search_button2:hover{
+#search_button2:hover {
         color: #303030
 }

@@ -5,10 +5,10 @@ import './Header.css'
 export default function Header({ bplLogo }) {
   return (
     <div className="header-top">
-      <CustomLink id="logo-item" to="/">
+      <CustomLink id="home-link" to="/">
+        <h1 id='header-title'>Best Professor List</h1>
         <img id='rt-logo' src={ bplLogo } alt='best professor list'/>
       </CustomLink>
-      <CustomLink id="title-name" to="/">Best Professor List</CustomLink>
     </div>
   )
 }

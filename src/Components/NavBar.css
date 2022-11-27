@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
 .nav-bar {
-    padding-top: 6%;
-    font-weight:bold;
+    font-weight: bold;
 }
 .nav-bar a {
     width: 25%;
     float: left;
-    color: black;
-    margin-top: 1vmin;
-    padding-top: 0.5%;
+    padding-top: 1vmin;
+    padding-bottom: 1vmin;
+    color: white;
     font-size: 1.5vmax;
     text-align: center;
-    padding-bottom: 2vh;
     text-decoration: none;
+    background-color: black;
     font-family: 'Raleway', sans-serif;
 }
 .nav-bar a:hover {

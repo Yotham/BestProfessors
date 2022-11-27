@@ -1,28 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@200&display=swap');
 .header-top {
     height: 10%;
     width: 100%;
     padding-top: 0.5%;
-    padding-bottom: 0.1%;
-    border-bottom-width: 0.2vh;
-    font-family: 'Playfair Display', serif;
+    padding-bottom: 0.5%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
 }
-#logo-item {
-    float: left;
-    width: 10%;
-}
-#rt-logo {
-    width: 80%;
-    padding-left: 1%;
-}
-#title-name {
-    float: left;
-    width: 80%;
-    color: #5C0705;
-    font-size: 4vmax;
+#home-link {
+    padding-left: 2vmax;
+    padding-right: 2vmax;
+    display: flex;
+    color: black;
     text-align: center;
     text-decoration: none;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
 }
-#title-name:hover {
-    color: #56423E
+#rt-logo {
+    width: 8vmax;
+}
+#header-title {
+    font-size: 4vmax;
 }
