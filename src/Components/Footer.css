@@ -1,43 +1,31 @@
 .footer {
-    left: 0;
-    bottom: 0px;
+    bottom: 0%;
     width: 100%;
+    display: flex;
     position: fixed;
-    padding-top: .5vh;
-    text-align: center;
-    padding-bottom: 0.2vh;
-    border-top-width: 0.2vh;
     background-color: white;
-    border-top: 1px solid black;
+    justify-content: space-evenly;
     font-family: 'Raleway', sans-serif;
-    font-weight:bold;
 }
 #git-link {
-    width: 100%;
-    color: black;
-    margin-right:20px;
-    text-decoration: none;
+    display: flex;
 }
-#get-link:hover{
+#git-title {
+    color: black;
+    text-decoration: none;
+    padding-left: 0.5vmin;
+}
+#get-title:hover{
     color: #303030 
 }
 #git-logo {
-    width: 1%;
-    height: 1%;
+    width: 1vmax;
+    height: 1vmax;
     padding-right: 0.2%;
 }
 #contact-link {
-    width: 9%;
-    color: black;
-    padding-top: 1%;
-    text-align: right;
-    position:absolute;
-    bottom:2px;
-    right:4px;
-    font-family: 'Raleway', sans-serif;
-    font-weight:bold;
-    vertical-align: auto;
     text-decoration: none;
+    color: black;
 }
 #contact-link:hover {
     color: #303030

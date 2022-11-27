@@ -5,10 +5,12 @@ import './Footer.css'
 export default function Footer({ gitLogo }) {
   return (
     <div className='footer'>
-        <a id="git-link" href="https://github.com/Yotham/BestProfessorsList">
-          <img id="git-logo" src={ gitLogo } alt="github logo" />
-          GitHub
-        </a>
+        <div id='git-link'>
+          <a href="https://github.com/Yotham/BestProfessorsList">
+            <img id="git-logo" src={ gitLogo } alt="github logo" />
+          </a>
+          <a id='git-title' href='https://github.com/Yotham/BestProfessorsList'>GitHub</a>
+        </div>
         <CustomLink id="contact-link" to="/contact">Contact</CustomLink>
     </div>
 
