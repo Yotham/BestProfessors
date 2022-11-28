@@ -1,6 +1,6 @@
 #course-search {
     font-size: 3vmax;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Playfair Display', serif;
     margin-bottom:10px;
 }
 #prof-name-class {
@@ -8,12 +8,32 @@
     font-weight:bold;
     padding-top: 1%;
 }
+.content {
+    max-height: 0;
+    overflow: auto;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    margin-top:1px;
+}
+.content.show {
+    height: auto;
+    max-height: 100vmax;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
 .full-review {
-    border: 2px outset black;
+    border: 1px outset black;
     margin-bottom:10px;
     background-color:white;
     margin-right: 25%;
     margin-left: 25%;
-    margin-bottom: 2%;
     
+}
+.prof-name-title {
+    display:flex;
+    justify-content: space-between;
+    padding-right: 4vmin;
+    padding-left: 4vmin;
+    padding-bottom: 1vmin;
+}
+.prof-name-title:hover {
+    cursor: pointer;
 }

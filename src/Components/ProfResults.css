@@ -1,34 +1,38 @@
 .prof {
     text-align: center;
 }
-.full-review-prof {
-    border: 2px outset black;
-    margin-bottom:10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight:bold;
-    background-color:white;
-    margin-top:5%;
-    margin-bottom: 10%;
-    margin-left: 25%;
-    margin-right: 25%;
+.content {
+    max-height: 0;
+    overflow: auto;
+    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    margin-top:3px;
+    border-top:1px solid gray;
+}
+.content.show {
+    height: auto;
+    max-height: 100vmax;
+    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 #prof-name {
+    margin-top:50px;
+    border-top: 1px outset black;
+    border-right:1px outset black;
+    border-left:1px outset black;
+    border-bottom:1px outset black;
+    height:6vh;
+    margin-right: 25%;
+    margin-left: 25%;
+    font-family: 'Raleway', sans-serif;
+    font-weight:bold;
     padding-top: 1%;
-    font-family: 'Raleway', sans-serif;
-}
-.rating {
-    margin: 1%;
-    border: 1px outset black;
-}
 
-select {
-    width: 550px;
-    height:100px;
-    white-space: break-spaces;
-    word-wrap:break-word;
-    font-family: 'Raleway', sans-serif;
-  }
-
-select.main{
-    text-align:center;
+}
+.prof-name-title {
+    display:flex;
+    justify-content: space-between;
+    padding-right: 4vmin;
+    padding-left: 4vmin;
+}
+.prof-name-title:hover {
+    cursor: pointer;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair Display');
 .header-top {
     height: 10%;
     width: 100%;
@@ -15,7 +15,7 @@
     text-align: center;
     text-decoration: none;
     justify-content: space-between;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 #rt-logo {
     width: 8vmax;

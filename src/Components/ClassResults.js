@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {useLocation } from 'react-router-dom'
+import ProfessorReviews from './ProfessorReviews';
 import './ClassResults.css'
 
 //determine if string is only letters
@@ -48,6 +49,13 @@ export default function ClassResults() {
   let courseData = location.state.courseData.CourseProfs[search]
   let valid = validInput(search, courseData)
   let numRevs = 0
+  const [selected, setSelected] = useState(null);
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+    setSelected(i);
+  };  
 
   // handle badly formatted user input
   if( valid == 0){
@@ -82,7 +90,7 @@ export default function ClassResults() {
             <div>
               {
                 rmpData && rmpData
-                .map( professors => {
+                .map((professors,i)=> {
                   return (
                     <div className='prof' key={ professors.profname }>
                       {(() => {
@@ -91,19 +99,14 @@ export default function ClassResults() {
                           return (
                             <div className='full-review'>
                               <div id='prof-name-class'>
-                                { professors.profname }
-                                <span> - </span>
-                                { professors.overall_rating.toFixed(1) }
+                                <div className='prof-name-title' onClick={() => toggle(i)}>
+                                  <h2>{ professors.profname } - { professors.overall_rating.toFixed(1)}</h2>
+                                  <h2>{selected === i ? '-' : '+'}</h2>
+                                </div>
+                                <div className={selected === i ? 'content show' : 'content'}>
+                                  <ProfessorReviews reviewData={professors.reviews}/>
+                                </div>
                               </div>
-                              <br></br>
-                              <center><select >
-                                     <option selected disabled = "true" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                     Professor Reviews</option>{
-                                      professors.reviews && professors.reviews.map((result) => (<option> {result.className} - {result.qualityRating.toFixed(1)} - {result.review} </option>))
-                                      }
-
-                             </select></center>
-                             <br></br>
                             </div>
 
                           )

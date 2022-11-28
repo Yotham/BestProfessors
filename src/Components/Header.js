@@ -6,7 +6,7 @@ export default function Header({ bplLogo }) {
   return (
     <div className="header-top">
       <CustomLink id="home-link" to="/">
-        <h1 id='header-title'>Best Professor List</h1>
+        <h2 id='header-title'>Best Professor List</h2>
         <img id='rt-logo' src={ bplLogo } alt='best professor list'/>
       </CustomLink>
     </div>

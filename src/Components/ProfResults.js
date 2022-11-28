@@ -1,5 +1,7 @@
 import './ProfResults.css'
+import ProfessorReviews from './ProfessorReviews';
 import {useLocation } from 'react-router-dom'
+import React, { useState } from 'react'
 
 // handle user input that is not a prof at RPI
 // checks if prof exited in json data after looking through
@@ -20,39 +22,43 @@ function ifNotSeen(seenProf, search){
   return("")
 }
 
+
 export default function ProfResults() {
   const location = useLocation();
   console.log(location)
   let data = location.state.data;
   let search = location.state.professor.message;
   let seenProf = false
+    
+  const [selected, setSelected] = useState(null);
+  const toggle = (i) => {
+    if (selected === i) {
+      return setSelected(null);
+    }
+    setSelected(i);
+  };
+
   return (
     <div>
       {
         data && data
-        .map( professors => {
+        .map((professors, i)=> {
           return (
             <div className='prof' key={ professors.profname }>
               {(() => {
                 if (professors.profname.toUpperCase() === search.toUpperCase()) {
                   seenProf = true
                   return (
-                    <div id = "full-review-prof" className='full-review-prof'>
                       <div id='prof-name'>
-                        { professors.profname }
-                        <span> - </span>
-                        { professors.overall_rating }
-                        <br></br>
-                        <br></br>
-                      <center><select>
-                        <option selected disabled = "true" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          Professor Reviews</option>{
-                          professors.reviews && professors.reviews.map((result) => (<option> {result.className} - {result.qualityRating.toFixed(1)} - {result.review}</option>))
-                        }
-                      </select></center>
+                          <div className='prof-name-title' onClick={() => toggle(i)}>
+                          <h2>{ professors.profname } - { professors.overall_rating.toFixed(1)}</h2>
+                          <h2>{selected === i ? '-' : '+'}</h2>
+                        </div>
+                        <div className={selected === i ? 'content show' : 'content'}>
+                          <ProfessorReviews reviewData={professors.reviews}/>
+                        </div>
                       <br></br>
                       </div>
-                    </div>
                   )
                 }
                 // Handle invalid user input. Tell user that their input was wrong, then provide a link
