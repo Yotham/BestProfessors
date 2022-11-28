@@ -35,7 +35,7 @@
 }
 .content.show {
     height: auto;
-    max-height: 100vmax;
+    max-height: 30vmax;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
 #class-search-home {
