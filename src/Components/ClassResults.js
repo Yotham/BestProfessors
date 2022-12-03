@@ -15,9 +15,9 @@ function isAlpha(s)
 // called after looping through json data to get course review data
 function ifNoRevs(numRevs){
   if(numRevs === 0)
-    return(<div><center>
-              <div><span>Unfortunately, there are no rated professors teaching this course.</span></div>
-              <div><span><a href="/">Click Here to Try Another Search</a></span></div>
+    return(<div className='invalid'><center>
+              <div><span>unfortunately, there are no rated professors teaching this course</span></div>
+              <div><span><a href="/">try another search</a></span></div>
            </center></div>
           )
   return("")
@@ -60,22 +60,22 @@ export default function ClassResults() {
   // handle badly formatted user input
   if( valid == 0){
     return (
-      <center><div>
-        <div><span> {search} is not a properly formatted search.</span></div>
-        <div><span> Please try again with an RPI course ID; four letters followed by four numbers without spaces.</span></div>
-        <div><span> An example of a valid course ID is: 'CSCI1100' without the quotation marks. </span></div>
-        <div><span><a href="/">Click Here to Try Another Search</a></span></div>
+      <center><div className='invalid'>
+        <div><span>"{search}" is not a properly formatted search</span></div>
+        <div><span>please try again with an RPI course ID; four letters followed by four numbers without spaces</span></div>
+        <div><span>an example of a valid course ID is: "CSCI1100" without the quotation marks</span></div>
+        <div><span><a href="/">try another search</a></span></div>
       </div></center>
     )
   }
   // handle input of a class that doesn't exist
   else if(valid == 1){
     return (
-      <center><div>
-        <div><span> {search} is not a course in the RPI catalog.</span></div>
-        <div><span> Please try again with an RPI course that actually exists.</span></div>
-        <div><span> An example of a valid course ID is: 'CSCI1100' without the quotation marks. </span></div>
-        <div><span><a href="/">Click Here to Try Another Search</a></span></div>
+      <center><div className='invalid'>
+        <div><span>"{search}" is not a course in the RPI catalog.</span></div>
+        <div><span>please try again with an RPI course that actually exists</span></div>
+        <div><span>an example of a valid course ID is: "CSCI1100" without the quotation marks</span></div>
+        <div><span><a href="/">try another search</a></span></div>
       </div></center>
     )
   }

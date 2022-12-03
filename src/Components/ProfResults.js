@@ -11,10 +11,10 @@ import React, { useState } from 'react'
 function ifNotSeen(seenProf, search){
   if(seenProf === false){
     return (
-      <div>
-        <div><span>{search} is not an RPI professor that has any ratings.</span></div>
-        <div><span><a href="/profhome">Click Here to See a List of RPI Professors with Ratings</a></span></div>
-        <div><span><a href="/">Click Here to Return to Search</a></span></div>
+      <div id='not-seen'>
+        <div><span>"{search}" is not an RPI professor that has any ratings.</span></div>
+        <div><span><a href="/profhome">see a list of RPI professors with ratings</a></span></div>
+        <div><span><a href="/">return to search</a></span></div>
       </div>
 
     )
