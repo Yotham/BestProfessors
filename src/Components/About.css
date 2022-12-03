@@ -9,7 +9,8 @@
 
 .row{
     display: flex;
-    margin:10px
+    margin:10px;
+    overflow: auto;
 }
 .column{
     flex: 33.33%;
