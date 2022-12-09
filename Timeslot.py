@@ -1,7 +1,9 @@
-# Timeslot.py
-# Class containing information pertaining to a timeslot within a section of a course.
-
+"""
+Timeslot.py
+Class containing information pertaining to a timeslot within a section of a course.
+"""
 class Timeslot:
+    "create timeslot object"
     def __init__(self, dateEnd, dateStart, days, instructor, location, timeEnd, timeStart):
         self.dateEnd = dateEnd
         self.dateStart = dateStart

@@ -2,7 +2,6 @@ from decimal import Decimal
 import json
 import boto3
 
-
 def load_course_prof(courses, dynamodb=None):
     if not dynamodb:
         dynamodb = boto3.resource("dynamodb", region_name="us-west-2")
@@ -23,6 +22,6 @@ def load_course_prof(courses, dynamodb=None):
 
 
 if __name__ == "__main__":
-    with open("courseProfs.json") as json_file:
+    with open("courseProfs.json", encoding = "utf-8") as json_file:
         course_prof_list = json.load(json_file, parse_float=Decimal)
     load_course_prof(course_prof_list)
