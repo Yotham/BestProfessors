@@ -1,44 +1,47 @@
 "compile the quacs data into more usable data for our project"
 import json
-#create a dictionary to dump into json
+# create a dictionary to dump into json
 overall_dict = {}
-#open course.json --> quacs file
-with open('courses.json', encoding = "utf-8") as data_file:    
+# open course.json --> quacs file
+with open('courses.json', encoding="utf-8") as data_file:
     data = json.load(data_file)
-    #loop through the file, multiple dictionaries requires lots of loops
-    for i in range(len(data)):
-        course = ""
-        code = str(data[i]['code'])
-        #loop through courses
-        for j in range(len(data[i]["courses"])):
-            #set to prevent duplicates
+    # loop through the file, multiple dictionaries requires lots of loops
+    for data_itr in enumerate(data):
+        COURSE = ""
+        CODE = str(data_itr['code'])
+        # loop through courses
+        for j in range(len(data_itr["courses"])):
+            # set to prevent duplicates
             instructors = set()
-            number= str(data[i]['courses'][j]["crse"])
-            course = code+number
-            #loop through sections
-            for k in range(len(data[i]['courses'][j]['sections'])):
-                #loop through timeslots
-                for o in range(len(data[i]['courses'][j]['sections'][k]['timeslots'])):
-                    #loop through instructors
-                    instructor = str(data[i]['courses'][j]['sections'][k]['timeslots'][o]['instructor'])
-                    #if the instructor exist
-                    if(data[i]['courses'][j]['sections'][k]['timeslots'][o]['instructor'] != "TBA"):
-                        #multiple instructors seperated by "," parse for each one
-                        if(instructor.find(",") != -1):
-                            #parse
-                            instructor = instructor[0:instructor.find(",")]
-                            #add instructor
-                            instructors.add(instructor)
-                        #if instructor isn't blank add them i.e only 1 instructor or last instructor in list
-                        elif (instructor != ""):
-                            instructors.add(instructor)
-            #if instructors set is filled
-            if(instructors):
-                #convert instructors into a list
+            NUMBER = str(data_itr['courses'][j]["crse"])
+            COURSE = CODE + NUMBER
+            # loop through sections
+            for k in range(len(data_itr['courses'][j]['sections'])):
+                # loop through timeslots
+                for o in range(len(data_itr['courses'][j]['sections'][k]['timeslots'])):
+                    # loop through instructors
+                    INSTRUCTOR = str(
+                        data_itr['courses'][j]['sections'][k]['timeslots'][o]['instructor'])
+                    # if the instructor exist
+                    if(data_itr['courses'][j]['sections'][k]['timeslots'][o]['instructor']
+                       != "TBA"):
+                        # multiple instructors seperated by "," parse for each one
+                        if INSTRUCTOR.find(",") != -1:
+                            # parse
+                            INSTRUCTOR = INSTRUCTOR[0:INSTRUCTOR.find(",")]
+                            # add instructor
+                            instructors.add(INSTRUCTOR)
+                        # if instructor isn't blank add them i.e only 1 instructor or
+                        # last instructor in list
+                        elif INSTRUCTOR != "":
+                            instructors.add(INSTRUCTOR)
+            # if instructors set is filled
+            if instructors:
+                # convert instructors into a list
                 instructors = list(instructors)
-                #add instructors to the course i.e "admn1030" = list of instructors
-                overall_dict[course] = instructors
+                # add instructors to the course i.e "admn1030" = list of instructors
+                overall_dict[COURSE] = instructors
 
-#dump into a json
-with open("courseProfs.json", "w", encoding = "utf-8") as outfile:
-    json.dump(overall_dict, outfile,indent = 4)
+# dump into a json
+with open("courseProfs.json", "w", encoding="utf-8") as outfile:
+    json.dump(overall_dict, outfile, indent=4)
