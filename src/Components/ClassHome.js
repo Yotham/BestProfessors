@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Pagination } from "@aws-amplify/ui-react";
+import ReactPaginate from "react-paginate";
 import './ClassHome.css'
 
 
@@ -160,7 +160,7 @@ function PaginatedItems({ itemsPerPage, data }) {
   return (
     <>
       <Items data={currentItems} fullData={data} />
-      <Pagination
+      <ReactPaginate
         containerClassName={'pagination'}
         pageClassName={'item'}
         activeClassName={'item active-page '}
