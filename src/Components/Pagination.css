@@ -1,0 +1,13 @@
+.pagination {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+}
+#page-num {
+    text-decoration: none;
+    color: rgb(101, 101, 101);
+    padding-right: 0.5vmin;
+    padding-left: 0.5vmin;
+    border: 1px solid rgb(200, 200, 200);
+}
