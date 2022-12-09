@@ -15,7 +15,6 @@
     margin-bottom: 10px;
     font-family: 'Raleway', sans-serif;
     border: 1px solid gray;
-    /* background-color:rgb(240, 240, 240); */
 }
 .prof-item-title {
     display: flex;
@@ -49,4 +48,8 @@
 }
 br.bottom {
     margin-bottom:10px;
+}
+#no-course-found {
+    font-size: 3vmin;
+    font-family: 'Raleway', sans-serif;
 }
