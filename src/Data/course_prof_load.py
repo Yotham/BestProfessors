@@ -1,17 +1,17 @@
+"load course professors in dynamo"
 from decimal import Decimal
 import json
 import boto3
 
 def load_course_prof(courses, dynamodb=None):
+    "load course professors in dynamo"
     if not dynamodb:
         dynamodb = boto3.resource("dynamodb", region_name="us-west-2")
 
     table = dynamodb.Table("course_prof")
-
     for course in courses:
         subject = course[0:4]
         number = int(course[4::])
-
         # get all the professors that teach a course
         profs = []
         for prof in courses[course]:

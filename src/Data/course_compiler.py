@@ -1,8 +1,9 @@
+"compile the quacs data into more usable data for our project"
 import json
 #create a dictionary to dump into json
 overall_dict = {}
 #open course.json --> quacs file
-with open('courses.json') as data_file:    
+with open('courses.json', encoding = "utf-8") as data_file:    
     data = json.load(data_file)
     #loop through the file, multiple dictionaries requires lots of loops
     for i in range(len(data)):
@@ -39,5 +40,5 @@ with open('courses.json') as data_file:
                 overall_dict[course] = instructors
 
 #dump into a json
-with open("courseProfs.json", "w") as outfile:
+with open("courseProfs.json", "w", encoding = "utf-8") as outfile:
     json.dump(overall_dict, outfile,indent = 4)
