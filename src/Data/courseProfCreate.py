@@ -1,6 +1,5 @@
 import boto3
 
-
 def create_course_prof_table(dynamodb=None):
     if not dynamodb:
         # for testing use region_name="us-west-2"
