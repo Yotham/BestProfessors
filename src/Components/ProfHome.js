@@ -53,7 +53,6 @@ function Items({ data, fullData }) {
                             <h2>{selected === i ? '-' : '+'}</h2>
                           </div>
                           <div className={selected === i ? 'content show' : 'content'}>
-                            
                             <ProfessorReviews reviewData={profName.reviews}/>
                           </div>
                         </div>

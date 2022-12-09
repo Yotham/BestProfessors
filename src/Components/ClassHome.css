@@ -37,10 +37,6 @@
     max-height: 30vmax;
     transition: all 0.5s cubic-bezier(1, 0, 1, 0);
 }
-#course {
-    padding-top: 1vmin;
-    border: 1px solid gray;
-}
 #class-search-home {
     border-radius: 1vh;
     border: 1px solid black;
