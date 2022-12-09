@@ -9,11 +9,11 @@ import requests
 
 class Professor:
     "create a professsor object"
-    def __init__(self, fname, mname, lname, fullname, overall_rating_, reviews_):
+    def __init__(self, fname, mname, lname, full_name_, overall_rating_, reviews_):
         self.fname = fname
         self.mname = mname
         self.lname = lname
-        self.fullname = fullname
+        self.full_name = full_name_
         self.overall_rating = overall_rating_
         self.reviews = reviews_
 
@@ -31,7 +31,7 @@ class Professor:
 
     def get_full_name(self):
         "return the full name of a professor"
-        return self.fullname
+        return self.full_name
 
     def get_overall_rating(self):
         "return the overall rating of a professor"
@@ -44,23 +44,23 @@ class Professor:
 
 class Review:
     "create a review object"
-    def __init__(self, classname, reviewemotion, qualityrating, review_):
-        self.classname = classname
-        self.reviewemotion = reviewemotion
-        self.qualityrating = qualityrating
+    def __init__(self, class_name, review_emotion, quality_rating, review_):
+        self.class_name = class_name
+        self.review_emotion = review_emotion
+        self.quality_rating = quality_rating
         self.review = review_
 
     def get_class_name(self):
         "return the classname"
-        return self.classname
+        return self.class_name
 
     def get_review_emotion(self):
         "return the review emotion"
-        return self.reviewemotion
+        return self.review_emotion
 
     def get_quality_rating(self):
         "return the quality rating"
-        return self.qualityrating
+        return self.quality_rating
 
     def get_review(self):
         "return the whole review"
@@ -104,7 +104,7 @@ def get_professor(professor_list_, fname, mname, lname):
     mname_check = False
     lname_check = False
     reset = True
-    for profe in enumerate(professor_list_):
+    for profe in professor_list_:
         # Check if first name = rate my prof first name
         if fname == profe["tFname"]:
             fname_check = True
@@ -145,21 +145,21 @@ def access_review_page(professor_input):
     # generate all html code of website
     soup = BeautifulSoup(response, "html.parser")
     # look for specific html class
-    classnames = soup.find_all(
+    class_names = soup.find_all(
         'div', {'class': 'RatingHeader__StyledClass-sc-1dlkqw1-2'})
-    reviewemotion = soup.find_all(
+    review_emotion = soup.find_all(
         'div', {'class': 'EmotionLabel__StyledEmotionLabel-sc-1u525uj-0'})
-    qualityrating = soup.find_all(
+    quality_rating = soup.find_all(
         'div', {'class': 'CardNumRating__CardNumRatingNumber-sc-17t4b9u-2'})
     reviews_ = soup.find_all(
         'div', {'class': 'Comments__StyledComments-dzzyvm-0'})
     # loop through all reviews on the page
     for i in range(len(reviews)):
         j = i*2
-        if j <= len(classnames)-1:
+        if j <= len(class_names)-1:
             # add total review object to professor ratings
-            review_ = Review(classnames[j].text, reviewemotion[j].text[1:len(
-                reviewemotion)], qualityrating[j].text, reviews_[i].text)
+            review_ = Review(class_names[j].text, review_emotion[j].text[1:len(
+                review_emotion)], quality_rating[j].text, reviews_[i].text)
             professor_ratings.append(review_)
         else:
             break
@@ -168,7 +168,7 @@ def access_review_page(professor_input):
 
 list_of_profs = []
 # fix overall_rating
-for prof in enumerate(professor_list):
+for prof in professor_list:
     # set professor attributes = to current professors attributes
     first_name = prof["tFname"]
     middle_name = prof["tMiddlename"]
@@ -185,8 +185,8 @@ for prof in enumerate(professor_list):
     for review in review_temp:
         review_dict = {}
         review_dict["className"] = review.get_class_name()
-        review_dict["reviewemotion"] = review.get_review_emotion()
-        review_dict["qualityrating"] = review.get_quality_rating()
+        review_dict["reviewEmotion"] = review.get_review_emotion()
+        review_dict["qualityRating"] = review.get_quality_rating()
         review_dict["review"] = review.get_review()
         review_list.append(review_dict)
     # set reviews = to review list
