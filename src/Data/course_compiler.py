@@ -6,7 +6,7 @@ overall_dict = {}
 with open('courses.json', encoding="utf-8") as data_file:
     data = json.load(data_file)
     # loop through the file, multiple dictionaries requires lots of loops
-    for data_itr in enumerate(data):
+    for data_itr in data:
         COURSE = ""
         CODE = str(data_itr['code'])
         # loop through courses
@@ -43,5 +43,5 @@ with open('courses.json', encoding="utf-8") as data_file:
                 overall_dict[COURSE] = instructors
 
 # dump into a json
-with open("courseProfs.json", "w", encoding="utf-8") as outfile:
+with open("unsortedProfs.json", "w", encoding="utf-8") as outfile:
     json.dump(overall_dict, outfile, indent=4)

@@ -1,9 +1,9 @@
 "Python file to sort professors"
 import json
 
-# open courseProfs json
-with open('courseProfs.json', encoding="utf-8") as f:
-    courseProfs = json.load(f)
+# open unsortedProfs json
+with open('unsortedProfs.json', encoding="utf-8") as f:
+    unsortedProfs = json.load(f)
 
 # open rate my professor json
 with open('rmp.json', encoding="utf-8") as f:
@@ -12,8 +12,9 @@ with open('rmp.json', encoding="utf-8") as f:
 # convert rmp into new dictionary containing
 # the professor name and their rating as the key
 new_dict = {}
-for rm in enumerate(rmp):
+for rm in rmp:
     new_dict[rm["profname"]] = rm["overall_rating"]
+
 
 # create an exist function
 # checks if the key exist in the dictionary
@@ -34,14 +35,14 @@ def exist(dict_, key_):
 # create a final dict to dump into the json
 final_dict = {}
 # loop through each key in course profs
-for key in courseProfs:
+for key in unsortedProfs:
     # create a list to store ratings
     num_list = []
-    for i in range(len(courseProfs[key])):
+    for i in range(len(unsortedProfs[key])):
         # if the professor exist in the rmp dict
-        if exist(new_dict, courseProfs[key][i]):
+        if exist(new_dict, unsortedProfs[key][i]):
             # append their rating to num_list
-            num_list.append(new_dict[courseProfs[key][i]])
+            num_list.append(new_dict[unsortedProfs[key][i]])
         else:
             continue
     # sort num_list from highest rating to lowest rating
@@ -49,17 +50,17 @@ for key in courseProfs:
     # create a list to store sorted professors
     sorted_profs = []
     # loop through num list
-    for num in enumerate(num_list):
+    for num in num_list:
         # loop through each professor
-        for i in range(len(courseProfs[key])):
+        for i in range(len(unsortedProfs[key])):
             # if that professor exist in rmp
-            if exist(new_dict, courseProfs[key][i]):
+            if exist(new_dict, unsortedProfs[key][i]):
                 # if num_list index is equal to the professors rating
-                if num == new_dict[courseProfs[key][i]]:
+                if num == new_dict[unsortedProfs[key][i]]:
                     # check for duplicates... if not a duplicate
-                    if courseProfs[key][i] not in sorted_profs:
+                    if unsortedProfs[key][i] not in sorted_profs:
                         # add that professor to sorted professors
-                        sorted_profs.append(courseProfs[key][i])
+                        sorted_profs.append(unsortedProfs[key][i])
     # if sorted_profs isn't emtpy
     if sorted_profs:
         # set the class code i.e "admn1030" to a list of professors for it in sorted order by rating
