@@ -4,6 +4,7 @@
 /* eslint-disable react/prop-types */
 /* eslint camelcase: "error" */
 /* eslint indent: ["error", 2] */
+import expect from 'expect';
 import React, {useState} from 'react';
 import ReactPaginate from 'react-paginate';
 import Courses from './Courses';
@@ -68,13 +69,15 @@ function Items({data}) {
 function PaginatedItems({itemsPerPage, data}) {
   // creating the offset
   const [itemOffset, setItemOffset] = useState(0);
-
   // simulate fetching items from source
   const endOffset = itemOffset + itemsPerPage;
   console.log('Loading items from ${itemOffset} to ${endOffset}');
   const currentItems = data.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(data.length / itemsPerPage);
-
+  // unit test
+  expect(endOffset).toBeGreaterThan(0, 'endOffset Test Failed');
+  expect(currentItems).toBeGreaterThan(0, 'currentItems Test Failed');
+  expect(pageCount).toBeGreaterThan(0, 'pageCount Test Failed');
   // click event handling
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
