@@ -1,4 +1,4 @@
-/* eslint linebreak-style: ["error", "windows"] */
+/* eslint-disable linebreak-style */
 /* eslint max-len: ["error", { "code": 150 }] */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */

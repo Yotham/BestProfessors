@@ -1,6 +1,6 @@
+/* eslint-disable linebreak-style */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable valid-jsdoc */
-/* eslint linebreak-style: ["error", "windows"] */
 /* eslint max-len: ["error", { "code": 150 }] */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
