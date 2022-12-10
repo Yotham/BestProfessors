@@ -39,7 +39,6 @@ function Items({data, fullData}) {
       <div className='prof-list'>
         {
           data && data
-            .sort((a, b) => a.overall_rating < b.overall_rating ? 1 : -1)
             .map((profName, i) => {
               return (
                 <div>
