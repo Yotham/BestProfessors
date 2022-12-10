@@ -74,6 +74,7 @@ function PaginatedItems({itemsPerPage, data}) {
   console.log('Loading items from ${itemOffset} to ${endOffset}');
   const currentItems = data.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(data.length / itemsPerPage);
+  expect(pageCount).toBeGreaterThan(0);
 
   // click event handling
   const handlePageClick = (event) => {
@@ -100,7 +101,7 @@ function PaginatedItems({itemsPerPage, data}) {
 
   return (
     <>
-      <input id="class-search-home" onChange = {handleChange} type="text" placeholder="Search by course code...." />
+      <input id="class-search-home" onChange = {handleChange} type="text" placeholder="Search by course code...." data-testid="placeholder-test"/>
       {(() => {
         if (searchText === '') {
           return (

@@ -18,7 +18,7 @@ export default function Footer({gitLogo}) {
         <a href="https://github.com/Yotham/BestProfessorsList">
           <img id="git-logo" src={ gitLogo } alt="github logo" />
         </a>
-        <a id='git-title' href='https://github.com/Yotham/BestProfessorsList'>GitHub</a>
+        <a data-testid="github-link-test" id='git-title' href='https://github.com/Yotham/BestProfessorsList'>GitHub</a>
       </div>
       <CustomLink id="contact-link" to="/contact">Contact</CustomLink>
     </div>

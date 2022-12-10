@@ -13,13 +13,13 @@ import './Contact.css';
 export default function Contact() {
   return (
     <div className='contact-container'>
-      <div className="contact-title">
+      <div className="contact-title" data-testid="title-test">
           Contact:
       </div>
-      <div className="contact-p">
+      <div className="contact-p" data-testid="p1-test">
           Let us know if you have any suggestions or issues!
       </div>
-      <div className="contact-p">
+      <div className="contact-p" data-testid="p2-test">
           Email: bestprofessorlist@gmail.com
       </div>
     </div>
