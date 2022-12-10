@@ -1,17 +1,31 @@
-import React, { useState } from "react"
-import ReactPaginate from "react-paginate";
-import Courses from './Courses'
-import './ClassHome.css'
+/* eslint linebreak-style: ["error", "windows"] */
+/* eslint max-len: ["error", { "code": 150 }] */
+/* eslint-disable react/jsx-key */
+/* eslint-disable react/prop-types */
+/* eslint camelcase: "error" */
+/* eslint indent: ["error", 2] */
+import React, {useState} from 'react';
+import ReactPaginate from 'react-paginate';
+import Courses from './Courses';
+import './ClassHome.css';
 
-
-export default function ClassHome({ data }) {  return (
+/**
+ * Generates the ClassHome page
+ * @return {/classHome} The ClassHome page
+ */
+export default function ClassHome({data}) {
+  return (
     <div>
       <PaginatedItems itemsPerPage={5} data={data} />
     </div>
-  )
+  );
 }
 
-function Items({ data }) {
+/**
+ * Class dropdown
+ * @return {class-dropdown} drop down associated with each class
+ */
+function Items({data}) {
   const [selected, setSelected] = useState(null);
   const toggle = (i) => {
     if (selected === i) {
@@ -39,15 +53,19 @@ function Items({ data }) {
                   </div>
                 </div>
               </div>
-            )
+            );
           } )
         }
       </div>
     </div>
-  )
+  );
 }
 
-function PaginatedItems({ itemsPerPage, data }) {
+/**
+ * Paginates each part of the ClassHome page for final generation
+ * @return {/classHome} The ClassHome page
+ */
+function PaginatedItems({itemsPerPage, data}) {
   // creating the offset
   const [itemOffset, setItemOffset] = useState(0);
 
@@ -55,21 +73,21 @@ function PaginatedItems({ itemsPerPage, data }) {
   const endOffset = itemOffset + itemsPerPage;
   console.log('Loading items from ${itemOffset} to ${endOffset}');
   const currentItems = data.slice(itemOffset, endOffset);
-  const pageCount  = Math.ceil(data.length / itemsPerPage);
+  const pageCount = Math.ceil(data.length / itemsPerPage);
 
   // click event handling
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
-    console.log('User requested page number ${event.selected}, which is offset ${newOffset}')
+    console.log('User requested page number ${event.selected}, which is offset ${newOffset}');
     setItemOffset(newOffset);
-  }
+  };
 
   // search event handling
   const [searchText, setText] = useState('');
-  const handleChange = event => {
+  const handleChange = (event) => {
     setText(event.target.value.toUpperCase());
     console.log('value is:', searchText);
-  }
+  };
 
   // dropdown menu event handling
   const [selected, setSelected] = useState(null);
@@ -84,7 +102,7 @@ function PaginatedItems({ itemsPerPage, data }) {
     <>
       <input id="class-search-home" onChange = {handleChange} type="text" placeholder="Search by course code...." />
       {(() => {
-        if (searchText === "") {
+        if (searchText === '') {
           return (
             <div>
               <Items data={currentItems} fullData={data} />
@@ -103,7 +121,7 @@ function PaginatedItems({ itemsPerPage, data }) {
                 renderOnZeroPageCount={null}
               />
             </div>
-          )
+          );
         } else {
           return (
             <div className='course-cataloge'>
@@ -125,15 +143,15 @@ function PaginatedItems({ itemsPerPage, data }) {
                                 </div>
                               </div>
                             </div>
-                          )
+                          );
                         }
                       })()}
                     </div>
-                  )
+                  );
                 } )
               }
             </div>
-          )
+          );
         }
       })()}
       <br></br>
