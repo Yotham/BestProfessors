@@ -5,6 +5,7 @@ overall_dict = {}
 # open course.json --> quacs file
 with open('courses.json', encoding="utf-8") as data_file:
     data = json.load(data_file)
+    assert data is not None
     # loop through the file, multiple dictionaries requires lots of loops
     for data_itr in data:
         COURSE = ""
@@ -43,5 +44,6 @@ with open('courses.json', encoding="utf-8") as data_file:
                 overall_dict[COURSE] = instructors
 
 # dump into a json
+assert overall_dict is not None
 with open("unsortedProfs.json", "w", encoding="utf-8") as outfile:
     json.dump(overall_dict, outfile, indent=4)

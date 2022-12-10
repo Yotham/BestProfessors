@@ -4,16 +4,17 @@ import json
 # open unsortedProfs json
 with open('unsortedProfs.json', encoding="utf-8") as f:
     unsortedProfs = json.load(f)
-
+assert unsortedProfs is not None
 # open rate my professor json
 with open('rmp.json', encoding="utf-8") as f:
     rmp = json.load(f)
-
+assert rmp is not None
 # convert rmp into new dictionary containing
 # the professor name and their rating as the key
 new_dict = {}
 for rm in rmp:
     new_dict[rm["profname"]] = rm["overall_rating"]
+assert new_dict is not None
 
 
 # create an exist function
@@ -66,6 +67,7 @@ for key in unsortedProfs:
         # set the class code i.e "admn1030" to a list of professors for it in sorted order by rating
         final_dict[key] = sorted_profs
 
+assert final_dict is not None
 # dump into a json file
 with open("courseProfs.json", "w", encoding="utf-8") as outfile:
     json.dump(final_dict, outfile, indent=4)
