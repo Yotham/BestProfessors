@@ -97,6 +97,7 @@ def generate_professor_list():
 
 
 professor_list = generate_professor_list()
+assert professor_list is not None
 
 def get_professor(professor_list_, fname, mname, lname):
     "get a professor object"
@@ -208,6 +209,7 @@ for profs in list_of_profs:
     # append each dictionary into the list of dictionaries
     dictionary_list.append(prof_dict)
 
+assert dictionary_list is not None
 # dump the dictionary list into a json file
 with open("test.json", "w", encoding = "utf-8") as outfile:
     json.dump(dictionary_list, outfile, indent=4)
