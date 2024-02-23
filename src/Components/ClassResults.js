@@ -88,48 +88,39 @@ export default function ClassResults() {
   }
   // Then you can check if courseData is not null before mapping over it
 
+
   const toggle = (i) => {
     setSelected(selected === i ? null : i);
   };
 
-  // Filter out the professors that do not match the search term or have a rating of 0
-  const filteredProfessors = courseData
-    .map(profName => rmpData.find(prof => prof.profname === profName))
-    .filter(prof => prof && prof.overall_rating !== 0);
+  // Assuming courseData is an array of professor names
+  const filteredProfessors = rmpData.filter(prof => 
+    courseData.includes(prof.profname) && prof.overall_rating !== 0
+  );
 
-  // handle badly formatted user input
+  // No need to map over courseData if you're displaying filteredProfessors
   return (
     <div>
-      <center><div id='course-search'>
-        { search }
-      </div></center>
-      {
-        courseData && courseData.map( (prof) => {
-          return (
-            <div>
-              {filteredProfessors.length > 0 ? (
-                filteredProfessors.map((professor, i) => (
-                  <div className='prof' key={professor.profname}>
-                    <div className='prof-name-title' onClick={() => toggle(i)}>
-                      <h2>{professor.profname} - {professor.overall_rating.toFixed(1)}</h2>
-                      <h2>{selected === i ? '-' : '+'}</h2>
-                    </div>
-                    <div className={selected === i ? 'content show' : 'content'}>
-                      <ProfessorReviews reviewData={professor.reviews}/>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <div className='no-results'>
-                  <p>No professors found for this course or no professors have been rated yet.</p>
-                </div>
-              )}
+      <center><div id='course-search'>{search}</div></center>
+      {filteredProfessors.length > 0 ? (
+        filteredProfessors.map((professor, i) => (
+          <div className='prof' key={professor.profname}>
+            <div className='prof-name-title' onClick={() => toggle(i)}>
+              <h2>{professor.profname} - {professor.overall_rating.toFixed(1)}</h2>
+              <h2>{selected === i ? '-' : '+'}</h2>
             </div>
-          );
-        })
-      }
+            <div className={selected === i ? 'content show' : 'content'}>
+              <ProfessorReviews reviewData={professor.reviews}/>
+            </div>
+          </div>
+        ))
+      ) : (
+        <div className='no-results'>
+          <p>No professors found for this course or no professors have been rated yet.</p>
+        </div>
+      )}
       <br></br>
     </div>
-
   );
 }
+
