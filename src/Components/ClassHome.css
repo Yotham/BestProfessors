@@ -1,84 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-.course-cataloge {
-    text-align: center;
-    font-family: 'Raleway', sans-serif;
+
+/* Body styles */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Raleway', sans-serif;
+  padding-bottom: 100px; /* Add space for fixed footer */
 }
-.class-home {
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 1%;
-}
-.code-title {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    padding-right: 3vmax;
-    padding-left: 3vmax;
-}
-.code-title:hover {
-    cursor: pointer;
-}
-#code {
-    font-size: 3vmax;
-    font-family: 'Playfair Display', serif;
-}
-#expand {
-    font-size: 3vmax;
-    font-family: 'Playfair Display', serif;
-}
-.class-card {
-    max-height: 0;
-    overflow: auto;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-.class-card.show {
-    height: auto;
-    max-height: 30vmax;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
+
+/* Search bar styles */
 #class-search-home {
-    border-radius: 1vh;
-    border: 1px solid black;
-    height: 7vh;
-    width: 40%;
-    text-indent: 1vw;
-    margin-top: 4vh;
-    margin-bottom: 2vmin;
-    margin-left: 30%;
+    color: #333; /* Dark gray color for text */
+    flex-grow: 1; /* Allows the input field to take up as much space as possible */
+    border-radius: 20px; /* Rounded corners */
+    border: 2px solid #cccccc;
+    height: 60px; /* Matching height for input and button */
+    margin-right: 10px; /* Space between input and button */
+    padding: 0 20px;
+    font-size: 1rem;
     font-family: 'Raleway', sans-serif;
 }
+
+/* Course catalog styles */
+.course-cataloge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.class-home {
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 5px 0;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px; /* Controls the max width for better readability on large screens */
+  transition: transform 0.2s; /* Smooth transition for hover effect */
+  
+}
+
+.class-home:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.code-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+#code, #expand {
+  font-size: 24px;
+  
+}
+
+.class-card {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  border: 1px solid gray;
+  border-radius:8px;
+}
+
+.class-card.show {
+  max-height: 500px; /* Sufficiently large to accommodate content */
+  transition: max-height 0.5s ease-in;
+  overflow: auto;
+  
+}
+
+/* Pagination styles */
 .pagination {
-    width: 40%;
     display: flex;
     list-style: none;
-    margin-left: auto;
-    margin-right: auto;
-    text-decoration: none;
-    justify-content: space-around;
-}
-.item {
-    padding: 1vmin;
-}
-.item:hover {
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .item a, .previous a, .next a {
+    display: block; /* Make the <a> tag fill the entire list item */
+    padding: 8px 12px; /* Adjust padding as necessary */
+    text-decoration: none; /* Optional: removes underline from links */
+    color: inherit; /* Inherits text color from parent */
+  }
+  
+  .item, .previous, .next {
+    margin: 4px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
     cursor: pointer;
-}
-.active-page {
-    color: white;
-    border-radius: 1vmin;
-    background-color: rgb(69, 69, 69);
-}
-.previous {
-    padding: 1vmin;
-}
-.previous:hover {
-    cursor: pointer;
-    color: rgb(45, 45, 45);
-}
-.next {
-    padding: 1vmin;
-}
-.next:hover {
-    cursor: pointer;
-    color: rgb(45, 45, 45);
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .item:hover, .previous:hover, .next:hover, .active-page {
+    background-color: #eeeeee;
+  }
+  
+  .active-page {
+    font-weight: bold;
+    color: #333;
+    border-color: #333;
+  }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #class-search-home, .class-home {
+    width: 90%; /* Increase width for mobile devices */
+  }
 }

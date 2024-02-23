@@ -9,25 +9,22 @@
 
 .row{
     display: flex;
-    margin:10px;
+    justify-content: center;
+    gap:4%;
     overflow: auto;
+    margin-top:10%;
 }
-.column{
-    flex: 33.33%;
-    padding: 10px;
-    text-align: center;
-    display: block;
-    font-family: 'Raleway', sans-serif;
-    font-weight:bold;
-}
+
 #member_photo{
-    border: 2px outset black;
+    border: 2px solid #cccccc;
+    border-radius:8px;
     float: center;
     width: 200px;
     height:220px;
     object-fit: cover;
 }
 #paragraph-about-us{
+    margin-top:5%;
     text-align:center;
     justify-content:center;
     font-weight:bold;

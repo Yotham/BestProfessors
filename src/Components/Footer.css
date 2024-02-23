@@ -1,34 +1,57 @@
 .footer {
-    bottom: 0%;
-    width: 100%;
-    display: flex;
     position: fixed;
-    background-color: rgb(237, 237, 237);
-    justify-content: space-evenly;
-    font-family: 'Raleway', sans-serif;
-}
-#git-link {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(237, 237, 237); /* Light grey background */
     display: flex;
-}
-#git-title {
+    justify-content: space-evenly; /* Evenly space content */
+    align-items: center; /* Center items vertically */
+    padding: 1rem 0; /* Add padding on top and bottom */
+    font-family: 'Raleway', sans-serif;
+    font-size:1.2em;
+  }
+  
+  #git-link {
+    display: flex;
+    align-items: center; /* Center the GitHub logo and title vertically */
+    text-decoration: none;
+    color: #303030; /* Darken the text on hover for better interaction feedback */
+  }
+  
+  #git-title {
     color: black;
     text-decoration: none;
     padding-left: 0.5vmin;
     font-weight: bold;
-}
-#get-title:hover{
-    color: #303030 
-}
-#git-logo {
-    width: 1vmax;
-    height: 1vmax;
-    padding-right: 0.2%;
-}
-#contact-link {
+  }
+  
+  #git-title:hover, #contact-link:hover {
+    color: #303030; /* Darken the text on hover for better interaction feedback */
+  }
+  
+  #git-logo {
+    width: 2rem; /* Set a fixed size for the GitHub logo for consistency */
+    height: 2rem;
+    margin-right: 0.5rem; /* Add some space between logo and text */
+    text-decoration: none;
+  }
+  
+  #contact-link {
     text-decoration: none;
     color: black;
     font-weight: bold;
-}
-#contact-link:hover {
-    color: #303030
-}
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      padding: 1rem; /* Adjust padding for better spacing */
+    }
+  
+    #git-link, #contact-link {
+      margin: 0.5rem 0; /* Add margin between stacked items */
+    }
+  }
+  

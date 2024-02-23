@@ -14,6 +14,7 @@ import './NavBar.css';
 export default function NavBar() {
   return (
     <div className='nav-bar'>
+      <span>Best Professors</span>
       <CustomLink to="/">Home</CustomLink>
       <CustomLink to="/classhome">Classes</CustomLink>
       <CustomLink to="/profhome">Professors</CustomLink>

@@ -9,7 +9,7 @@ import {BrowserRouter} from 'react-router-dom';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-document.title = 'Best Professor List';
+document.title = 'Best Professors';
 root.render(
   <React.StrictMode>
     <BrowserRouter>

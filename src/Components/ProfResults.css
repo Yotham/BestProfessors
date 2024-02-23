@@ -6,7 +6,7 @@
     max-height: 0;
     overflow: auto;
     transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-    border: 1px solid gray;
+    /* border: 1px solid gray; */
 }
 .content.show {
     height: auto;

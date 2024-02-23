@@ -1,8 +1,11 @@
 .prof-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-}
+    width: 100%;
+    padding: 20px;
+  }
 #heading{
     font-size: 3vmax;
     font-family: 'Playfair Display', serif;
@@ -10,35 +13,48 @@
     margin-bottom: 0px;
 }
 .prof-item {
-    font-weight: bold;
-    padding-top: 1%;
-    margin-bottom: 10px;
-    font-family: 'Raleway', sans-serif;
-    border: 1px solid gray;
-}
-.prof-item-title {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 5px 0;
+    padding: 20px;
+    width:800px;
+    max-width: 800px; /* Controls the max width for better readability on large screens */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+  }
+
+  #code, #expand {
+    font-size: 24px;
+  }
+  
+  .prof-item-title {
     display: flex;
     justify-content: space-between;
-    padding-right: 4vmin;
-    padding-left: 4vmin;
-    padding-bottom: 1vmin;
-}
-.prof-item-title:hover {
-    cursor: pointer;
-}
-.content {
+    align-items: center; /* Vertically centers the content */
+    cursor: pointer; /* Indicates the item can be interacted with */
+    font-family: 'Raleway', sans-serif; /* Consistency in font */
+  }
+  
+  .prof-item-title:hover, .prof-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .content {
     max-height: 0;
-    overflow: auto;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-}
-.content.show {
-    height: auto;
-    max-height: 30vmax;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; /* Transition for expanding content */
+    border: 1px solid gray;
+    border-radius:8px;
+  }
+  
+  .content.show {
+    max-height: 500px; /* Adjust as needed for content size */
+    transition: max-height 0.5s ease-in;
+    overflow: auto; /* Allows scrolling within the content */
+  }
 #class-search-home {
-    border-radius: 1vh;
-    border: 1px solid black;
+    color: #333; /* Dark gray color for text */
     height: 7vh;
     width: 40%;
     text-indent: 1vw;

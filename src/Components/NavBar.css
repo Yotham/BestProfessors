@@ -1,22 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 .nav-bar {
-    font-weight: bold;
+  display: flex;
+  justify-content: space-around; /* Distributes space evenly between items */
+  align-items: center; /* Vertically centers items */
+  font-weight: bold;
+  background-color: #333; /* Updated to a darker shade for a sleek look */
+  font-family: 'Raleway', sans-serif;
+  padding: 1rem 0; /* Add some padding on top and bottom */
+  user-select: none;
 }
+
+.nav-bar span {
+  color: #fff; /* White color for contrast */
+  font-size: 1.5rem; /* Adjust based on your preference */
+  margin-right: auto 1%; /* Pushes everything else to the right */
+}
+
 .nav-bar a {
-    width: 25%;
-    float: left;
-    padding-top: 1vmin;
-    padding-bottom: 1vmin;
-    color: white;
-    font-size: 1.5vmax;
-    text-align: center;
-    text-decoration: none;
-    background-color: black;
-    font-family: 'Raleway', sans-serif;
+  color: #bbb; /* Lighter gray for the links to differentiate from the title */
+  font-size: 1rem; /* Adjusted for better scalability */
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 1rem; /* Adjust padding to fit better */
+  transition: color 0.3s, transform 0.3s; /* Updated transition for color and transform */
 }
-.nav-bar a:hover {
-    text-decoration: underline;
+
+.nav-bar a:hover, .nav-bar a.active {
+  color: #1e90ff; /* Bright blue for hover and active state */
+  text-decoration: none; /* Removing underline on hover for a cleaner look */
 }
-.nav-bar a.active {
-    text-decoration: underline;
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    padding: 0.5rem 0; /* Adjust padding for smaller screens */
+  }
+
+  .nav-bar a, .nav-bar span {
+    margin: 5px 0; /* Add space between items when stacked */
+  }
 }

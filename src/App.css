@@ -1,65 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+/* Reset margins and paddings for all elements */
 * {
-    margin: 0;
-    padding: 0;
-}
-input.class-search {
-        border-radius: 1vh;
-        border: 1px solid black;
-        height: 7vh;
-        width: 40%;
-        text-indent: 1vw;
-        margin-top: 4vh;
-        margin-left: 30%;
-        font-family: 'Raleway', sans-serif;
-    
-}
-input.professor-search {
-        border-radius: 1vh;
-        border: 1px solid black;
-        height: 7vh;
-        width: 40%;
-        text-indent: 1vw;
-        margin-top: 4vh;
-        margin-left: 30%;
-        font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders do not increase the total width of elements */
 }
 
-#search_button1 {
-        border-radius: 1vh;
-        padding: 12px;
-        border: 1px solid black;
-        margin-left: 10px;
-        margin-top:10px;
-        height: 7vh;
-        font-family: 'Raleway', sans-serif;
-        text-decoration:none;
-        color:black;
-        background-color:white;
-        font-weight:bold;
-
+/* Body styles */
+body {
+  background-color: #f5f5f5; /* Light gray background */
+  color: #333; /* Dark gray color for text */
+  font-family: 'Raleway', sans-serif; /* Consistent font throughout the app */
 }
-#search_button2 {
-        border-radius: 1vh;
-        padding: 12px;
-        border: 1px solid black;
-        margin-left: 10px;
-        margin-top:10px;
-        height: 7vh;
+
+.search-groups-container{
+        margin-top:6vh;
         font-family: 'Raleway', sans-serif;
-        background-color:white;
-        text-decoration:none;
+}
+.search-group {
+  display: flex; /* Flex container to hold input and button side by side */
+  justify-content: center; /* Center the group horizontally */
+  align-items: center; /* Align items vertically */
+  margin: 20px auto; /* Adds vertical spacing between each group and centers them */
+  width: 80%; /* Matches the input width for consistency */
+  
+}
+
+.search-input {
+  flex-grow: 1; /* Allows the input field to take up as much space as possible */
+  border-radius: 20px; /* Rounded corners */
+  border: 2px solid #cccccc;
+  height: 60px; /* Matching height for input and button */
+  margin-right: 10px; /* Space between input and button */
+  padding: 0 20px;
+  font-size: 1rem;
+}
+
+.search-button {
+        display: inline-block; /* Allows for better control over button positioning */
+        border-radius: 20px; /* Matching the input field's border-radius */
+        padding: 12px 24px; /* Increased padding for a larger clickable area */
+        border: 2px solid #cccccc; /* Matching the input field's border style */
+        background-color: white;
+        color: #333; /* Dark gray text for better contrast */
         font-weight: bold;
-        color:black;
+        text-decoration: none; /* Removes underline from buttons */
+        cursor: pointer; /* Changes cursor to pointer to indicate clickability */
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.1rem; /* Matching the input field's font size */
+        margin: 0 10px; /* Adds horizontal spacing between buttons */
+        transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
 
+.search-button:hover {
+  background-color: #e0e0e0;
+  color: #222;
 }
-#search_bars {
-        float: center;
-        margin-top:75px;
-        margin-right:100px;
-}
-#search_button1:hover {
-        color: #303030
-}
-#search_button2:hover {
-        color: #303030
+
+@media (max-width: 768px) {
+  .search-group {
+    flex-direction: column; /* Stack input and button vertically on smaller screens */
+    width: 90%;
+  }
+  .search-input, .search-button {
+    width: 100%; /* Full width for small screens */
+    margin: 10px 0; /* Add some vertical spacing */
+    text-align:center;
+  }
+  .search-button {
+    height: 50px; /* Adjust if necessary for visual consistency */
+    text-align:center;
+  }
 }

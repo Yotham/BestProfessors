@@ -35,7 +35,7 @@ function Items({data, fullData}) {
 
   return (
     <div>
-      <div id = "heading">Professors</div>
+      {/* <div id = "heading">Professors</div> */}
       <div className='prof-list'>
         {
           data && data

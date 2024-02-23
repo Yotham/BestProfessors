@@ -13,14 +13,10 @@ import './About.css';
 export default function About() {
   return (
     <div>
-      <div id = "about-title" className="about-title">
+      {/* <div id = "about-title" className="about-title">
           About Us
-      </div>
+      </div> */}
       <center><div className="row">
-        <div className = "column">
-          <img id = "member_photo" alt = "Yotham Sage" src = "https://i.ibb.co/dKwYy5p/yotham-sage.jpg" ></img>
-          <p data-testid="name1">Yotham Sage</p>
-        </div>
         <div className = "column">
           <img id = "member_photo" alt = "Jen Lawless" src = "https://i.ibb.co/7RPGXb0/jenny-lawless.jpg" ></img>
           <p data-testid="name2">Jen Lawless</p>
@@ -28,6 +24,10 @@ export default function About() {
         <div className = "column">
           <img id = "member_photo" alt = "Isaac Foster" src = "https://i.ibb.co/syFXhGS/isaac-foster.jpg" ></img>
           <p data-testid="name3">Isaac Foster</p>
+        </div>
+        <div className = "column">
+          <img id = "member_photo" alt = "Yotham Sage" src = "https://i.ibb.co/dKwYy5p/yotham-sage.jpg" ></img>
+          <p data-testid="name1">Yotham Sage</p>
         </div>
         <div className = "column">
           <img id = "member_photo" alt = "Julia Maguire" src = "https://i.ibb.co/10my9ZV/Julia-Maguire.jpg" ></img>
