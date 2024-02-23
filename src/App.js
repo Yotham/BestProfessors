@@ -5,7 +5,6 @@
 /* eslint camelcase: "error" */
 /* eslint indent: ["error", 2] */
 import React, {useState} from 'react';
-import Header from './Components/Header';
 import NavBar from './Components/NavBar';
 import About from './Components/About';
 import ClassHome from './Components/ClassHome';

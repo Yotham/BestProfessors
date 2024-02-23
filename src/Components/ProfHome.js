@@ -72,14 +72,14 @@ function PaginatedItems({itemsPerPage, data}) {
 
   // simulate fetching items from source
   const endOffset = itemOffset + itemsPerPage;
-  console.log('Loading items from ${itemOffset} to ${endOffset}');
+  console.log(`Loading items from ${itemOffset} to ${endOffset}`);
   const currentItems = data.slice(itemOffset, endOffset);
   const pageCount = Math.ceil(data.length / itemsPerPage);
 
   // click event handling
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
-    console.log('User requested page number ${event.selected}, which is offset ${newOffset}');
+    console.log(`User requested page number ${event.selected}, which is offset ${newOffset}`);
     setItemOffset(newOffset);
   };
 
@@ -135,7 +135,7 @@ function PaginatedItems({itemsPerPage, data}) {
                       return (
                         <div>
                           {(() => {
-                            if ((profName.profname.toLowerCase().includes(searchText) || searchText === '') && profName.overall_rating != 0.0) {
+                            if ((profName.profname.toLowerCase().includes(searchText) || searchText === '') && profName.overall_rating !== 0.0) {
                               foundFlag = true;
                               return (
                                 <div className='prof-item' key={ profName.profName }>

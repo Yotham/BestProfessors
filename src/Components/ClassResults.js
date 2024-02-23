@@ -49,7 +49,7 @@ function ifNoRevs(numRevs) {
  * @return {0/1/2} 0 = true 1 = false 2 = false
  */
 function validInput(str, dat) {
-  if (str.length != 8 || !(isAlpha(str.substring(0, 4))) || isNaN(str.substring(5))) {
+  if (str.length !== 8 || !(isAlpha(str.substring(0, 4))) || isNaN(str.substring(5))) {
     return (0);
   } else if (!(dat)) {
     return 1;
@@ -77,7 +77,7 @@ export default function ClassResults() {
   };
 
   // handle badly formatted user input
-  if ( valid == 0) {
+  if ( valid === 0) {
     return (
       <center><div className='invalid'>
         <div><span>"{search}" is not a properly formatted search</span></div>
@@ -86,7 +86,7 @@ export default function ClassResults() {
         <div><span><a href="/">try another search</a></span></div>
       </div></center>
     );
-  } else if (valid == 1) {
+  } else if (valid === 1) {
     return (
       <center><div className='invalid'>
         <div><span>"{search}" is not a course in the RPI catalog.</span></div>
