@@ -14,9 +14,15 @@ import './ProfHome.css';
  * @return {/ProfHome} The ProfHome page
  */
 export default function ProfHome({data}) {
+  const [selected, setSelected] = useState(null);
+
+  const toggle = (i) => {
+    setSelected(selected === i ? null : i);
+  };
   return (
     <div>
-      <PaginatedItems itemsPerPage={10} data={data} />
+      <PaginatedItems itemsPerPage={10} data={data} selected={selected}
+        toggle={toggle}/>
     </div>
   );
 }
