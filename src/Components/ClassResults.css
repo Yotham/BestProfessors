@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 #course-search {
     font-size: 3vmax;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
     margin-bottom:10px;
+    margin-top:10px;
 }
 #prof-name-class {
     font-family: 'Raleway', sans-serif;

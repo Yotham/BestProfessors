@@ -9,8 +9,10 @@
 
 import './ProfResults.css';
 import ProfessorReviews from './ProfessorReviews';
-import {useLocation} from 'react-router-dom';
+import {useResolvedPath, useMatch, Link,useLocation } from 'react-router-dom';
 import React, {useState} from 'react';
+
+import RMPData from '../Data/rmp.json';
 
 
 /**
@@ -41,52 +43,64 @@ function ifNotSeen(seenProf, search) {
 */
 export default function ProfResults() {
   const location = useLocation();
-  console.log(location);
   const data = location.state.data;
   const search = location.state.professor.message;
   let seenProf = false;
-
+  const [message, setMessage] = useState('');
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+    console.log('value is:', event.target.value);
+  };
   const [selected, setSelected] = useState(null);
   const toggle = (i) => {
-    if (selected === i) {
-      return setSelected(null);
-    }
-    setSelected(i);
+    setSelected(selected === i ? null : i);
   };
 
+  const filteredProfessors = data.filter(professor =>
+    professor.profname.toUpperCase() === search.toUpperCase()
+  );
+
+  // After filtering, set seenProf to true if we have any professors
+  seenProf = filteredProfessors.length > 0;
+  function CustomLink({to, children, ...props}) {
+    const resolvedPath = useResolvedPath(to);
+    const isActive = useMatch({path: resolvedPath.pathname, end: true});
+  
+    return <Link id='search-btn' className={isActive ? 'active' : ''} to={to} {...props}>{children}</Link>;
+  }
+  
   return (
     <div>
-      {
-        data && data
-          .map((professors, i)=> {
-            return (
-              <div className='prof' key={ professors.profname }>
-                {(() => {
-                  if (professors.profname.toUpperCase() === search.toUpperCase()) {
-                    seenProf = true;
-                    return (
-                      <div id='prof-name'>
-                        <div className='prof-name-title' onClick={() => toggle(i)}>
-                          <h2>{ professors.profname } - { professors.overall_rating.toFixed(1)}</h2>
-                          <h2>{selected === i ? '-' : '+'}</h2>
-                        </div>
-                        <div className={selected === i ? 'content show' : 'content'}>
-                          <ProfessorReviews reviewData={professors.reviews}/>
-                        </div>
-                        <br></br>
-                      </div>
-                    );
-                  }
-                  // Handle invalid user input. Tell user that their input was wrong, then provide a link
-                  // to the professor list page, and a link back to the home page
-                })()}
-              </div>
-            );
-          })
-      }
-      <div><center>
-        {ifNotSeen(seenProf, search)}
-      </center></div>
+      <div className="search-group">
+        <input
+          className="search-input professor-search"
+          onChange={handleChange}
+          type="text"
+          placeholder="Search Professors...."
+        />
+        <CustomLink className="search-button" to="/profresults" state={{ data: RMPData, professor: { message } }}>
+          Search
+        </CustomLink>
+      </div>
+      {filteredProfessors.map((professors, i) => (
+        <div className='prof' key={ professors.profname }>
+          <div id='prof-name'>
+            <div className='prof-name-title' onClick={() => toggle(i)}>
+              <h2>{ professors.profname } - { professors.overall_rating.toFixed(1)}</h2>
+              <h2>{selected === i ? '-' : '+'}</h2>
+            </div>
+            <div className={selected === i ? 'content show' : 'content'}>
+              <ProfessorReviews reviewData={professors.reviews}/>
+            </div>
+            <br></br>
+          </div>
+        </div>
+      ))}
+      <center>
+        {!seenProf && ifNotSeen(seenProf, search)}
+      </center>
+      
     </div>
   );
 }
+

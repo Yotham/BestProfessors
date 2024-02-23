@@ -1,43 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-.prof {
-    text-align: center;
-}
-.content {
-    max-height: 0;
-    overflow: auto;
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
-    /* border: 1px solid gray; */
-}
-.content.show {
-    height: auto;
-    max-height: 30vmax;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
-}
-#prof-name {
-    margin-top:50px;
-    border-top: 1px outset black;
-    border-right:1px outset black;
-    border-left:1px outset black;
-    border-bottom:1px outset black;
-    height:6vh;
-    margin-right: 25%;
-    margin-left: 25%;
-    font-family: 'Raleway', sans-serif;
-    font-weight:bold;
-    padding-top: 1%;
 
-}
-.prof-name-title {
-    display:flex;
+.prof {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 1% auto; /* Center the container */
+    padding: 15px 20px 10px;
+    width: 80%;
+    max-width: 800px; /* Controls the max width for better readability on large screens */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+    display: flex; /* Use flexbox to center the content vertically */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+  }
+
+  .prof:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+  }
+  
+  .prof-name-title {
+    display: flex;
     justify-content: space-between;
-    padding-right: 4vmin;
-    padding-left: 4vmin;
-}
-.prof-name-title:hover {
+    align-items: center;
     cursor: pointer;
-}
-#not-seen {
-    font-size: 4vmin;
-    margin-top: 4vmax;
+    font-family: 'Raleway', sans-serif;
+    width: 100%; /* Full width to match the parent container */
+  }
+  
+  #prof-name {
+    color: #333;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    width: 100%; /* Full width to match the .prof container */
+    text-align: center; /* Center the text */
+  }
+  
+  .content {
+    width: 100%; /* Full width to match the parent container */
+    transition: all 0.5s ease-out; /* Transition for expanding and collapsing */
+    overflow: hidden; /* Hide the overflowed content */
+  }
+  
+  .content.show {
+    max-height: 500px; /* Remove the max-height when expanded */
+  }
+  
+  #not-seen {
+    font-size: 1rem;
     font-family: 'Playfair Display', serif;
-}
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Add some space above the text */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .prof, #prof-name {
+      width: 90%; /* Increase width for mobile devices */
+    }
+  }

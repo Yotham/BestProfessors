@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable valid-jsdoc */
-/* eslint max-len: ["error", { "code": 150 }] */
+/* eslint max-len: ["error", { "code": 200 }] */
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 /* eslint camelcase: "error" */
@@ -20,6 +20,10 @@ function isAlpha(s) {
   return /^[a-zA-Z()]+$/.test(s);
 }
 
+function isDigit(str) {
+  return /^\d+$/.test(str);
+}
+
 
 /**
  *function handles output for when a course has no reviewed professors
@@ -28,16 +32,6 @@ function isAlpha(s) {
  *called after looping through json data to get course review data
  * @return {True/False}
  */
-function ifNoRevs(numRevs) {
-  if (numRevs === 0) {
-    return (<div className='invalid'><center>
-      <div><span>unfortunately, there are no rated professors teaching this course</span></div>
-      <div><span><a href="/">try another search</a></span></div>
-    </center></div>
-    );
-  };
-  return ('');
-}
 
 
 /**
@@ -49,7 +43,7 @@ function ifNoRevs(numRevs) {
  * @return {0/1/2} 0 = true 1 = false 2 = false
  */
 function validInput(str, dat) {
-  if (str.length !== 8 || !(isAlpha(str.substring(0, 4))) || isNaN(str.substring(5))) {
+  if (str.length !== 8 || !(isAlpha(str.substring(0, 4))) || !(isDigit(str.substring(4, 8))) || isNaN(str.substring(5))) {
     return (0);
   } else if (!(dat)) {
     return 1;
@@ -62,21 +56,17 @@ function validInput(str, dat) {
  */
 export default function ClassResults() {
   const location = useLocation();
-  console.log(location);
+  //console.log(location);
   const rmpData = location.state.data;
+  //console.log(rmpData)
   const search = location.state.professor.message.toString().toUpperCase();
-  const courseData = location.state.courseData.CourseProfs[search];
-  const valid = validInput(search, courseData);
-  let numRevs = 0;
+  //console.log(search)
   const [selected, setSelected] = useState(null);
-  const toggle = (i) => {
-    if (selected === i) {
-      return setSelected(null);
-    }
-    setSelected(i);
-  };
-
-  // handle badly formatted user input
+  // Before using the state, check if it exists and has the `CourseProfs` key
+  const courseData = location.state && location.state.courseProfs && location.state.courseProfs && location.state.courseProfs[search] ? location.state.courseProfs[search] : null;
+  const valid = validInput(search, courseData);
+  // console.log(valid)
+  // console.log(courseData)
   if ( valid === 0) {
     return (
       <center><div className='invalid'>
@@ -96,6 +86,18 @@ export default function ClassResults() {
       </div></center>
     );
   }
+  // Then you can check if courseData is not null before mapping over it
+
+  const toggle = (i) => {
+    setSelected(selected === i ? null : i);
+  };
+
+  // Filter out the professors that do not match the search term or have a rating of 0
+  const filteredProfessors = courseData
+    .map(profName => rmpData.find(prof => prof.profname === profName))
+    .filter(prof => prof && prof.overall_rating !== 0);
+
+  // handle badly formatted user input
   return (
     <div>
       <center><div id='course-search'>
@@ -105,45 +107,27 @@ export default function ClassResults() {
         courseData && courseData.map( (prof) => {
           return (
             <div>
-              {
-                rmpData && rmpData
-                  .map((professors, i)=> {
-                    return (
-                      <div className='prof' key={ professors.profname }>
-                        {(() => {
-                          if (professors.profname === prof && professors.overall_rating !== 0) {
-                            numRevs = numRevs + 1;
-                            return (
-                              <div className='full-review'>
-                                <div id='prof-name-class'>
-                                  <div className='prof-name-title' onClick={() => toggle(i)}>
-                                    <h2>{ professors.profname } - { professors.overall_rating.toFixed(1)}</h2>
-                                    <h2>{selected === i ? '-' : '+'}</h2>
-                                  </div>
-                                  <div className={selected === i ? 'content show' : 'content'}>
-                                    <ProfessorReviews reviewData={professors.reviews}/>
-                                  </div>
-                                </div>
-                              </div>
-
-                            );
-                          }// end of if
-                          // if there are no reviews after looking at every prof, bad input
-                        })()}
-
-                      </div>
-                    );
-                  })
-              }
-
-
+              {filteredProfessors.length > 0 ? (
+                filteredProfessors.map((professor, i) => (
+                  <div className='prof' key={professor.profname}>
+                    <div className='prof-name-title' onClick={() => toggle(i)}>
+                      <h2>{professor.profname} - {professor.overall_rating.toFixed(1)}</h2>
+                      <h2>{selected === i ? '-' : '+'}</h2>
+                    </div>
+                    <div className={selected === i ? 'content show' : 'content'}>
+                      <ProfessorReviews reviewData={professor.reviews}/>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className='no-results'>
+                  <p>No professors found for this course or no professors have been rated yet.</p>
+                </div>
+              )}
             </div>
           );
         })
       }
-      <div>
-        {ifNoRevs(numRevs)}
-      </div>
       <br></br>
     </div>
 

@@ -37,7 +37,7 @@ function App() {
           <Route path="/" element={<HomeBody/>} />
           <Route path="/classhome" element={<ClassHome data={CourseData}/>} />
           <Route path="/profhome" element={<ProfHome data={RMPData}/>} />
-          <Route path="/profresults" element={<ProfResults/>} />
+          <Route path="/profresults" element={<ProfResults data={RMPData}/>} />
           <Route path="/classresults" element={<ClassResults/>} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
@@ -93,7 +93,7 @@ function HomeBody() {
           type="text"
           placeholder="Search Classes...."
         />
-        <CustomLink className="search-button" to="/classresults" state={{ data: CourseData, courseProfs: CourseProfs, professor: { message } }}>
+        <CustomLink className="search-button" to="/classresults" state={{ data: RMPData, courseProfs: CourseProfs, professor: { message } }}>
           Search
         </CustomLink>
       </div>
